@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SimpleBookStore.DAL.LogEntity
 {
-    public class Logs : DbEntity
+    public class Logs : DbEntity, ILogEntity
     {
         [Key]
         public int Id { get; set; }

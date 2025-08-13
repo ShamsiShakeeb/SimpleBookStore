@@ -17,7 +17,7 @@ namespace SimpleBookStore.DAL.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.18")
+                .HasAnnotation("ProductVersion", "8.0.19")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -203,7 +203,7 @@ namespace SimpleBookStore.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Book");
+                    b.ToTable("Book", (string)null);
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.Review", b =>
@@ -247,7 +247,7 @@ namespace SimpleBookStore.DAL.Migrations
 
                     b.HasIndex("UID");
 
-                    b.ToTable("Review");
+                    b.ToTable("Review", (string)null);
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.User", b =>
@@ -346,7 +346,7 @@ namespace SimpleBookStore.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("User_Book");
+                    b.ToTable("User_Book", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

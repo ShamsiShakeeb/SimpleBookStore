@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="KhatiExcel" Version="1.0.5" />
+    <PackageReference Include="KhatiMediaTr" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SimpleBookStore.DAL\SimpleBookStore.DAL.csproj" />
-    <ProjectReference Include="..\SimpleBookStore.Model\SimpleBookStore.Model.csproj" />
-    <ProjectReference Include="..\SimpleBookStore.Utility\SimpleBookStore.Utility.csproj" />
   </ItemGroup>
 
 </Project>

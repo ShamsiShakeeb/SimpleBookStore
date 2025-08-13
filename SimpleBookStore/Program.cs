@@ -1,9 +1,5 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
-using SimpleBookStore.BLL.Configurations;
 using SimpleBookStore.DAL.Configurations;
-using SimpleBookStore.DAL.DbContextSet;
-using SimpleBookStore.DAL.StoreEntity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.DAL();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
@@ -41,13 +38,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
-builder.Services.DAL(builder.Configuration);
-builder.Services.BLL(builder.Configuration);
-
-builder.Services.AddIdentity<User, IdentityRole>()
-    .AddEntityFrameworkStores<StoreContext>()
-    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SimpleBookStore.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class InitialStoreDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -64,31 +64,15 @@ namespace SimpleBookStore.DAL.Migrations
                     ISBN = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PublishedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Stock = table.Column<int>(type: "int", nullable: false),
                     Createdby = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Updatedby = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Book", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Stock",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Count = table.Column<int>(type: "int", nullable: false),
-                    Createdby = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Updatedby = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Stock", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -198,6 +182,37 @@ namespace SimpleBookStore.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Review",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UID = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    BID = table.Column<int>(type: "int", nullable: false),
+                    Rating = table.Column<int>(type: "int", nullable: false),
+                    Comment = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
+                    Createdby = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Updatedby = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Review", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Review_AspNetUsers_UID",
+                        column: x => x.UID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Review_Book_BID",
+                        column: x => x.BID,
+                        principalTable: "Book",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "User_Book",
                 columns: table => new
                 {
@@ -218,32 +233,6 @@ namespace SimpleBookStore.DAL.Migrations
                         name: "FK_User_Book_Book_BookId",
                         column: x => x.BookId,
                         principalTable: "Book",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Book_Stock",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    BookId = table.Column<int>(type: "int", nullable: false),
-                    StockId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Book_Stock", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Book_Stock_Book_BookId",
-                        column: x => x.BookId,
-                        principalTable: "Book",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Book_Stock_Stock_StockId",
-                        column: x => x.StockId,
-                        principalTable: "Stock",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -288,14 +277,14 @@ namespace SimpleBookStore.DAL.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Book_Stock_BookId",
-                table: "Book_Stock",
-                column: "BookId");
+                name: "IX_Review_BID",
+                table: "Review",
+                column: "BID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Book_Stock_StockId",
-                table: "Book_Stock",
-                column: "StockId");
+                name: "IX_Review_UID",
+                table: "Review",
+                column: "UID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_User_Book_BookId",
@@ -327,16 +316,13 @@ namespace SimpleBookStore.DAL.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Book_Stock");
+                name: "Review");
 
             migrationBuilder.DropTable(
                 name: "User_Book");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "Stock");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

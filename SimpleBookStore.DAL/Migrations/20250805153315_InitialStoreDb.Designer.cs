@@ -12,15 +12,15 @@ using SimpleBookStore.DAL.DbContextSet;
 namespace SimpleBookStore.DAL.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250802164334_AddingRatingsModel")]
-    partial class AddingRatingsModel
+    [Migration("20250805153315_InitialStoreDb")]
+    partial class InitialStoreDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.18")
+                .HasAnnotation("ProductVersion", "8.0.19")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -198,7 +198,7 @@ namespace SimpleBookStore.DAL.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Updatedby")
@@ -206,7 +206,7 @@ namespace SimpleBookStore.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Book");
+                    b.ToTable("Book", (string)null);
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.Review", b =>
@@ -218,9 +218,6 @@ namespace SimpleBookStore.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("BID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("BookId")
                         .HasColumnType("int");
 
                     b.Property<string>("Comment")
@@ -239,24 +236,21 @@ namespace SimpleBookStore.DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UID")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Updatedby")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("BookId");
+                    b.HasIndex("BID");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UID");
 
-                    b.ToTable("Review");
+                    b.ToTable("Review", (string)null);
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.User", b =>
@@ -355,7 +349,7 @@ namespace SimpleBookStore.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("User_Book");
+                    b.ToTable("User_Book", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -412,12 +406,14 @@ namespace SimpleBookStore.DAL.Migrations
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.Review", b =>
                 {
                     b.HasOne("SimpleBookStore.DAL.StoreEntity.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId");
+                        .WithMany("Review")
+                        .HasForeignKey("BID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SimpleBookStore.DAL.StoreEntity.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                        .WithMany("Review")
+                        .HasForeignKey("UID");
 
                     b.Navigation("Book");
 
@@ -443,11 +439,15 @@ namespace SimpleBookStore.DAL.Migrations
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.Book", b =>
                 {
+                    b.Navigation("Review");
+
                     b.Navigation("User_Books");
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.User", b =>
                 {
+                    b.Navigation("Review");
+
                     b.Navigation("User_Books");
                 });
 #pragma warning restore 612, 618

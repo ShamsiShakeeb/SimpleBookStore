@@ -3,7 +3,7 @@ using SimpleBookStore.DAL.CommonEntity;
 
 namespace SimpleBookStore.DAL.StoreEntity
 {
-    public class Book : DbEntity
+    public class Book : DbEntity, IStoreEntity
     {
         [Key]
         public int Id { get; set; }  

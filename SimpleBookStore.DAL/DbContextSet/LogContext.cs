@@ -1,13 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using KhatiExtendedEF.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using SimpleBookStore.DAL.LogEntity;
 
 namespace SimpleBookStore.DAL.DbContextSet
 {
-    public class LogContext : DbContext
+    public class LogContext : DatabaseContext<ILogEntity>
     {
-        public LogContext(DbContextOptions<LogContext> options) : base(options)
+        private readonly IConfiguration _configuration;
+        public LogContext(DbContextOptions options, IConfiguration configuration) : base(options)
         {
+            _configuration = configuration;
         }
-        public DbSet<Logs> Logs { get; set; }
+        public override string connectionString() => _configuration.GetConnectionString("LogConnection");
     }
 }

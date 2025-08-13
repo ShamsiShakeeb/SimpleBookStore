@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SimpleBookStore.DAL.StoreEntity
 {
-    public class Review : DbEntity
+    public class Review : DbEntity, IStoreEntity
     {
         public int Id { get; set; }
 
