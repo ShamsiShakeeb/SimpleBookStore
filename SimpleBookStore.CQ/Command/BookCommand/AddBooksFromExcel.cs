@@ -1,5 +1,6 @@
 ﻿using KhatiExcel.Feature;
 using KhatiExtendedEF.Repositories;
+using KhatiExtendedEF.UnitOfWork;
 using KhatiMediaTr;
 using Microsoft.AspNetCore.Http;
 using SimpleBookStore.CQ.Command.LogCommand;
@@ -9,14 +10,17 @@ namespace SimpleBookStore.CQ.Command.BookCommand
 {
     public class AddBooksFromExcel : IEventHandler
     {
-        public readonly IRepository<Book> _repositoryBook;
+        private readonly IRepository<Book> _repositoryBook;
+        private readonly IUnitOfWork<IStoreEntity> _storeUnitWork;
         private readonly IMediaTr<AddLogCommand, Task> _logCommand;
         private readonly ILoadExcel _loadExcel;
         public AddBooksFromExcel(IRepository<Book> repositoryBook,
+            IUnitOfWork<IStoreEntity> storeUnitWork,
             IMediaTr<AddLogCommand, Task> logCommand,
             ILoadExcel loadExcel)
         {
             _repositoryBook = repositoryBook;
+            _storeUnitWork = storeUnitWork;
             _logCommand = logCommand;
             _loadExcel = loadExcel;
         }
@@ -36,13 +40,11 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     PublishedDate = r.Where(x => x.ColumnName.Trim() == "PublishedDate").Select(x => DateTime.Parse(x.ColumnValue))
                     .FirstOrDefault()
                 };
+                books.Add(book);
             }
-            return await _repositoryBook.Commit(async () =>
+            return await _storeUnitWork.Commit(async () =>
             {
-                foreach (var book in books) 
-                {
-                   await _repositoryBook.InsertAsync(book);
-                }
+                await _repositoryBook.InsertRangeAsync(books);
             });
         }
     }

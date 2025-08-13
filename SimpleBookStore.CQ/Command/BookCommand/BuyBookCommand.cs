@@ -1,4 +1,5 @@
 ﻿using KhatiExtendedEF.Repositories;
+using KhatiExtendedEF.UnitOfWork;
 using KhatiMediaTr;
 using SimpleBookStore.CQ.Command.LogCommand;
 using SimpleBookStore.DAL.LogEntity;
@@ -11,13 +12,16 @@ namespace SimpleBookStore.CQ.Command.BookCommand
     {
         private readonly IRepository<Book> _repositoryBook;
         private readonly IRepository<User_Book> _repositoryUserBook;
+        private readonly IUnitOfWork<IStoreEntity> _storeUnitWork;
         private readonly IMediaTr<AddLogCommand, Task> _logCommand;
         public BuyBookCommand(IRepository<Book> repositoryBook,
             IRepository<User_Book> repositoryUserBook,
+            IUnitOfWork<IStoreEntity> storeUnitWork,
             IMediaTr<AddLogCommand, Task> logCommand)
         {
             _repositoryBook = repositoryBook;
             _repositoryUserBook = repositoryUserBook;
+            _storeUnitWork = storeUnitWork;
             _logCommand = logCommand;
         }
         public async Task<(bool success, string message, string errorMessage)> Handler(BuyBookRequestModel model)
@@ -48,7 +52,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                 return (false, "Recently this Book is not available", null);
             }
 
-            return await _repositoryUserBook.Commit(async () =>
+            return await _storeUnitWork.Commit(async () =>
             {
                 var insertModel = new User_Book()
                 {
