@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using SimpleBookStore.CQ.Configuration;
 using SimpleBookStore.DAL.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.DAL();
+builder.Services.CQ();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

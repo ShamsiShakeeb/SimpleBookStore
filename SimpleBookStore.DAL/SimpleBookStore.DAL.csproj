@@ -8,8 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="KhatiExtendedAdo" Version="8.0.6" />
-    <PackageReference Include="KhatiExtendedEF" Version="8.0.21" />
+    <PackageReference Include="KhatiExtendedEF" Version="8.0.23" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.7" />
   </ItemGroup>
 

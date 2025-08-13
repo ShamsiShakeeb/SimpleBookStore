@@ -2,7 +2,6 @@
 using KhatiExtendedEF.UnitOfWork;
 using KhatiMediaTr;
 using SimpleBookStore.CQ.Command.LogCommand;
-using SimpleBookStore.DAL.LogEntity;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.Model.Request;
 

@@ -38,10 +38,13 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     Price = r.Where(x => x.ColumnName.Trim() == "Price").Select(x => Convert.ToDecimal(x.ColumnValue))
                     .FirstOrDefault(),
                     PublishedDate = r.Where(x => x.ColumnName.Trim() == "PublishedDate").Select(x => DateTime.Parse(x.ColumnValue))
-                    .FirstOrDefault()
+                    .FirstOrDefault(),
+                    Createdby = Utility.Constant.Role.SuperAdmin,
+
                 };
                 books.Add(book);
             }
+
             return await _storeUnitWork.Commit(async () =>
             {
                 await _repositoryBook.InsertRangeAsync(books);

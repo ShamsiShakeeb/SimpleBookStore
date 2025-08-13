@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
-using static SimpleBookStore.Utility.Constant;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using static SimpleBookStore.Utility.Constant;
 
 namespace SimpleBookStore.CustomFiltering
 {

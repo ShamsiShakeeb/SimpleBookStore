@@ -1,7 +1,10 @@
-﻿using KhatiExtendedEF.Resolver;
+﻿using KhatiExtendedADO;
+using KhatiExtendedEF.Resolver;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
+using SimpleBookStore.DAL.ADO.Context;
 using SimpleBookStore.DAL.DbContextSet;
+using SimpleBookStore.DAL.StoreEntity;
 
 namespace SimpleBookStore.DAL.Configurations
 {
@@ -11,11 +14,14 @@ namespace SimpleBookStore.DAL.Configurations
         {
             services.ExtendedEF<StoreContext>();
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<User, IdentityRole>()
             .AddEntityFrameworkStores<StoreContext>()
             .AddDefaultTokenProviders();
 
             services.ExtendedEF<LogContext>();
+
+            services.AdoDependency();
+            services.AddSingleton<IStoreAdoContext, StoreAdoContext>();
 
             return services;
         }
