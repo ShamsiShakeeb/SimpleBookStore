@@ -103,7 +103,7 @@ namespace SimpleBookStore.BLL.Services.UserService
                 return null;
             }
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Utility.Constant.JWTDescription.Key));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Utility.Constant.JwtDescription.Key));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var roles = await _userManager.GetRolesAsync(user);
             var rolesCommaSeparated = string.Join(',', roles);
@@ -113,8 +113,8 @@ namespace SimpleBookStore.BLL.Services.UserService
                 new Claim("UserId",user.Id),
                 new Claim(ClaimTypes.Role,rolesCommaSeparated),
             };
-            var token = new JwtSecurityToken(Utility.Constant.JWTDescription.Issuer,
-                Utility.Constant.JWTDescription.Audience,
+            var token = new JwtSecurityToken(Utility.Constant.JwtDescription.Issuer,
+                Utility.Constant.JwtDescription.Audience,
                 claims,
                 expires: DateTime.Now.AddHours(1),
                 signingCredentials: credentials);

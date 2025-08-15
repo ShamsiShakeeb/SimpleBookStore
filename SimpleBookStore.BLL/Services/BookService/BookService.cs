@@ -11,6 +11,7 @@ using SimpleBookStore.Model.Request;
 using SimpleBookStore.Model.Response;
 using SimpleBookStore.Utility;
 using SimpleReviewStore.DAL.Repositories.ReviewRepository;
+using System.Globalization;
 
 namespace SimpleBookStore.BLL.Services.BookService
 {
@@ -98,7 +99,7 @@ namespace SimpleBookStore.BLL.Services.BookService
                     return (false, "Recently this Book is not available", null);
                 }
 
-                var insertModel = new User_Book()
+                var insertModel = new UserBook()
                 {
                     BookId = model.BookId,
                     UserId = model.UserId
@@ -157,7 +158,7 @@ namespace SimpleBookStore.BLL.Services.BookService
                             Author = row.Cell(2).GetString(),
                             ISBN = row.Cell(3).GetString(),
                             Price = decimal.TryParse(row.Cell(4).GetString(), out var price) ? price : 0,
-                            PublishedDate = DateTime.TryParse(row.Cell(5).GetString(), out var date) ? date : DateTime.MinValue,
+                            PublishedDate = DateTime.TryParse(row.Cell(5).GetString(), CultureInfo.InvariantCulture, DateTimeStyles.None, out var date) ? date : DateTime.MinValue,
                             Createdby = Constant.Role.SuperAdmin,
                             CreatedDate = DateTime.UtcNow.AddHours(6)
                         };

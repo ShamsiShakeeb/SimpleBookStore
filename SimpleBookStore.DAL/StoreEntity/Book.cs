@@ -23,7 +23,7 @@ namespace SimpleBookStore.DAL.StoreEntity
 
         [Required]
         public int Stock {  get; set; }
-        public List<User_Book> User_Books { set; get; }
+        public List<UserBook> User_Books { set; get; }
         public List<Review> Review { set; get; }
     }
 }

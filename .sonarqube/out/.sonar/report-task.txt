@@ -2,5 +2,5 @@ projectKey=RawProjectKey
 serverUrl=http://localhost:9000
 serverVersion=25.8.0.112029
 dashboardUrl=http://localhost:9000/dashboard?id=RawProjectKey
-ceTaskId=05f8fab9-958c-491f-a526-94724e718aff
-ceTaskUrl=http://localhost:9000/api/ce/task?id=05f8fab9-958c-491f-a526-94724e718aff
+ceTaskId=92635d03-1410-4635-8269-ccd8af7b5e97
+ceTaskUrl=http://localhost:9000/api/ce/task?id=92635d03-1410-4635-8269-ccd8af7b5e97

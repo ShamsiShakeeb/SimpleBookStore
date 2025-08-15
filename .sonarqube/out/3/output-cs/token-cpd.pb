@@ -1,4 +1,336 @@
-Ÿ^
+∑/
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs
+	namespace		 	
+SimpleBookStore		
+ 
+.		 
+BLL		 
+.		 
+Services		 &
+.		& '
+ReviewService		' 4
+{
+
+ 
+public 
+
+class 
+ReviewService 
+:  
+IReviewService! /
+{ 
+private 
+readonly 
+IReviewRepository *
+_reviewRepository+ <
+;< =
+private 
+readonly 
+UserManager $
+<$ %
+User% )
+>) *
+_userManager+ 7
+;7 8
+private 
+readonly 
+ILogService $
+_logService% 0
+;0 1
+private 
+readonly 
+IStoreUnitOfWork )
+_storeUnitOfWork* :
+;: ;
+public 
+ReviewService 
+( 
+IReviewRepository .
+reviewRepository/ ?
+,? @
+UserManager 
+< 
+User 
+> 
+userManager )
+,) *
+ILogService 
+
+logService "
+," #
+IStoreUnitOfWork 
+storeUnitOfWork ,
+), -
+{ 	
+_reviewRepository 
+= 
+reviewRepository  0
+;0 1
+_userManager 
+= 
+userManager &
+;& '
+_logService 
+= 
+
+logService $
+;$ %
+_storeUnitOfWork 
+= 
+storeUnitOfWork .
+;. /
+} 	
+public 
+async 
+Task 
+< 
+( 
+bool 
+success  '
+,' (
+string) /
+message0 7
+,7 8
+string9 ?
+errorMessage@ L
+)L M
+>M N
+
+GiveReviewO Y
+(Y Z
+ReviewRequestModelZ l
+modelm r
+)r s
+{ 	
+var 
+user 
+= 
+await 
+_userManager )
+.) *
+FindByIdAsync* 7
+(7 8
+model8 =
+.= >
+UID> A
+)A B
+;B C
+if 
+( 
+user 
+== 
+null 
+) 
+{   
+await!! 
+_logService!! !
+.!!! "
+	InsertLog!!" +
+(!!+ ,
+new"" 
+LogRequestModel"" '
+(""' (
+)""( )
+{## 
+Success$$ 
+=$$  !
+false$$" '
+,$$' (
+Message%% 
+=%%  !
+$str%%" 2
+,%%2 3
+ErrorMessage&& $
+=&&% &
+string&&' -
+.&&- .
+Format&&. 4
+(&&4 5
+$str&&5 Z
++&&[ \
+$str'' 0
+,''0 1
+model''2 7
+.''7 8
+UID''8 ;
+)''; <
+}(( 
+)(( 
+;(( 
+return)) 
+()) 
+false)) 
+,)) 
+$str)) /
+,))/ 0
+$str))1 >
+)))> ?
+;))? @
+}** 
+var,, 
+result,, 
+=,, 
+await,, 
+_storeUnitOfWork,, /
+.,,/ 0
+CommitAsync,,0 ;
+<,,; <
+(,,< =
+bool,,= A
+success,,B I
+,,,I J
+string,,K Q
+message,,R Y
+,,,Y Z
+string,,[ a
+errorMessage,,b n
+),,n o
+>,,o p
+(,,p q
+async,,q v
+(,,w x
+),,x y
+=>,,z |
+{-- 
+var.. 
+insertModel.. 
+=..  !
+new.." %
+Review..& ,
+(.., -
+)..- .
+{// 
+UID00 
+=00 
+model00 
+.00  
+UID00  #
+,00# $
+BID11 
+=11 
+model11 
+.11  
+BID11  #
+,11# $
+Comment22 
+=22 
+model22 #
+.22# $
+Comment22$ +
+,22+ ,
+Rating33 
+=33 
+model33 "
+.33" #
+Rating33# )
+,33) *
+	Createdby44 
+=44 
+user44  $
+.44$ %
+UserName44% -
+,44- .
+CreatedDate55 
+=55  !
+model55" '
+.55' (
+CreatedDate55( 3
+,553 4
+}66 
+;66 
+var88 
+result88 
+=88 
+await88 "
+_reviewRepository88# 4
+.884 5
+InsertAsync885 @
+(88@ A
+insertModel88A L
+)88L M
+;88M N
+return99 
+(99 
+result99 
+.99 
+success99 &
+,99& '
+result99' -
+.99- .
+message99. 5
+,995 6
+result996 <
+.99< =
+errorMessage99= I
+)99I J
+;99J K
+}:: 
+):: 
+;:: 
+if== 
+(== 
+!== 
+result== 
+.== 
+success== 
+)==  
+{>> 
+await?? 
+_logService?? !
+.??! "
+	InsertLog??" +
+(??+ ,
+new@@ 
+LogRequestModel@@ '
+(@@' (
+)@@( )
+{AA 
+SuccessBB 
+=BB  !
+falseBB" '
+,BB' (
+MessageCC 
+=CC  !
+resultCC" (
+.CC( )
+messageCC) 0
+,CC0 1
+ErrorMessageDD $
+=DD% &
+stringDD' -
+.DD- .
+FormatDD. 4
+(DD4 5
+$strDD5 
+,EE 
+modelEE 
+.EE 
+UIDEE "
+,EE" #
+resultEE# )
+.EE) *
+errorMessageEE* 6
+)EE6 7
+}FF 
+)FF 
+;FF 
+}GG 
+returnII 
+(II 
+resultII 
+.II 
+successII "
+,II" #
+resultII$ *
+.II* +
+messageII+ 2
+,II2 3
+nullII4 8
+)II8 9
+;II9 :
+}JJ 	
+}KK 
+}LL Ÿ^
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\UserService.cs
 	namespace
 
@@ -544,7 +876,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\User
 .jjU V
 ConstantjjV ^
 .jj^ _
-JWTDescriptionjj_ m
+JwtDescriptionjj_ m
 .jjm n
 Keyjjn q
 )jjq r
@@ -640,7 +972,7 @@ ClaimTypesrr $
 .tt4 5
 Constanttt5 =
 .tt= >
-JWTDescriptiontt> L
+JwtDescriptiontt> L
 .ttL M
 IssuerttM S
 ,ttS T
@@ -648,7 +980,7 @@ ClaimTypesrr $
 .uu 
 Constantuu  
 .uu  !
-JWTDescriptionuu! /
+JwtDescriptionuu! /
 .uu/ 0
 Audienceuu0 8
 ,uu8 9
@@ -739,339 +1071,7 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\User
 }
 
  
-} ∑/
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs
-	namespace		 	
-SimpleBookStore		
- 
-.		 
-BLL		 
-.		 
-Services		 &
-.		& '
-ReviewService		' 4
-{
-
- 
-public 
-
-class 
-ReviewService 
-:  
-IReviewService! /
-{ 
-private 
-readonly 
-IReviewRepository *
-_reviewRepository+ <
-;< =
-private 
-readonly 
-UserManager $
-<$ %
-User% )
->) *
-_userManager+ 7
-;7 8
-private 
-readonly 
-ILogService $
-_logService% 0
-;0 1
-private 
-readonly 
-IStoreUnitOfWork )
-_storeUnitOfWork* :
-;: ;
-public 
-ReviewService 
-( 
-IReviewRepository .
-reviewRepository/ ?
-,? @
-UserManager 
-< 
-User 
-> 
-userManager )
-,) *
-ILogService 
-
-logService "
-," #
-IStoreUnitOfWork 
-storeUnitOfWork ,
-), -
-{ 	
-_reviewRepository 
-= 
-reviewRepository  0
-;0 1
-_userManager 
-= 
-userManager &
-;& '
-_logService 
-= 
-
-logService $
-;$ %
-_storeUnitOfWork 
-= 
-storeUnitOfWork .
-;. /
-} 	
-public 
-async 
-Task 
-< 
-( 
-bool 
-success  '
-,' (
-string) /
-message0 7
-,7 8
-string9 ?
-errorMessage@ L
-)L M
->M N
-
-GiveReviewO Y
-(Y Z
-ReviewRequestModelZ l
-modelm r
-)r s
-{ 	
-var 
-user 
-= 
-await 
-_userManager )
-.) *
-FindByIdAsync* 7
-(7 8
-model8 =
-.= >
-UID> A
-)A B
-;B C
-if 
-( 
-user 
-== 
-null 
-) 
-{   
-await!! 
-_logService!! !
-.!!! "
-	InsertLog!!" +
-(!!+ ,
-new"" 
-LogRequestModel"" '
-(""' (
-)""( )
-{## 
-Success$$ 
-=$$  !
-false$$" '
-,$$' (
-Message%% 
-=%%  !
-$str%%" 2
-,%%2 3
-ErrorMessage&& $
-=&&% &
-string&&' -
-.&&- .
-Format&&. 4
-(&&4 5
-$str&&5 Z
-+&&[ \
-$str'' 0
-,''0 1
-model''2 7
-.''7 8
-UID''8 ;
-)''; <
-}(( 
-)(( 
-;(( 
-return)) 
-()) 
-false)) 
-,)) 
-$str)) /
-,))/ 0
-$str))1 >
-)))> ?
-;))? @
-}** 
-var,, 
-result,, 
-=,, 
-await,, 
-_storeUnitOfWork,, /
-.,,/ 0
-CommitAsync,,0 ;
-<,,; <
-(,,< =
-bool,,= A
-success,,B I
-,,,I J
-string,,K Q
-message,,R Y
-,,,Y Z
-string,,[ a
-errorMessage,,b n
-),,n o
->,,o p
-(,,p q
-async,,q v
-(,,w x
-),,x y
-=>,,z |
-{-- 
-var.. 
-insertModel.. 
-=..  !
-new.." %
-Review..& ,
-(.., -
-)..- .
-{// 
-UID00 
-=00 
-model00 
-.00  
-UID00  #
-,00# $
-BID11 
-=11 
-model11 
-.11  
-BID11  #
-,11# $
-Comment22 
-=22 
-model22 #
-.22# $
-Comment22$ +
-,22+ ,
-Rating33 
-=33 
-model33 "
-.33" #
-Rating33# )
-,33) *
-	Createdby44 
-=44 
-user44  $
-.44$ %
-UserName44% -
-,44- .
-CreatedDate55 
-=55  !
-model55" '
-.55' (
-CreatedDate55( 3
-,553 4
-}66 
-;66 
-var88 
-result88 
-=88 
-await88 "
-_reviewRepository88# 4
-.884 5
-InsertAsync885 @
-(88@ A
-insertModel88A L
-)88L M
-;88M N
-return99 
-(99 
-result99 
-.99 
-success99 &
-,99& '
-result99' -
-.99- .
-message99. 5
-,995 6
-result996 <
-.99< =
-errorMessage99= I
-)99I J
-;99J K
-}:: 
-):: 
-;:: 
-if== 
-(== 
-!== 
-result== 
-.== 
-success== 
-)==  
-{>> 
-await?? 
-_logService?? !
-.??! "
-	InsertLog??" +
-(??+ ,
-new@@ 
-LogRequestModel@@ '
-(@@' (
-)@@( )
-{AA 
-SuccessBB 
-=BB  !
-falseBB" '
-,BB' (
-MessageCC 
-=CC  !
-resultCC" (
-.CC( )
-messageCC) 0
-,CC0 1
-ErrorMessageDD $
-=DD% &
-stringDD' -
-.DD- .
-FormatDD. 4
-(DD4 5
-$strDD5 
-,EE 
-modelEE 
-.EE 
-UIDEE "
-,EE" #
-resultEE# )
-.EE) *
-errorMessageEE* 6
-)EE6 7
-}FF 
-)FF 
-;FF 
-}GG 
-returnII 
-(II 
-resultII 
-.II 
-successII "
-,II" #
-resultII$ *
-.II* +
-messageII+ 2
-,II2 3
-nullII4 8
-)II8 9
-;II9 :
-}JJ 	
-}KK 
-}LL Ó
+} Ó
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
 	namespace 	
 SimpleBookStore
@@ -1109,7 +1109,7 @@ GiveReviewB L
 )e f
 ;f g
 } 
-}		 ˘=
+}		 ç>
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs
 	namespace 	
 SimpleBookStore
@@ -1304,16 +1304,17 @@ iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Repo
 ;= >
 } 	
 private!! 
-string!! 
-GenerateExcelBase64!! *
-(!!* +
-List!!+ /
-<!!/ 0$
-CommentCountByUserReport!!0 H
->!!H I
+static!! 
+string!! 
+GenerateExcelBase64!! 1
+(!!1 2
+List!!2 6
+<!!6 7$
+CommentCountByUserReport!!7 O
+>!!O P
 
-reportData!!J T
-)!!T U
+reportData!!Q [
+)!![ \
 {"" 	
 using## 
 (## 
@@ -1693,7 +1694,7 @@ jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Repo
 
 n o
 } 
-} «
+} ª
 cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\LogService.cs
 	namespace 	
 SimpleBookStore
@@ -1721,82 +1722,91 @@ LogService 
 ;		6 7
 public
 
- 
-async
+ 
+
+LogService
 
- 
-Task
-
- 
-	InsertLog
-
- #
+ 
 (
 
-# $
-LogRequestModel
+ 
+ILogRepository
 
-$ 3
-logs
+ (
+logRepository
 
-4 8
+) 6
 )
 
-8 9
-{ 	
-var 
-model 
-= 
-new 
-Logs  
-(  !
-)! "
-{ 
-Success 
-= 
-logs 
-. 
-Success &
-,& '
-Message 
-= 
-logs 
-. 
-Message &
-,& '
-ErrorMessage 
-= 
-logs #
-.# $
-ErrorMessage$ 0
-,0 1
-	Createdby 
-= 
-$str $
-,$ %
-CreatedDate 
-= 
-DateTime &
-.& '
-UtcNow' -
-.- .
-AddHours. 6
-(6 7
-$num7 8
-)8 9
-} 
-; 
-await 
-_logRepository  
-.  !
-	InsertLog! *
-(* +
-model+ 0
-)0 1
-;1 2
-} 	
-} 
-} Ö
+6 7
+{ 	
+_logRepository 
+= 
+logRepository *
+;* +
+} 	
+public 
+async 
+Task 
+	InsertLog #
+(# $
+LogRequestModel$ 3
+logs4 8
+)8 9
+{ 	
+var 
+model 
+= 
+new 
+Logs  
+(  !
+)! "
+{ 
+Success 
+= 
+logs 
+. 
+Success &
+,& '
+Message 
+= 
+logs 
+. 
+Message &
+,& '
+ErrorMessage 
+= 
+logs #
+.# $
+ErrorMessage$ 0
+,0 1
+	Createdby 
+= 
+$str $
+,$ %
+CreatedDate 
+= 
+DateTime &
+.& '
+UtcNow' -
+.- .
+AddHours. 6
+(6 7
+$num7 8
+)8 9
+} 
+; 
+await 
+_logRepository  
+.  !
+	InsertLog! *
+(* +
+model+ 0
+)0 1
+;1 2
+} 	
+} 
+} Ö
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\ILogService.cs
 	namespace 	
 SimpleBookStore
@@ -1924,1242 +1934,1245 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Book
 )i j
 ;j k
 } 
-} ◊É
+} •Ö
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\BookService.cs
-	namespace 	
-SimpleBookStore
+	namespace 	
+SimpleBookStore
  
-. 
-BLL 
-. 
-Services &
-.& '
-BookService' 2
-{ 
-public 
+. 
+BLL 
+. 
+Services &
+.& '
+BookService' 2
+{ 
+public 
 
-class 
-BookService 
-: 
-IBookService +
-{ 
-private 
-readonly 
-IBookRepository (
-_bookRepository) 8
-;8 9
+class 
+BookService 
+: 
+IBookService +
+{ 
 private 
-readonly 
-IReviewRepository *
-_reviewRepository+ <
-;< =
+readonly 
+IBookRepository (
+_bookRepository) 8
+;8 9
 private 
-readonly 
-UserManager $
-<$ %
-User% )
->) *
-_userManager+ 7
-;7 8
+readonly 
+IReviewRepository *
+_reviewRepository+ <
+;< =
 private 
-readonly 
-IUserBookRepository ,
-_userBookRepository- @
-;@ A
+readonly 
+UserManager $
+<$ %
+User% )
+>) *
+_userManager+ 7
+;7 8
 private 
-readonly 
-ILogService $
-_logService% 0
-;0 1
+readonly 
+IUserBookRepository ,
+_userBookRepository- @
+;@ A
 private 
-readonly 
-IStoreUnitOfWork )
-_storeUnitOfWork* :
-;: ;
-public 
-BookService 
-( 
-IBookRepository *
-bookRepository+ 9
-,9 :
-IReviewRepository 
-reviewRepository .
-,. /
-UserManager 
-< 
-User 
-> 
-userManager )
-,) *
-IUserBookRepository 
-userBookRepository  2
-,2 3
-ILogService 
+readonly 
+ILogService $
+_logService% 0
+;0 1
+private 
+readonly 
+IStoreUnitOfWork )
+_storeUnitOfWork* :
+;: ;
+public 
+BookService 
+( 
+IBookRepository *
+bookRepository+ 9
+,9 :
+IReviewRepository 
+reviewRepository .
+,. /
+UserManager 
+< 
+User 
+> 
+userManager )
+,) *
+IUserBookRepository 
+userBookRepository  2
+,2 3
+ILogService 
 
-logService "
-," #
-IStoreUnitOfWork 
-storeUnitOfWork ,
-), -
-{ 	
-_bookRepository   
-=   
-bookRepository   ,
-;  , -
-_reviewRepository!! 
-=!! 
-reviewRepository!!  0
-;!!0 1
-_userManager"" 
-="" 
-userManager"" &
-;""& '
-_userBookRepository## 
-=##  !
-userBookRepository##" 4
-;##4 5
-_logService$$ 
-=$$ 
+logService "
+," #
+IStoreUnitOfWork 
+storeUnitOfWork ,
+), -
+{   	
+_bookRepository!! 
+=!! 
+bookRepository!! ,
+;!!, -
+_reviewRepository"" 
+="" 
+reviewRepository""  0
+;""0 1
+_userManager## 
+=## 
+userManager## &
+;##& '
+_userBookRepository$$ 
+=$$  !
+userBookRepository$$" 4
+;$$4 5
+_logService%% 
+=%% 
 
-logService$$ $
-;$$$ %
-_storeUnitOfWork%% 
-=%% 
-storeUnitOfWork%% .
-;%%. /
-}&& 	
-public(( 
-async(( 
-Task(( 
-<(( 
-List(( 
-<(( 
-Book(( #
->((# $
->(($ %
-GetBookList((& 1
-(((1 2
-)((2 3
-{)) 	
-var** 
-result** 
-=** 
-await** 
-_bookRepository** .
-.**. /
-GetListAsync**/ ;
-(**; <
-)**< =
-;**= >
-return++ 
-result++ 
-;++ 
-},, 	
-public-- 
-async-- 
-Task-- 
-<-- 
-List-- 
-<-- !
-BookInfoResponseModel-- 4
->--4 5
->--5 6
-GetBookDetailInfo--7 H
-(--H I
-)--I J
-{.. 	
-var// 
-result// 
-=// 
-await// 
-(//  
-from//  $
-b//% &
-in//' )
-_bookRepository//* 9
-.//9 :
-Get//: =
-(//= >
-)//> ?
-join00  $
-r00% &
-in00' )
-_reviewRepository00* ;
-.00; <
-Get00< ?
-(00? @
-)00@ A
-on11  "
-b11# $
-.11$ %
-Id11% '
-equals11( .
-r11/ 0
-.110 1
-BID111 4
-join22  $
-u22% &
-in22' )
-_userManager22* 6
-.226 7
-Users227 <
-on33  "
-r33# $
-.33$ %
-UID33% (
-equals33) /
-u330 1
-.331 2
-Id332 4
-select44  &
-new44' *!
-BookInfoResponseModel44+ @
-{55  !
-Title66$ )
-=66* +
-b66, -
-.66- .
-Title66. 3
-,663 4
-Author77$ *
-=77+ ,
-b77- .
-.77. /
-Author77/ 5
-,775 6
-ISBN88$ (
-=88) *
-b88+ ,
-.88, -
-ISBN88- 1
-,881 2
-Price99$ )
-=99* +
-b99, -
-.99- .
-Price99. 3
-,993 4
-PublishDate::$ /
-=::0 1
-b::2 3
-.::3 4
-PublishedDate::4 A
-.::A B
-ToString::B J
-(::J K
-$str::K W
-)::W X
-,::X Y
-Stock;;$ )
-=;;* +
-b;;, -
-.;;- .
-Stock;;. 3
-,;;3 4
-BookId<<$ *
-=<<+ ,
-b<<- .
-.<<. /
-Id<</ 1
-,<<1 2
-UserName==$ ,
-===- .
-u==/ 0
-.==0 1
-UserName==1 9
-,==9 :
-Email>>$ )
-=>>* +
-u>>, -
-.>>- .
-Email>>. 3
-,>>3 4
-UserId??$ *
-=??+ ,
-u??- .
-.??. /
-Id??/ 1
-,??1 2
-Rating@@$ *
+logService%% $
+;%%$ %
+_storeUnitOfWork&& 
+=&& 
+storeUnitOfWork&& .
+;&&. /
+}'' 	
+public)) 
+async)) 
+Task)) 
+<)) 
+List)) 
+<)) 
+Book)) #
+>))# $
+>))$ %
+GetBookList))& 1
+())1 2
+)))2 3
+{** 	
+var++ 
+result++ 
+=++ 
+await++ 
+_bookRepository++ .
+.++. /
+GetListAsync++/ ;
+(++; <
+)++< =
+;++= >
+return,, 
+result,, 
+;,, 
+}-- 	
+public.. 
+async.. 
+Task.. 
+<.. 
+List.. 
+<.. !
+BookInfoResponseModel.. 4
+>..4 5
+>..5 6
+GetBookDetailInfo..7 H
+(..H I
+)..I J
+{// 	
+var00 
+result00 
+=00 
+await00 
+(00  
+from00  $
+b00% &
+in00' )
+_bookRepository00* 9
+.009 :
+Get00: =
+(00= >
+)00> ?
+join11  $
+r11% &
+in11' )
+_reviewRepository11* ;
+.11; <
+Get11< ?
+(11? @
+)11@ A
+on22  "
+b22# $
+.22$ %
+Id22% '
+equals22( .
+r22/ 0
+.220 1
+BID221 4
+join33  $
+u33% &
+in33' )
+_userManager33* 6
+.336 7
+Users337 <
+on44  "
+r44# $
+.44$ %
+UID44% (
+equals44) /
+u440 1
+.441 2
+Id442 4
+select55  &
+new55' *!
+BookInfoResponseModel55+ @
+{66  !
+Title77$ )
+=77* +
+b77, -
+.77- .
+Title77. 3
+,773 4
+Author88$ *
+=88+ ,
+b88- .
+.88. /
+Author88/ 5
+,885 6
+ISBN99$ (
+=99) *
+b99+ ,
+.99, -
+ISBN99- 1
+,991 2
+Price::$ )
+=::* +
+b::, -
+.::- .
+Price::. 3
+,::3 4
+PublishDate;;$ /
+=;;0 1
+b;;2 3
+.;;3 4
+PublishedDate;;4 A
+.;;A B
+ToString;;B J
+(;;J K
+$str;;K W
+);;W X
+,;;X Y
+Stock<<$ )
+=<<* +
+b<<, -
+.<<- .
+Stock<<. 3
+,<<3 4
+BookId==$ *
+===+ ,
+b==- .
+.==. /
+Id==/ 1
+,==1 2
+UserName>>$ ,
+=>>- .
+u>>/ 0
+.>>0 1
+UserName>>1 9
+,>>9 :
+Email??$ )
+=??* +
+u??, -
+.??- .
+Email??. 3
+,??3 4
+UserId@@$ *
 =@@+ ,
-r@@- .
-.@@. /
-Rating@@/ 5
-,@@5 6
-CommentAA$ +
-=AA, -
-rAA. /
-.AA/ 0
-CommentAA0 7
-,AA7 8
-ReviewIdBB$ ,
-=BB- .
-rBB/ 0
-.BB0 1
-IdBB1 3
-}CC  !
-)CC! "
-.CC" #
-ToListAsyncCC# .
-(CC. /
-)CC/ 0
-;CC0 1
-returnDD 
-resultDD 
-;DD 
-}EE 	
-publicFF 
-asyncFF 
-TaskFF 
-<FF 
-(FF 
-boolFF 
-successFF  '
-,FF' (
-stringFF) /
-messageFF0 7
-,FF7 8
-stringFF9 ?
-errorMessageFF@ L
-)FFL M
->FFM N
-BuyBookAsyncFFO [
-(FF[ \
-BuyBookRequestModelFF\ o
-modelFFp u
-)FFu v
-{GG 	
-returnHH 
-awaitHH 
-_storeUnitOfWorkHH )
-.HH) *
-CommitAsyncHH* 5
-<HH5 6
-(HH6 7
-boolHH7 ;
-,HH; <
-stringHH= C
-,HHC D
-stringHHE K
-)HHK L
->HHL M
-(HHM N
-asyncHHN S
-(HHT U
-)HHU V
-=>HHW Y
-{II 
-varJJ 
-bookInfoJJ 
-=JJ 
-awaitJJ $
-_bookRepositoryJJ% 4
-.JJ4 5
-GetEntityAsyncJJ5 C
-(JJC D
-xJJD E
-=>JJF H
-xJJI J
-.JJJ K
-IdJJK M
-==JJN P
-modelJJQ V
-.JJV W
-BookIdJJW ]
-)JJ] ^
-;JJ^ _
-ifLL 
-(LL 
-bookInfoLL 
-isLL 
-nullLL  $
-)LL$ %
-{MM 
-awaitNN 
-_logServiceNN %
-.NN% &
-	InsertLogNN& /
-(NN/ 0
-newOO 
-LogRequestModelOO +
-(OO+ ,
-)OO, -
-{PP 
-SuccessPP !
-=PP" #
-falsePP$ )
-,PP) *
-MessageQQ !
-=QQ" #
-$strQQ$ 4
-,QQ4 5
-ErrorMessageRR &
-=RR' (
-stringRR) /
-.RR/ 0
-FormatRR0 6
-(RR6 7
-$strRR7 f
-+RRg h
-$strSS 2
-,SS3 4
-modelSS5 :
-.SS: ;
-BookIdSS; A
-,SSA B
-modelSSB G
-.SSG H
-UserIdSSH N
-)SSN O
-}TT 
-)TT 
-;TT 
-returnUU 
-(UU 
-falseUU !
-,UU! "
-$strUU# 3
-,UU3 4
-$strUU5 ]
-)UU] ^
-;UU^ _
-}VV 
-elseXX 
-ifXX 
-(XX 
-bookInfoXX !
-.XX! "
-StockXX" '
-==XX( *
-$numXX+ ,
-)XX, -
-{YY 
-awaitZZ 
-_logServiceZZ %
-.ZZ% &
-	InsertLogZZ& /
-(ZZ/ 0
-new[[ 
-LogRequestModel[[ +
-([[+ ,
-)[[, -
-{\\ 
-Success]] #
-=]]$ %
-false]]& +
-,]]+ ,
-Message^^ #
-=^^$ %
-$str^^& K
-,^^K L
-ErrorMessage__ (
-=__) *
-string__+ 1
-.__1 2
-Format__2 8
-(__8 9
-$str__9 h
-+__i j
-$str`` 4
-,``4 5
-model``6 ;
-.``; <
-BookId``< B
-,``B C
-model``D I
-.``I J
-UserId``J P
-)``P Q
-}aa 
-)aa 
-;aa 
-returnbb 
-(bb 
-falsebb !
-,bb! "
-$strbb# H
-,bbH I
-nullbbJ N
-)bbN O
-;bbO P
-}cc 
-varee 
-insertModelee 
-=ee  !
-newee" %
-	User_Bookee& /
-(ee/ 0
-)ee0 1
-{ff 
-BookIdgg 
-=gg 
-modelgg "
-.gg" #
-BookIdgg# )
-,gg) *
-UserIdhh 
+u@@- .
+.@@. /
+Id@@/ 1
+,@@1 2
+RatingAA$ *
+=AA+ ,
+rAA- .
+.AA. /
+RatingAA/ 5
+,AA5 6
+CommentBB$ +
+=BB, -
+rBB. /
+.BB/ 0
+CommentBB0 7
+,BB7 8
+ReviewIdCC$ ,
+=CC- .
+rCC/ 0
+.CC0 1
+IdCC1 3
+}DD  !
+)DD! "
+.DD" #
+ToListAsyncDD# .
+(DD. /
+)DD/ 0
+;DD0 1
+returnEE 
+resultEE 
+;EE 
+}FF 	
+publicGG 
+asyncGG 
+TaskGG 
+<GG 
+(GG 
+boolGG 
+successGG  '
+,GG' (
+stringGG) /
+messageGG0 7
+,GG7 8
+stringGG9 ?
+errorMessageGG@ L
+)GGL M
+>GGM N
+BuyBookAsyncGGO [
+(GG[ \
+BuyBookRequestModelGG\ o
+modelGGp u
+)GGu v
+{HH 	
+returnII 
+awaitII 
+_storeUnitOfWorkII )
+.II) *
+CommitAsyncII* 5
+<II5 6
+(II6 7
+boolII7 ;
+,II; <
+stringII= C
+,IIC D
+stringIIE K
+)IIK L
+>IIL M
+(IIM N
+asyncIIN S
+(IIT U
+)IIU V
+=>IIW Y
+{JJ 
+varKK 
+bookInfoKK 
+=KK 
+awaitKK $
+_bookRepositoryKK% 4
+.KK4 5
+GetEntityAsyncKK5 C
+(KKC D
+xKKD E
+=>KKF H
+xKKI J
+.KKJ K
+IdKKK M
+==KKN P
+modelKKQ V
+.KKV W
+BookIdKKW ]
+)KK] ^
+;KK^ _
+ifMM 
+(MM 
+bookInfoMM 
+isMM 
+nullMM  $
+)MM$ %
+{NN 
+awaitOO 
+_logServiceOO %
+.OO% &
+	InsertLogOO& /
+(OO/ 0
+newPP 
+LogRequestModelPP +
+(PP+ ,
+)PP, -
+{QQ 
+SuccessQQ !
+=QQ" #
+falseQQ$ )
+,QQ) *
+MessageRR !
+=RR" #
+$strRR$ 4
+,RR4 5
+ErrorMessageSS &
+=SS' (
+stringSS) /
+.SS/ 0
+FormatSS0 6
+(SS6 7
+$strSS7 f
++SSg h
+$strTT 2
+,TT3 4
+modelTT5 :
+.TT: ;
+BookIdTT; A
+,TTA B
+modelTTB G
+.TTG H
+UserIdTTH N
+)TTN O
+}UU 
+)UU 
+;UU 
+returnVV 
+(VV 
+falseVV !
+,VV! "
+$strVV# 3
+,VV3 4
+$strVV5 ]
+)VV] ^
+;VV^ _
+}WW 
+elseYY 
+ifYY 
+(YY 
+bookInfoYY !
+.YY! "
+StockYY" '
+==YY( *
+$numYY+ ,
+)YY, -
+{ZZ 
+await[[ 
+_logService[[ %
+.[[% &
+	InsertLog[[& /
+([[/ 0
+new\\ 
+LogRequestModel\\ +
+(\\+ ,
+)\\, -
+{]] 
+Success^^ #
+=^^$ %
+false^^& +
+,^^+ ,
+Message__ #
+=__$ %
+$str__& K
+,__K L
+ErrorMessage`` (
+=``) *
+string``+ 1
+.``1 2
+Format``2 8
+(``8 9
+$str``9 h
++``i j
+$straa 4
+,aa4 5
+modelaa6 ;
+.aa; <
+BookIdaa< B
+,aaB C
+modelaaD I
+.aaI J
+UserIdaaJ P
+)aaP Q
+}bb 
+)bb 
+;bb 
+returncc 
+(cc 
+falsecc !
+,cc! "
+$strcc# H
+,ccH I
+nullccJ N
+)ccN O
+;ccO P
+}dd 
+varff 
+insertModelff 
+=ff  !
+newff" %
+UserBookff& .
+(ff. /
+)ff/ 0
+{gg 
+BookIdhh 
 =hh 
 modelhh "
 .hh" #
-UserIdhh# )
-}ii 
-;ii 
-varkk 
-resultkk 
-=kk 
-awaitkk "
-_userBookRepositorykk# 6
-.kk6 7
-InsertAsynckk7 B
-(kkB C
-insertModelkkC N
-)kkN O
-;kkO P
-ifmm 
-(mm 
-!mm 
-resultmm 
-.mm 
-successmm #
-)mm# $
-{nn 
-awaitoo 
-_logServiceoo %
-.oo% &
-	InsertLogoo& /
-(oo/ 0
-newpp 
-LogRequestModelpp *
-(pp* +
-)pp+ ,
-{qq 
-Successrr "
-=rr# $
-falserr% *
-,rr* +
-Messagess "
-=ss# $
-$strss% 5
-,ss5 6
-ErrorMessagett '
-=tt( )
-stringtt* 0
-.tt0 1
-Formattt1 7
-(tt7 8
-$str	tt8 â
-,uu 
-modeluu "
-.uu" #
-BookIduu# )
-,uu) *
-modeluu+ 0
+BookIdhh# )
+,hh) *
+UserIdii 
+=ii 
+modelii "
+.ii" #
+UserIdii# )
+}jj 
+;jj 
+varll 
+resultll 
+=ll 
+awaitll "
+_userBookRepositoryll# 6
+.ll6 7
+InsertAsyncll7 B
+(llB C
+insertModelllC N
+)llN O
+;llO P
+ifnn 
+(nn 
+!nn 
+resultnn 
+.nn 
+successnn #
+)nn# $
+{oo 
+awaitpp 
+_logServicepp %
+.pp% &
+	InsertLogpp& /
+(pp/ 0
+newqq 
+LogRequestModelqq *
+(qq* +
+)qq+ ,
+{rr 
+Successss "
+=ss# $
+falsess% *
+,ss* +
+Messagett "
+=tt# $
+$strtt% 5
+,tt5 6
+ErrorMessageuu '
+=uu( )
+stringuu* 0
 .uu0 1
-UserIduu1 7
-,uu7 8
-resultuu9 ?
-.uu? @
-errorMessageuu@ L
-)uuL M
-}vv 
-)vv 
-;vv 
-returnww 
-(ww 
-falseww !
-,ww! "
-resultww# )
-.ww) *
-messageww* 1
-,ww1 2
-resultww3 9
-.ww9 :
-errorMessageww: F
-)wwF G
-;wwG H
-}xx 
-bookInfozz 
-.zz 
-Stockzz 
--=zz  "
-$numzz# $
-;zz$ %
-_bookRepository{{ 
-.{{  
-Update{{  &
-({{& '
-bookInfo{{' /
-){{/ 0
-;{{0 1
-return}} 
-(}} 
-true}} 
-,}} 
-$str}} ;
-,}}; <
-null}}= A
-)}}A B
-;}}B C
-}~~ 
-)~~ 
-;~~ 
-} 	
+Formatuu1 7
+(uu7 8
+$str	uu8 â
+,vv 
+modelvv "
+.vv" #
+BookIdvv# )
+,vv) *
+modelvv+ 0
+.vv0 1
+UserIdvv1 7
+,vv7 8
+resultvv9 ?
+.vv? @
+errorMessagevv@ L
+)vvL M
+}ww 
+)ww 
+;ww 
+returnxx 
+(xx 
+falsexx !
+,xx! "
+resultxx# )
+.xx) *
+messagexx* 1
+,xx1 2
+resultxx3 9
+.xx9 :
+errorMessagexx: F
+)xxF G
+;xxG H
+}yy 
+bookInfo{{ 
+.{{ 
+Stock{{ 
+-={{  "
+$num{{# $
+;{{$ %
+_bookRepository|| 
+.||  
+Update||  &
+(||& '
+bookInfo||' /
+)||/ 0
+;||0 1
+return~~ 
+(~~ 
+true~~ 
+,~~ 
+$str~~ ;
+,~~; <
+null~~= A
+)~~A B
+;~~B C
+} 
+) 
+; 
+}
+ÄÄ 	
 public
-ÄÄ 
+ÅÅ 
 async
-ÄÄ 
+ÅÅ 
 Task
-ÄÄ 
+ÅÅ 
 <
-ÄÄ 
+ÅÅ 
 (
-ÄÄ 
+ÅÅ 
 bool
-ÄÄ 
+ÅÅ 
 success
-ÄÄ  '
+ÅÅ  '
 ,
-ÄÄ' (
+ÅÅ' (
 string
-ÄÄ) /
+ÅÅ) /
 message
-ÄÄ0 7
+ÅÅ0 7
 ,
-ÄÄ7 8
+ÅÅ7 8
 string
-ÄÄ9 ?
+ÅÅ9 ?
 errorMessage
-ÄÄ@ L
+ÅÅ@ L
 )
-ÄÄL M
+ÅÅL M
 >
-ÄÄM N&
+ÅÅM N&
 ParseBooksFromExcelAsync
-ÄÄO g
+ÅÅO g
 (
-ÄÄg h
+ÅÅg h
 	IFormFile
-ÄÄh q
+ÅÅh q
 file
-ÄÄr v
+ÅÅr v
 )
-ÄÄv w
+ÅÅv w
 {
-ÅÅ 	
+ÇÇ 	
 var
-ÇÇ 
+ÉÉ 
 books
-ÇÇ 
+ÉÉ 
 =
-ÇÇ 
+ÉÉ 
 new
-ÇÇ 
+ÉÉ 
 List
-ÇÇ  
+ÉÉ  
 <
-ÇÇ  !
+ÉÉ  !
 Book
-ÇÇ! %
+ÉÉ! %
 >
-ÇÇ% &
+ÉÉ% &
 (
-ÇÇ& '
+ÉÉ& '
 )
-ÇÇ' (
+ÉÉ' (
 ;
-ÇÇ( )
+ÉÉ( )
 if
-ÑÑ 
+ÖÖ 
 (
-ÑÑ 
+ÖÖ 
 file
-ÑÑ 
+ÖÖ 
 ==
-ÑÑ 
+ÖÖ 
 null
-ÑÑ 
+ÖÖ 
 ||
-ÑÑ 
+ÖÖ 
 file
-ÑÑ  $
+ÖÖ  $
 .
-ÑÑ$ %
+ÖÖ$ %
 Length
-ÑÑ% +
+ÖÖ% +
 ==
-ÑÑ, .
+ÖÖ, .
 $num
-ÑÑ/ 0
+ÖÖ/ 0
 )
-ÑÑ0 1
+ÖÖ0 1
 {
-ÖÖ 
+ÜÜ 
 await
-ÜÜ 
+áá 
 _logService
-ÜÜ !
+áá !
 .
-ÜÜ! "
+áá! "
 	InsertLog
-ÜÜ" +
+áá" +
 (
-ÜÜ+ ,
+áá+ ,
 new
-áá 
+àà 
 LogRequestModel
-áá $
+àà $
 (
-áá$ %
+àà$ %
 )
-áá% &
+àà% &
 {
-àà 
+ââ 
 Success
-ââ 
-=
-ââ 
-false
-ââ $
-,
-ââ$ %
-Message
 ää 
 =
-ää 
-$str
-ää P
-,
-ääP Q
-ErrorMessage
-ãã !
-=
-ãã" #
-$str
-ãã$ x
-,
-ããx y
-}
-åå 
-)
-åå 
-;
-åå 
-return
-çç 
-(
-çç 
+ää 
 false
-çç 
+ää $
 ,
-çç 
+ää$ %
+Message
+ãã 
+=
+ãã 
 $str
-çç 5
+ãã P
 ,
-çç5 6
+ããP Q
+ErrorMessage
+åå !
+=
+åå" #
 $str
-çç7 L
-)
-ççL M
-;
-ççM N
+åå$ x
+,
+ååx y
 }
-éé 
-using
-êê 
-(
-êê 
-var
-êê 
-stream
-êê 
-=
-êê 
-new
-êê  #
-MemoryStream
-êê$ 0
-(
-êê0 1
+çç 
 )
-êê1 2
-)
-êê2 3
-{
-ëë 
-await
-íí 
-file
-íí 
-.
-íí 
-CopyToAsync
-íí &
-(
-íí& '
-stream
-íí' -
-)
-íí- .
+çç 
 ;
-íí. /
-using
-ìì 
+çç 
+return
+éé 
 (
-ìì 
+éé 
+false
+éé 
+,
+éé 
+$str
+éé 5
+,
+éé5 6
+$str
+éé7 L
+)
+ééL M
+;
+ééM N
+}
+èè 
+using
+ëë 
+(
+ëë 
 var
-ìì 
-workbook
-ìì #
+ëë 
+stream
+ëë 
 =
-ìì$ %
+ëë 
 new
-ìì& )
+ëë  #
+MemoryStream
+ëë$ 0
+(
+ëë0 1
+)
+ëë1 2
+)
+ëë2 3
+{
+íí 
+await
+ìì 
+file
+ìì 
+.
+ìì 
+CopyToAsync
+ìì &
+(
+ìì& '
+stream
+ìì' -
+)
+ìì- .
+;
+ìì. /
+using
+îî 
+(
+îî 
+var
+îî 
+workbook
+îî #
+=
+îî$ %
+new
+îî& )
 
 XLWorkbook
-ìì* 4
+îî* 4
 (
-ìì4 5
+îî4 5
 stream
-ìì5 ;
+îî5 ;
 )
-ìì; <
+îî; <
 )
-ìì< =
+îî< =
 {
-îî 
+ïï 
 var
-ïï 
+ññ 
 	worksheet
-ïï !
+ññ !
 =
-ïï" #
+ññ" #
 workbook
-ïï$ ,
+ññ$ ,
 .
-ïï, -
+ññ, -
 	Worksheet
-ïï- 6
+ññ- 6
 (
-ïï6 7
+ññ6 7
 $num
-ïï7 8
+ññ7 8
 )
-ïï8 9
+ññ8 9
 ;
-ïï9 :
+ññ9 :
 var
-ññ 
+óó 
 rows
-ññ 
+óó 
 =
-ññ 
+óó 
 	worksheet
-ññ (
+óó (
 .
-ññ( )
+óó( )
 	RangeUsed
-ññ) 2
+óó) 2
 (
-ññ2 3
+óó2 3
 )
-ññ3 4
+óó3 4
 .
-ññ4 5
+óó4 5
 RowsUsed
-ññ5 =
+óó5 =
 (
-ññ= >
+óó= >
 )
-ññ> ?
+óó> ?
 .
-ññ? @
+óó? @
 Skip
-ññ@ D
+óó@ D
 (
-ññD E
+óóD E
 $num
-ññE F
+óóE F
 )
-ññF G
+óóF G
 ;
-ññG H
+óóG H
 foreach
-òò 
+ôô 
 (
-òò 
+ôô 
 var
-òò  
+ôô  
 row
-òò! $
+ôô! $
 in
-òò% '
+ôô% '
 rows
-òò( ,
+ôô( ,
 )
-òò, -
+ôô, -
 {
-ôô 
+öö 
 var
-öö 
+õõ 
 book
-öö  
+õõ  
 =
-öö! "
+õõ! "
 new
-öö# &
+õõ# &
 Book
-öö' +
+õõ' +
 {
-õõ 
+úú 
 Title
-úú !
+ùù !
 =
-úú" #
+ùù" #
 row
-úú$ '
+ùù$ '
 .
-úú' (
+ùù' (
 Cell
-úú( ,
+ùù( ,
 (
-úú, -
+ùù, -
 $num
-úú- .
+ùù- .
 )
-úú. /
-.
-úú/ 0
-	GetString
-úú0 9
-(
-úú9 :
-)
-úú: ;
-,
-úú; <
-Author
-ùù "
-=
-ùù# $
-row
-ùù% (
-.
-ùù( )
-Cell
-ùù) -
-(
-ùù- .
-$num
 ùù. /
-)
-ùù/ 0
 .
-ùù0 1
+ùù/ 0
 	GetString
-ùù1 :
+ùù0 9
 (
+ùù9 :
+)
 ùù: ;
-)
-ùù; <
 ,
-ùù< =
+ùù; <
+Author
+ûû "
+=
+ûû# $
+row
+ûû% (
+.
+ûû( )
+Cell
+ûû) -
+(
+ûû- .
+$num
+ûû. /
+)
+ûû/ 0
+.
+ûû0 1
+	GetString
+ûû1 :
+(
+ûû: ;
+)
+ûû; <
+,
+ûû< =
 ISBN
-ûû  
+üü  
 =
-ûû! "
+üü! "
 row
-ûû# &
+üü# &
 .
-ûû& '
+üü& '
 Cell
-ûû' +
+üü' +
 (
-ûû+ ,
+üü+ ,
 $num
-ûû, -
+üü, -
 )
-ûû- .
+üü- .
 .
-ûû. /
+üü. /
 	GetString
-ûû/ 8
+üü/ 8
 (
-ûû8 9
+üü8 9
 )
-ûû9 :
+üü9 :
 ,
-ûû: ;
+üü: ;
 Price
-üü !
+†† !
 =
-üü" #
+††" #
 decimal
-üü$ +
+††$ +
 .
-üü+ ,
+††+ ,
 TryParse
-üü, 4
-(
-üü4 5
-row
-üü5 8
-.
-üü8 9
-Cell
-üü9 =
-(
-üü= >
-$num
-üü> ?
-)
-üü? @
-.
-üü@ A
-	GetString
-üüA J
-(
-üüJ K
-)
-üüK L
-,
-üüL M
-out
-üüN Q
-var
-üüR U
-price
-üüV [
-)
-üü[ \
-?
-üü] ^
-price
-üü_ d
-:
-üüe f
-$num
-üüg h
-,
-üüh i
-PublishedDate
-†† )
-=
-††* +
-DateTime
 ††, 4
-.
-††4 5
-TryParse
-††5 =
 (
-††= >
+††4 5
 row
-††> A
+††5 8
 .
-††A B
+††8 9
 Cell
-††B F
+††9 =
 (
-††F G
+††= >
 $num
-††G H
+††> ?
 )
-††H I
+††? @
 .
-††I J
+††@ A
 	GetString
-††J S
+††A J
 (
-††S T
+††J K
 )
-††T U
+††K L
 ,
-††U V
+††L M
 out
-††W Z
+††N Q
 var
-††[ ^
-date
-††_ c
+††R U
+price
+††V [
 )
-††c d
+††[ \
 ?
-††e f
-date
-††g k
+††] ^
+price
+††_ d
 :
-††l m
-DateTime
-††n v
-.
-††v w
-MinValue
-††w 
-,†† Ä
-	Createdby
-°° %
+††e f
+$num
+††g h
+,
+††h i
+PublishedDate
+°° )
 =
-°°& '
+°°* +
+DateTime
+°°, 4
+.
+°°4 5
+TryParse
+°°5 =
+(
+°°= >
+row
+°°> A
+.
+°°A B
+Cell
+°°B F
+(
+°°F G
+$num
+°°G H
+)
+°°H I
+.
+°°I J
+	GetString
+°°J S
+(
+°°S T
+)
+°°T U
+,
+°°U V
+CultureInfo
+°°W b
+.
+°°b c
+InvariantCulture
+°°c s
+,
+°°s t
+DateTimeStyles°°u É
+.°°É Ñ
+None°°Ñ à
+,°°à â
+out°°ä ç
+var°°é ë
+date°°í ñ
+)°°ñ ó
+?°°ò ô
+date°°ö û
+:°°ü †
+DateTime°°° ©
+.°°© ™
+MinValue°°™ ≤
+,°°≤ ≥
+	Createdby
+¢¢ %
+=
+¢¢& '
 Constant
-°°( 0
+¢¢( 0
 .
-°°0 1
+¢¢0 1
 Role
-°°1 5
+¢¢1 5
 .
-°°5 6
+¢¢5 6
 
 SuperAdmin
-°°6 @
+¢¢6 @
 ,
-°°@ A
+¢¢@ A
 CreatedDate
-¢¢ '
+££ '
 =
-¢¢( )
+££( )
 DateTime
-¢¢* 2
+££* 2
 .
-¢¢2 3
+££2 3
 UtcNow
-¢¢3 9
+££3 9
 .
-¢¢9 :
+££9 :
 AddHours
-¢¢: B
+££: B
 (
-¢¢B C
+££B C
 $num
-¢¢C D
+££C D
 )
-¢¢D E
+££D E
 }
-££ 
+§§ 
 ;
-££ 
+§§ 
 books
-•• 
+¶¶ 
 .
-•• 
+¶¶ 
 Add
-•• !
+¶¶ !
 (
-••! "
+¶¶! "
 book
-••" &
+¶¶" &
 )
-••& '
+¶¶& '
 ;
-••' (
+¶¶' (
 }
-¶¶ 
+ßß 
 }
-ßß 
+®® 
 }
-®® 
+©© 
 return
-™™ 
+´´ 
 await
-™™ 
+´´ 
 _storeUnitOfWork
-™™ )
+´´ )
 .
-™™) *
+´´) *
 CommitAsync
-™™* 5
+´´* 5
 <
-™™5 6
+´´5 6
 (
-™™6 7
+´´6 7
 bool
-™™7 ;
+´´7 ;
 ,
-™™; <
+´´; <
 string
-™™= C
+´´= C
 ,
-™™C D
+´´C D
 string
-™™E K
+´´E K
 )
-™™K L
+´´K L
 >
-™™L M
+´´L M
 (
-™™M N
+´´M N
 async
-™™N S
+´´N S
 (
-™™T U
+´´T U
 )
-™™U V
+´´U V
 =>
-™™W Y
+´´W Y
 {
-´´ 
+¨¨ 
 var
-¨¨ 
+≠≠ 
 result
-¨¨ 
+≠≠ 
 =
-¨¨ 
+≠≠ 
 await
-¨¨ "
+≠≠ "
 _bookRepository
-¨¨# 2
+≠≠# 2
 .
-¨¨2 3
+≠≠2 3
 InsertRangeAsync
-¨¨3 C
+≠≠3 C
 (
-¨¨C D
+≠≠C D
 books
-¨¨D I
+≠≠D I
 )
-¨¨I J
+≠≠I J
 ;
-¨¨J K
+≠≠J K
 return
-≠≠ 
+ÆÆ 
 (
-≠≠ 
+ÆÆ 
 result
-≠≠ 
+ÆÆ 
 .
-≠≠ 
+ÆÆ 
 success
-≠≠ &
+ÆÆ &
 ,
-≠≠& '
+ÆÆ& '
 result
-≠≠( .
+ÆÆ( .
 .
-≠≠. /
+ÆÆ. /
 message
-≠≠/ 6
+ÆÆ/ 6
 ,
-≠≠6 7
+ÆÆ6 7
 result
-≠≠8 >
+ÆÆ8 >
 .
-≠≠> ?
+ÆÆ> ?
 errorMessage
-≠≠? K
+ÆÆ? K
 )
-≠≠K L
+ÆÆK L
 ;
-≠≠L M
+ÆÆL M
 }
-ÆÆ 
+ØØ 
 )
-ÆÆ 
+ØØ 
 ;
-ÆÆ 
+ØØ 
 }
-ØØ 	
+∞∞ 	
 }
-±± 
-}≤≤ «
+≤≤ 
+}≥≥ «
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Configurations\DependencyResolver.cs
 	namespace		 	
 SimpleBookStore		

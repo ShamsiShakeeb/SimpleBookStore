@@ -1,4 +1,22 @@
-Ï	
+ß
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs
+
+ 
++ < 88# 4
++ 7  )(
+% 0 !! !?? !
+* : ,, /
+/ ?  0
+ ) &
+ " $
+ , .
+
+O YZ
+m r8 =''2 700 11 22 #33 "55" 'EE 
+  44  $<
+,, == CC" (EE# )II II$ *
+.. 88A L(
+88 99 99' -996 <Ï	
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\UserService.cs
 
  <
@@ -35,47 +53,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\User
 ll mm7 <
 mm #rr* =
 nn vv 
-tt zz< A¼
-fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.cs
-
- !
-
-( 3
-
-M R
-
-[ _
-
-		J V
-
-		^ f
-
-		o wß
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs
-
- 
-+ < 88# 4
-+ 7  )(
-% 0 !! !?? !
-* : ,, /
-/ ?  0
- ) &
- " $
- , .
-
-O YZ
-m r8 =''2 700 11 22 #33 "55" 'EE 
-  44  $<
-,, == CC" (EE# )II II$ *
-.. 88A L(
-88 99 99' -996 <
-jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
-
- #
-
-B L
-
-` eÚ
+tt zz< AÚ
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs
 
  2
@@ -90,14 +68,36 @@ iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Repo
 [ v<
    . 4> D- 3
    
-!! * ,
-!!J T--$ .// )
+!! 1 ,
+!!Q [--$ .// )
 ## %%  (:: x
 %% '' (( )) ** ++ 00 11 22 33 44 77 Z
 -- --  !--6 7//* +00# $11# $22# $33# $44# $<
 // 005 9115 9225 9335 9445 9
 88 !::$ *;;  &
-;; <<2 7œ
+;; <<2 7¼
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.cs
+
+ !
+
+( 3
+
+M R
+
+[ _
+
+		J V
+
+		^ f
+
+		o w
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
+
+ #
+
+B L
+
+` eœ
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\IReportService.cs
 
  #
@@ -108,26 +108,18 @@ jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Repo
 
 
 
-Q lÓ
+Q ló
 cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\LogService.cs
 
- 
-		( 6  
-
+ 
+		( 6   
 
 
- #(
-
-
-4 8   #
- + 0Š
-dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\ILogService.cs
+) 6 *
 
-  
-
- 
-
-' +¼
+ #(
+4 8   #
+ + 0¼
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\IBookService.cs
 
  !
@@ -144,76 +136,81 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Book
 
 B Z
 
-e i±	
+e iŠ
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\ILogService.cs
+
+  
+
+ 
+
+' +µ	
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\BookService.cs
 
- H
-) 8   ** .//* 9JJ% 4{{ 
-¬¬# 2
-+ <!! 00* ;
-+ 7"" 22* 6
-- @## kk# 6>
-% 0$$ NN %ZZ %oo %
-†† !*
-* :%% HH )
-ªª )
-+ 9   ,
- .!!  0
- )"" &
-  2##" 4
- "$$ $
- ,%% .
+ H
+) 8!! ++ .00* 9KK% 4|| 
+­­# 2
++ <"" 11* ;
++ 7## 33* 6
+- @$$ ll# 6>
+% 0%% OO %[[ %pp %
+‡‡ !*
+* :&& II )
+«« )
++ 9!! ,
+ .""  0
+ )## &
+  2$$" 4
+ "%% $
+ ,&& .
 
-((& 1
-** ++ 
+))& 1
+++ ,, 
 
---7 H
-// DD 
+..7 H
+00 EE 
 
-FFO [d
-FFp uJJQ VSS5 :SSB G``6 ;``D Igg "hh "uu "uu+ 02
-JJ LL XX !zz {{' /
-JJD EJJI J
-ee kkC N2
-kk mm uu9 ?ww# )ww3 9
+GGO [d
+GGp uKKQ VTT5 :TTB Gaa6 ;aaD Ihh "ii "vv "vv+ 02
+KK MM YY !{{ ||' /
+KKD EKKI J
+ff llC N2
+ll nn vv9 ?xx# )xx3 9
 
-€€O g0
+O g0
 
-€€r v
-„„ 
-„„  $
-’’ $
+r v
+…… 
+……  $
+““ $
 
-‚‚ 
-¥¥ 
-¬¬D I$
+ƒƒ 
+¦¦ 
+­­D I$
 
- 
-’’' -
-““5 ;
+‘‘ 
+““' -
+””5 ;
 
-““ #
-••$ ,
+”” #
+––$ ,
 
-•• !
-–– (
+–– !
+—— (
 
-–– 
-˜˜( ,
+—— 
+™™( ,
 
-šš  
-¥¥" &
+››  
+¦¦" &
 
-ŸŸV [
-ŸŸ_ d
+  V [
+  _ d
+¡¡’ –¡¡š ž0
 
-  _ c
-  g k0
-
-¬¬ 
-­­ 
-­­( .
-­­8 >Ô
+­­ 
+®® 
+®®( .
+®®8 >Ô
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Configurations\DependencyResolver.cs
 
  *

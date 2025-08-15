@@ -14,14 +14,14 @@ namespace SimpleBookStore.DAL.DbContextSet
         }
         public DbSet<Book> Book { set; get; }
         public DbSet<Review> Review { set; get; }
-        public DbSet<User_Book> User_Book { set; get; }
+        public DbSet<UserBook> User_Book { set; get; }
 
         public DbSet<UserBookStatsReport> UserBookStats { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
 
-            modelBuilder.Entity<UserBookStatsReport>().HasNoKey();
+            builder.Entity<UserBookStatsReport>().HasNoKey().ToView(null);
         }
 
     }

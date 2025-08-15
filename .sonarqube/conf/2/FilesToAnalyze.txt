@@ -16,6 +16,10 @@ C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\202
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250803182914_ReviewEntityFix2.Designer.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250804193836_CommonEntityUpdatedDateFix.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250804193836_CommonEntityUpdatedDateFix.Designer.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122113_UserBookTableNameModify.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122113_UserBookTableNameModify.Designer.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122449_UserBookTableNameModify1.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122449_UserBookTableNameModify1.Designer.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.Designer.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\LogContextModelSnapshot.cs
@@ -33,6 +37,6 @@ C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\U
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.cs
-C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User_Book.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\IStoreUnitOfWork.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\StoreUnitOfWork.cs

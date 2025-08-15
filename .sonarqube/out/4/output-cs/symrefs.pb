@@ -16,13 +16,13 @@ HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.csX
 44 77 99 :: == ?? AA CC ú
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 
- $
-  66' ,
-* / 
+ -
+  % 66' ,
+3 8 
 
  02
-H O 00 ?? EE 
-i mHH 
+H O 00 ?? FF 
+i mII 
  + 0
   
  @ C
@@ -33,17 +33,19 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ++ ++! "
 44 88+ 4
 66 99+ 6
-88 == —
+88 == —
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReviewController.cs
 
- !
-( 6  -
-/ < *
+
+
+ !
+( 6  -
+/ < *
 
-) 5
-I N9 >
-r sw x<
-  ( .8 > ", 2‰
+) 5
+I N9 >
+r sw x<
+  ( .8 > ", 2‰
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
 
 

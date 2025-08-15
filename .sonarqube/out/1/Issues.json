@@ -11,47 +11,7 @@
         "language": "en-US"
       },
       "results": [
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'JWTDescription' to match pascal case naming rules, consider using 'JwtDescription'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Utility/Constant.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 29,
-                  "endLine": 5,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        }
-      ],
-      "rules": {
-        "S101": {
-          "id": "S101",
-          "shortDescription": "Types should be named in PascalCase",
-          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        }
-      }
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
 {
     public static class Constant
     {
-        public static class JWTDescription
+        public static class JwtDescription
         {
             public static readonly string Key = "ThisIsA32CharacterMinimumSecretKey!";
             public static readonly string Issuer = "https://localhost:7191/";

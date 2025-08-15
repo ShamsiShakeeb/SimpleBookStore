@@ -53,7 +53,7 @@ PC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.c
 ;) *
 }+ ,
 } 
-} †!
+} ª!
 HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs
 var 
 builder 
@@ -173,13 +173,15 @@ SwaggerDoc 
 $str%% %
 }&& 
 }'' 
-,'' 
-new(( 
-string(( 
-[(( 
-](( 
-{(( 
-}(( 
+,'' 
+Array(( 
+.(( 
+Empty(( 
+<(( 
+string(( 
+>(( 
+(((  
+)((  !
 })) 	
 }** 
 )** 
@@ -292,7 +294,7 @@ UseSwagger99 
 (CC 
 )CC 	
 ;CC	 
-Ó0
+ê1
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 	namespace		 	
 SimpleBookStore		
@@ -330,23 +332,24 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 „ …
 public 
 
-class 
-AuthorizationFilter $
-:% &
-	Attribute' 0
-,0 1
-IAsyncActionFilter2 D
+class (
+AuthorizationFilterAttribute -
+:. /
+	Attribute0 9
+,9 :
+IAsyncActionFilter; M
 { 
-private 
-string 
-roles 
-; 
-public 
-AuthorizationFilter "
-(" #
-string# )
-roles* /
-)/ 0
+private 
+readonly 
+string 
+roles  %
+;% &
+public (
+AuthorizationFilterAttribute +
+(+ ,
+string, 2
+roles3 8
+)8 9
 { 	
 this 
 . 
@@ -411,7 +414,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 .$ %
 GetBytes% -
 (- .
-JWTDescription. <
+JwtDescription. <
 .< =
 Key= @
 )@ A
@@ -455,13 +458,13 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ,""- .
 ValidIssuer## 
 =##  !
-JWTDescription##" 0
+JwtDescription##" 0
 .##0 1
 Issuer##1 7
 ,##7 8
 ValidAudience$$ !
 =$$" #
-JWTDescription$$$ 2
+JwtDescription$$$ 2
 .$$2 3
 Audience$$3 ;
 }%% 
@@ -587,14 +590,13 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 );;: ;
 ;;;; <
 if== 
-(== 
-!== 
-	roleExist== 
-.== 
-Any== "
-(==" #
-)==# $
-)==$ %
+(== 
+	roleExist== 
+.== 
+Count== #
+====$ &
+$num==' (
+)==( )
 {>> 
 context?? 
 .?? 
@@ -615,203 +617,207 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 exCC 
 )CC  
 {DD 
-contextEE 
-.EE 
-ResultEE 
-=EE  
-newEE! $
-UnauthorizedResultEE% 7
-(EE7 8
-)EE8 9
-;EE9 :
-returnFF 
-;FF 
-}GG 
-awaitHH 
-nextHH 
-(HH 
-)HH 
-;HH 
-}II 	
-}JJ 
-}KK ÿ
+ConsoleEE 
+.EE 
+	WriteLineEE !
+(EE! "
+exEE" $
+)EE$ %
+;EE% &
+contextFF 
+.FF 
+ResultFF 
+=FF  
+newFF! $
+UnauthorizedResultFF% 7
+(FF7 8
+)FF8 9
+;FF9 :
+returnGG 
+;GG 
+}HH 
+awaitII 
+nextII 
+(II 
+)II 
+;II 
+}JJ 	
+}KK 
+}LL ƒ
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReviewController.cs
-	namespace 	
-SimpleBookStore
+	namespace 	
+SimpleBookStore
  
-. 
-Controllers %
-{ 
-[		 
-ApiController		 
-]		 
-[
-
- 
-Route
-
- 
+. 
+Controllers %
+{ 
+[ 
+ApiController 
+] 
+[		 
+Route		 
 
-(
-
-
+(		
  
-$str
+$str		 &
+)		& '
+]		' (
+public
 
- &
-)
-
-& '
-]
-
-' (
-public 
+ 
 
-class 
-ReviewController !
-:" #
+class
+
+ 
+ReviewController
+
+ !
+:
+
+" #
+ControllerBase
+
+$ 2
+{ 
+private 
+readonly 
+IReviewService '
+_reviewService( 6
+;6 7
+public 
+ReviewController 
+(  
+IReviewService  .
+reviewService/ <
+)< =
+{ 	
+_reviewService 
+= 
+reviewService *
+;* +
+} 	
+[ 	
+AuthorizationFilter	 
+( 
+$str %
+)% &
+]& '
+[ 	
+HttpPost	 
+] 
+public 
+async 
+Task 
+< 
+IActionResult '
+>' (
+SubmitReview) 5
+(5 6
+ReviewRequestModel6 H
+modelI N
+)N O
+{ 	
+if 
+( 
+! 
 
-Controller$ .
-{ 
-private 
-readonly 
-IReviewService '
-_reviewService( 6
-;6 7
-public 
-ReviewController 
-(  
-IReviewService  .
-reviewService/ <
-)< =
-{ 	
-_reviewService 
-= 
-reviewService *
-;* +
-} 	
-[ 	
-AuthorizationFilter	 
-( 
-$str %
-)% &
-]& '
-[ 	
-HttpPost	 
-] 
-public 
-async 
-Task 
-< 
-IActionResult '
->' (
-SubmitReview) 5
-(5 6
-ReviewRequestModel6 H
-modelI N
-)N O
-{ 	
-if 
-( 
-! 
+ModelState 
+. 
+IsValid #
+)# $
+return 
 
-ModelState 
-. 
-IsValid #
-)# $
-return 
+BadRequest !
+(! "
+new" %
+{& '
+success( /
+=0 1
+false2 7
+,7 8
+message9 @
+=A B
+stringC I
+.I J
+JoinJ N
+(N O
+$strO S
+,S T
 
-BadRequest !
-(! "
-new" %
-{& '
-success( /
-=0 1
-false2 7
-,7 8
-message9 @
-=A B
-stringC I
-.I J
-JoinJ N
-(N O
-$strO S
-,S T
+ModelStateU _
+._ `
+Values` f
+.f g
 
-ModelStateU _
-._ `
-Values` f
-.f g
-
-SelectManyg q
-(q r
-vr s
-=>t v
-vw x
-.x y
-Errorsy 
-)	 €
+SelectManyg q
+(q r
+vr s
+=>t v
+vw x
+.x y
+Errorsy 
+)	 €
 )
-€ 
+€ 
 }
-‚ ƒ
+‚ ƒ
 )
-ƒ „
+ƒ „
 ;
-„ …
-var 
-result 
-= 
-await 
-_reviewService -
-.- .
+„ …
+var 
+result 
+= 
+await 
+_reviewService -
+.- .
 
-GiveReview. 8
-(8 9
-model9 >
-)> ?
-;? @
-if 
-( 
-! 
-result 
-. 
-success 
-)  
-return 
+GiveReview. 8
+(8 9
+model9 >
+)> ?
+;? @
+if 
+( 
+! 
+result 
+. 
+success 
+)  
+return 
 
-BadRequest !
-(! "
-new" %
-{& '
-result( .
-.. /
-success/ 6
-,6 7
-result8 >
-.> ?
-message? F
-}G H
-)H I
-;I J
-return 
-Ok 
-( 
-new 
-{ 
-result "
-." #
-success# *
-,* +
-result, 2
-.2 3
-message3 :
-}; <
-)< =
-;= >
-} 	
-} 
-}   Æ 
+BadRequest !
+(! "
+new" %
+{& '
+result( .
+.. /
+success/ 6
+,6 7
+result8 >
+.> ?
+message? F
+}G H
+)H I
+;I J
+return 
+Ok 
+( 
+new 
+{ 
+result "
+." #
+success# *
+,* +
+result, 2
+.2 3
+message3 :
+}; <
+)< =
+;= >
+} 	
+} 
+} Ê 
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
 	namespace 	
 SimpleBookStore
@@ -848,11 +854,10 @@ BadRequest !
  !
 :
 
-" #
-
-Controller
+" #
+ControllerBase
 
-$ .
+$ 2
 { 
 private 
 readonly 
@@ -1054,7 +1059,7 @@ BadRequest)) !
 ;++L M
 },, 	
 }-- 
-}.. ¡$
+}.. ¥$
 [C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
 	namespace 	
 SimpleBookStore
@@ -1085,11 +1090,10 @@ BadRequest)) !
  
 :
 
-  !
-
-Controller
+  !
+ControllerBase
 
-" ,
+" 0
 { 
 private 
 readonly 
@@ -1323,7 +1327,7 @@ BadRequest22 !
 ;33= >
 }44 	
 }55 
-}66 £9
+}66 §9
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
 	namespace 	
 SimpleBookStore
@@ -1354,11 +1358,10 @@ BadRequest22 !
  "
 :
 
-# $
-
-Controller
+# $
+ControllerBase
 
-% /
+% 3
 { 
 private 
 readonly 

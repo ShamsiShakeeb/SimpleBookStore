@@ -153,9 +153,9 @@ UnitOfWork (
 )3 4
 ;4 5
 } 
-} ∑
+} µ
 
-ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User_Book.cs
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.cs
 	namespace 	
 SimpleBookStore
  
@@ -166,8 +166,8 @@ ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 { 
 public 
 
-class 
-	User_Book 
+class 
+UserBook 
 { 
 [ 	
 Key	 
@@ -232,7 +232,7 @@ ForeignKey	 
 ;# $
 }% &
 } 
-} ô
+} ò
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.cs
 	namespace 	
 SimpleBookStore
@@ -302,17 +302,17 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 }# $
 public 
 List 
-< 
-	User_Book 
-> 
+< 
+UserBook 
+> 
 
-User_Books )
-{* +
-set, /
-;/ 0
-get1 4
-;4 5
-}6 7
+User_Books (
+{) *
+set+ .
+;. /
+get0 3
+;3 4
+}5 6
 public 
 List 
 < 
@@ -439,7 +439,7 @@ ForeignKey	 
 ;( )
 }* +
 } 
-} …
+} »
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs
 	namespace 	
 SimpleBookStore
@@ -566,17 +566,17 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\B
 }& '
 public 
 List 
-< 
-	User_Book 
-> 
+< 
+UserBook 
+> 
 
-User_Books )
-{* +
-set, /
-;/ 0
-get1 4
-;4 5
-}6 7
+User_Books (
+{) *
+set+ .
+;. /
+get0 3
+;3 4
+}5 6
 public 
 List 
 < 
@@ -590,7 +590,7 @@ User_Books )
 ;- .
 }/ 0
 } 
-} ÑT
+} ÛQ
 wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.cs
 	namespace 	
 SimpleBookStore
@@ -655,10 +655,10 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 )` a
 >a b
 InsertAsyncc n
-(n o
-	User_Booko x
-modely ~
-)~ 
+(n o
+UserBooko w
+modelx }
+)} ~
 { 	
 try 
 { 
@@ -730,11 +730,11 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 InsertRangeAsyncO _
 (_ `
 List` d
-<d e
-	User_Booke n
->n o
-modelp u
-)u v
+<d e
+UserBooke m
+>m n
+modelo t
+)t u
 { 	
 try 
 {   
@@ -796,10 +796,10 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 errorMessage))I U
 )))U V
 Update))W ]
-())] ^
-	User_Book))^ g
-model))h m
-)))m n
+())] ^
+UserBook))^ f
+model))g l
+)))l m
 {** 	
 try++ 
 {,, 
@@ -866,11 +866,11 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 UpdateRange55C N
 (55N O
 List55O S
-<55S T
-	User_Book55T ]
->55] ^
-model55_ d
-)55d e
+<55S T
+UserBook55T \
+>55\ ]
+model55^ c
+)55c d
 {66 	
 try77 
 {88 
@@ -931,10 +931,10 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 errorMessageAAI U
 )AAU V
 DeleteAAW ]
-(AA] ^
-	User_BookAA^ g
-modelAAh m
-)AAm n
+(AA] ^
+UserBookAA^ f
+modelAAg l
+)AAl m
 {BB 	
 tryCC 
 {DD 
@@ -1001,11 +1001,11 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 DeleteRangeMMC N
 (MMN O
 ListMMO S
-<MMS T
-	User_BookMMT ]
->MM] ^
-modelMM_ d
-)MMd e
+<MMS T
+UserBookMMT \
+>MM\ ]
+modelMM^ c
+)MMc d
 {NN 	
 tryOO 
 {PP 
@@ -1054,24 +1054,24 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 publicYY 
 asyncYY 
 TaskYY 
-<YY 
-	User_BookYY #
->YY# $
-GetEntityAsyncYY% 3
-(YY3 4
+<YY 
+UserBookYY "
+>YY" #
+GetEntityAsyncYY$ 2
+(YY2 3
 
-ExpressionYY4 >
-<YY> ?
-FuncYY? C
-<YYC D
-	User_BookYYD M
-,YYM N
-boolYYO S
->YYS T
->YYT U
+ExpressionYY3 =
+<YY= >
+FuncYY> B
+<YYB C
+UserBookYYC K
+,YYK L
+boolYYM Q
+>YYQ R
+>YYR S
 
-expressionYYV `
-)YY` a
+expressionYYT ^
+)YY^ _
 {ZZ 	
 var[[ 
 model[[ 
@@ -1104,118 +1104,102 @@ expression[[7 A
 Task^^ 
 <^^ 
 List^^ 
-<^^ 
-	User_Book^^ (
->^^( )
->^^) *
-GetListAsync^^+ 7
-(^^7 8
+<^^ 
+UserBook^^ '
+>^^' (
+>^^( )
+GetListAsync^^* 6
+(^^6 7
 
-Expression^^8 B
-<^^B C
-Func^^C G
-<^^G H
-	User_Book^^H Q
-,^^Q R
-bool^^S W
->^^W X
->^^X Y
+Expression^^7 A
+<^^A B
+Func^^B F
+<^^F G
+UserBook^^G O
+,^^O P
+bool^^Q U
+>^^U V
+>^^V W
 
-expression^^Z d
-=^^e f
-null^^g k
-)^^k l
-{__ 	
-var`` 
-list`` 
-=`` 
-new`` 
-List`` 
-<``  
-	User_Book``  )
->``) *
-(``* +
-)``+ ,
-;``, -
-ifaa 
-(aa 
+expression^^X b
+=^^c d
+null^^e i
+)^^i j
+{__ 	
+if`` 
+(`` 
 
-expressionaa 
-!=aa 
-nullaa "
-)aa" #
-listbb 
-=bb 
-awaitbb 
-_contextbb %
-.bb% &
-	User_Bookbb& /
-.bb/ 0
-Wherebb0 5
-(bb5 6
+expression`` 
+!=`` 
+null`` "
+)``" #
+returnaa 
+awaitaa 
+_contextaa %
+.aa% &
+	User_Bookaa& /
+.aa/ 0
+Whereaa0 5
+(aa5 6
 
-expressionbb6 @
-)bb@ A
-.bbA B
-AsNoTrackingbbB N
-(bbN O
-)bbO P
-.bbP Q
-ToListAsyncbbQ \
-(bb\ ]
-)bb] ^
-;bb^ _
-elsecc 
-listdd 
-=dd 
-awaitdd 
-_contextdd %
-.dd% &
-	User_Bookdd& /
-.dd/ 0
-AsNoTrackingdd0 <
-(dd< =
-)dd= >
-.dd> ?
-ToListAsyncdd? J
-(ddJ K
-)ddK L
-;ddL M
-returnee 
-listee 
-;ee 
-}ff 	
-publicgg 
+expressionaa6 @
+)aa@ A
+.aaA B
+AsNoTrackingaaB N
+(aaN O
+)aaO P
+.aaP Q
+ToListAsyncaaQ \
+(aa\ ]
+)aa] ^
+;aa^ _
+elsebb 
+returncc 
+awaitcc 
+_contextcc %
+.cc% &
+	User_Bookcc& /
+.cc/ 0
+AsNoTrackingcc0 <
+(cc< =
+)cc= >
+.cc> ?
+ToListAsynccc? J
+(ccJ K
+)ccK L
+;ccL M
+}dd 	
+publicee 
 
-IQueryablegg 
-<gg 
-	User_Bookgg #
->gg# $
-Getgg% (
-(gg( )
-)gg) *
-{hh 	
-varii 
-modelii 
-=ii 
-_contextii  
-.ii  !
-	User_Bookii! *
-.ii* +
-AsNoTrackingii+ 7
-(ii7 8
-)ii8 9
-.ii9 :
-AsQueryableii: E
-(iiE F
-)iiF G
-;iiG H
-returnjj 
-modeljj 
-;jj 
-}kk 	
-}ll 
-}mm ©
+IQueryableee 
+<ee 
+UserBookee "
+>ee" #
+Getee$ '
+(ee' (
+)ee( )
+{ff 	
+vargg 
+modelgg 
+=gg 
+_contextgg  
+.gg  !
+	User_Bookgg! *
+.gg* +
+AsNoTrackinggg+ 7
+(gg7 8
+)gg8 9
+.gg9 :
+AsQueryablegg: E
+(ggE F
+)ggF G
+;ggG H
+returnhh 
+modelhh 
+;hh 
+}ii 	
+}jj 
+}kk û
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\IUserBookRepository.cs
 	namespace 	
 SimpleBookStore
@@ -1249,11 +1233,11 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 )		S T
 >		T U
 InsertAsync		V a
-(		a b
-	User_Book		b k
-model		l q
-)		q r
-;		r s
+(		a b
+UserBook		b j
+model		k p
+)		p q
+;		q r
 Task
 
  
@@ -1304,22 +1288,22 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 S W
 <
 
-W X
-	User_Book
+W X
+UserBook
 
-X a
+X `
 >
 
-a b
+` a
 model
 
-c h
+b g
 )
 
-h i
+g h
 ;
 
-i j
+h i
 ( 	
 bool	 
 success 
@@ -1334,11 +1318,11 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 errorMessageB N
 )N O
 UpdateP V
-(V W
-	User_BookW `
-modela f
-)f g
-;g h
+(V W
+UserBookW _
+model` e
+)e f
+;f g
 ( 	
 bool	 
 success 
@@ -1352,12 +1336,12 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 UpdateRange< G
 (G H
 ListH L
-<L M
-	User_BookM V
->V W
-modelX ]
-)] ^
-;^ _
+<L M
+UserBookM U
+>U V
+modelW \
+)\ ]
+;] ^
 ( 	
 bool	 
 success 
@@ -1372,11 +1356,11 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 errorMessageB N
 )N O
 DeleteP V
-(V W
-	User_BookW `
-modela f
-)f g
-;g h
+(V W
+UserBookW _
+model` e
+)e f
+;f g
 ( 	
 bool	 
 success 
@@ -1390,68 +1374,68 @@ xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 DeleteRange< G
 (G H
 ListH L
-<L M
-	User_BookM V
->V W
-modelX ]
-)] ^
-;^ _
+<L M
+UserBookM U
+>U V
+modelW \
+)\ ]
+;] ^
 Task 
-< 
-	User_Book 
-> 
-GetEntityAsync &
-(& '
+< 
+UserBook 
+> 
+GetEntityAsync %
+(% &
 
-Expression' 1
-<1 2
-Func2 6
-<6 7
-	User_Book7 @
-,@ A
-boolB F
->F G
->G H
+Expression& 0
+<0 1
+Func1 5
+<5 6
+UserBook6 >
+,> ?
+bool@ D
+>D E
+>E F
 
-expressionI S
-)S T
-;T U
+expressionG Q
+)Q R
+;R S
 Task 
 < 
 List 
-< 
-	User_Book 
-> 
-> 
-GetListAsync *
-(* +
+< 
+UserBook 
+> 
+> 
+GetListAsync )
+() *
 
-Expression+ 5
-<5 6
-Func6 :
-<: ;
-	User_Book; D
-,D E
-boolF J
->J K
->K L
+Expression* 4
+<4 5
+Func5 9
+<9 :
+UserBook: B
+,B C
+boolD H
+>H I
+>I J
 
-expressionM W
-=X Y
-nullZ ^
-)^ _
-;_ `
+expressionK U
+=V W
+nullX \
+)\ ]
+;] ^
 
 IQueryable 
-< 
-	User_Book 
-> 
-Get !
-(! "
-)" #
-;# $
+< 
+UserBook 
+> 
+Get  
+(  !
+)! "
+;" #
 } 
-} ∏S
+} µQ
 sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\ReviewRepository.cs
 	namespace 	
 SimpleReviewStore
@@ -1978,97 +1962,81 @@ expression]]T ^
 =]]_ `
 null]]a e
 )]]e f
-{^^ 	
-var__ 
-list__ 
-=__ 
-new__ 
-List__ 
-<__  
-Review__  &
->__& '
-(__' (
-)__( )
-;__) *
-if`` 
-(`` 
+{^^ 	
+if__ 
+(__ 
 
-expression`` 
-!=`` 
-null`` "
-)``" #
-listaa 
-=aa 
-awaitaa 
-_contextaa %
-.aa% &
-Reviewaa& ,
-.aa, -
-Whereaa- 2
-(aa2 3
+expression__ 
+!=__ 
+null__ "
+)__" #
+return`` 
+await`` 
+_context`` %
+.``% &
+Review``& ,
+.``, -
+Where``- 2
+(``2 3
 
-expressionaa3 =
-)aa= >
-.aa> ?
-AsNoTrackingaa? K
-(aaK L
-)aaL M
-.aaM N
-ToListAsyncaaN Y
-(aaY Z
-)aaZ [
-;aa[ \
-elsebb 
-listcc 
-=cc 
-awaitcc 
-_contextcc %
-.cc% &
-Reviewcc& ,
-.cc, -
-AsNoTrackingcc- 9
-(cc9 :
-)cc: ;
-.cc; <
-ToListAsynccc< G
-(ccG H
-)ccH I
-;ccI J
-returndd 
-listdd 
-;dd 
-}ee 	
-publicff 
+expression``3 =
+)``= >
+.``> ?
+AsNoTracking``? K
+(``K L
+)``L M
+.``M N
+ToListAsync``N Y
+(``Y Z
+)``Z [
+;``[ \
+elseaa 
+returnbb 
+awaitbb 
+_contextbb %
+.bb% &
+Reviewbb& ,
+.bb, -
+AsNoTrackingbb- 9
+(bb9 :
+)bb: ;
+.bb; <
+ToListAsyncbb< G
+(bbG H
+)bbH I
+;bbI J
+}cc 	
+publicdd 
 
-IQueryableff 
-<ff 
-Reviewff  
->ff  !
-Getff" %
-(ff% &
-)ff& '
-{gg 	
-varhh 
-modelhh 
-=hh 
-_contexthh  
-.hh  !
-Reviewhh! '
-.hh' (
-AsNoTrackinghh( 4
-(hh4 5
-)hh5 6
-.hh6 7
-AsQueryablehh7 B
-(hhB C
-)hhC D
-;hhD E
-returnii 
-modelii 
-;ii 
-}jj 	
-}kk 
-}ll Ç
+IQueryabledd 
+<dd 
+Reviewdd  
+>dd  !
+Getdd" %
+(dd% &
+)dd& '
+{ee 	
+varff 
+modelff 
+=ff 
+_contextff  
+.ff  !
+Reviewff! '
+.ff' (
+AsNoTrackingff( 4
+(ff4 5
+)ff5 6
+.ff6 7
+AsQueryableff7 B
+(ffB C
+)ffC D
+;ffD E
+returngg 
+modelgg 
+;gg 
+}hh 	
+}ii 
+}jj Ç
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\IReviewRepository.cs
 	namespace 	
 SimpleReviewStore
@@ -2306,390 +2274,398 @@ IQueryable 
 } 
 } ≠5
 sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\ReportRepository.cs
-	namespace		 	
-SimpleBookStore		
+	namespace 	
+SimpleBookStore
  
-.		 
-DAL		 
-.		 
-Repositories		 *
-.		* +
-ReportRepository		+ ;
-{
+. 
+DAL 
+. 
+Repositories *
+.* +
+ReportRepository+ ;
+{		 
+public
 
- 
-public 
+ 
 
-class 
-ReportRepository !
-:" #
-IReportRepository$ 5
-{ 
+class
+
+ 
+ReportRepository
+
+ !
+:
+
+" #
+IReportRepository
+
+$ 5
+{ 
+private 
+readonly 
+IConfiguration '
+_configuration( 6
+;6 7
 private 
-readonly 
-IConfiguration '
-_configuration( 6
-;6 7
-private 
-readonly 
-StoreContext %
-_storeContext& 3
-;3 4
-public 
-ReportRepository 
-(  
-IConfiguration  .
-configuration/ <
-,< =
-StoreContext 
-storeContext %
-)% &
-{ 	
-_configuration 
-= 
-configuration *
-;* +
-_storeContext 
-= 
-storeContext (
-;( )
-} 	
-public 
-async 
-Task 
-< 
-( 
-bool 
-success  '
-,' (
-List) -
-<- .$
-CommentCountByUserReport. F
->F G
-reportH N
-,N O
-stringP V
-messageW ^
-,^ _
-string_ e
-errorMessagef r
-)r s
->s t#
-GetCommentCountByUsers	u ã
+readonly 
+StoreContext %
+_storeContext& 3
+;3 4
+public 
+ReportRepository 
+(  
+IConfiguration  .
+configuration/ <
+,< =
+StoreContext 
+storeContext %
+)% &
+{ 	
+_configuration 
+= 
+configuration *
+;* +
+_storeContext 
+= 
+storeContext (
+;( )
+} 	
+public 
+async 
+Task 
+< 
+( 
+bool 
+success  '
+,' (
+List) -
+<- .$
+CommentCountByUserReport. F
+>F G
+reportH N
+,N O
+stringP V
+messageW ^
+,^ _
+string_ e
+errorMessagef r
+)r s
+>s t#
+GetCommentCountByUsers	u ã
 (
-ã å
+ã å
 )
-å ç
-{ 	
-var 
-commentCounts 
-= 
-new  #
-List$ (
-<( )$
-CommentCountByUserReport) A
->A B
-(B C
-)C D
-;D E
-using 
-( 
-SqlConnection  
+å ç
+{ 	
+var 
+commentCounts 
+= 
+new  #
+List$ (
+<( )$
+CommentCountByUserReport) A
+>A B
+(B C
+)C D
+;D E
+using 
+( 
+SqlConnection  
 
-connection! +
-=, -
-new. 1
-SqlConnection2 ?
-(? @
-_configuration@ N
-.N O
-GetConnectionStringO b
-(b c
-$strc t
-)t u
-)u v
-)v w
-{ 
-string 
-sqlQuery 
-=  !
-string" (
-.( )
-Format) /
-(/ 0
-$str(0 #
-,((# $
-Utility(($ +
-.((+ ,
-Constant((, 4
-.((4 5
-Role((5 9
-.((9 :
+connection! +
+=, -
+new. 1
+SqlConnection2 ?
+(? @
+_configuration@ N
+.N O
+GetConnectionStringO b
+(b c
+$strc t
+)t u
+)u v
+)v w
+{ 
+string 
+sqlQuery 
+=  !
+string" (
+.( )
+Format) /
+(/ 0
+$str'0 #
+,''# $
+Utility''$ +
+.''+ ,
+Constant'', 4
+.''4 5
+Role''5 9
+.''9 :
 
-SuperAdmin((: D
-)((D E
-;((E F
-using** 
-(** 
+SuperAdmin'': D
+)''D E
+;''E F
+using)) 
+()) 
 
-SqlCommand** !
-command**" )
-=*** +
-new**, /
+SqlCommand)) !
+command))" )
+=))* +
+new)), /
 
-SqlCommand**0 :
-(**: ;
-sqlQuery**; C
-,**C D
+SqlCommand))0 :
+()): ;
+sqlQuery)); C
+,))C D
 
-connection**E O
-)**O P
-)**P Q
-{++ 
-try,, 
-{-- 
-await.. 
+connection))E O
+)))O P
+)))P Q
+{** 
+try++ 
+{,, 
+await-- 
 
-connection.. (
-...( )
-	OpenAsync..) 2
-(..2 3
-)..3 4
-;..4 5
-using// 
-(// 
-SqlDataReader// ,
-reader//- 3
-=//4 5
-await//6 ;
-command//< C
-.//C D
-ExecuteReaderAsync//D V
-(//V W
-)//W X
-)//X Y
-{00 
-while11 !
-(11" #
-reader11# )
-.11) *
-Read11* .
-(11. /
-)11/ 0
-)110 1
-{22 
-var33  #
-model33$ )
-=33* +
-new33, /$
-CommentCountByUserReport330 H
-{44  !
-UID55$ '
-=55( )
-reader55* 0
-.550 1
-	GetString551 :
-(55: ;
-$num55; <
-)55< =
-,55= >
-UserName66$ ,
-=66- .
-reader66/ 5
-.665 6
-	GetString666 ?
-(66? @
-$num66@ A
-)66A B
-,66B C
-Email77$ )
-=77* +
-reader77, 2
-.772 3
-	GetString773 <
+connection-- (
+.--( )
+	OpenAsync--) 2
+(--2 3
+)--3 4
+;--4 5
+using.. 
+(.. 
+SqlDataReader.. ,
+reader..- 3
+=..4 5
+await..6 ;
+command..< C
+...C D
+ExecuteReaderAsync..D V
+(..V W
+)..W X
+)..X Y
+{// 
+while00 !
+(00" #
+reader00# )
+.00) *
+Read00* .
+(00. /
+)00/ 0
+)000 1
+{11 
+var22  #
+model22$ )
+=22* +
+new22, /$
+CommentCountByUserReport220 H
+{33  !
+UID44$ '
+=44( )
+reader44* 0
+.440 1
+	GetString441 :
+(44: ;
+$num44; <
+)44< =
+,44= >
+UserName55$ ,
+=55- .
+reader55/ 5
+.555 6
+	GetString556 ?
+(55? @
+$num55@ A
+)55A B
+,55B C
+Email66$ )
+=66* +
+reader66, 2
+.662 3
+	GetString663 <
+(66< =
+$num66= >
+)66> ?
+,66? @
+Gender77$ *
+=77+ ,
+reader77- 3
+.773 4
+IsDBNull774 <
 (77< =
 $num77= >
 )77> ?
-,77? @
-Gender88$ *
-=88+ ,
-reader88- 3
-.883 4
-IsDBNull884 <
-(88< =
-$num88= >
-)88> ?
-?88@ A
-null88B F
-:88G H
-reader88I O
-.88O P
-	GetString88P Y
-(88Y Z
-$num88Z [
-)88[ \
-,88\ ]
-CommentCount99$ 0
-=991 2
-reader993 9
-.999 :
-GetInt3299: B
-(99B C
-$num99C D
-)99D E
-}::  !
-;::! "
-commentCounts;;  -
-.;;- .
-Add;;. 1
-(;;1 2
-model;;2 7
-);;7 8
-;;;8 9
-}<< 
-}== 
-}>> 
-catch?? 
-(?? 
-	Exception?? $
-ex??% '
-)??' (
-{@@ 
-returnAA 
-(AA  
-falseAA  %
-,AA% &
-nullAA' +
-,AA+ ,
-exAA- /
-.AA/ 0
-MessageAA0 7
-,AA7 8
-exAA9 ;
-.AA; <
-ToStringAA< D
-(AAD E
-)AAE F
-)AAF G
-;AAG H
-}BB 
-}CC 
-}DD 
-returnEE 
-(EE 
-trueEE 
-,EE 
-commentCountsEE '
-,EE' (
-$strEE( C
-,EEC D
-nullEED H
-)EEH I
-;EEI J
-}FF 	
-publicHH 
-asyncHH 
-TaskHH 
-<HH 
-(HH 
-boolHH 
-successHH  '
-,HH' (
-ListHH) -
-<HH- .
-UserBookStatsReportHH. A
->HHA B
-reportHHC I
-,HHI J
-stringHHK Q
-messageHHR Y
-,HHY Z
-stringHH[ a
-errorMessageHHb n
-)HHn o
->HHo p
-UserBookStatsHHq ~
-(HH~ 
-)	HH Ä
-{II 	
-tryJJ 
-{KK 
-varLL 
-resultLL 
-=LL 
-awaitLL "
-_storeContextLL# 0
-.LL0 1
-SetLL1 4
-<LL4 5
-UserBookStatsReportLL5 H
->LLH I
-(LLI J
-)LLJ K
-.MM 
+?77@ A
+null77B F
+:77G H
+reader77I O
+.77O P
+	GetString77P Y
+(77Y Z
+$num77Z [
+)77[ \
+,77\ ]
+CommentCount88$ 0
+=881 2
+reader883 9
+.889 :
+GetInt3288: B
+(88B C
+$num88C D
+)88D E
+}99  !
+;99! "
+commentCounts::  -
+.::- .
+Add::. 1
+(::1 2
+model::2 7
+)::7 8
+;::8 9
+};; 
+}<< 
+}== 
+catch>> 
+(>> 
+	Exception>> $
+ex>>% '
+)>>' (
+{?? 
+return@@ 
+(@@  
+false@@  %
+,@@% &
+null@@' +
+,@@+ ,
+ex@@- /
+.@@/ 0
+Message@@0 7
+,@@7 8
+ex@@9 ;
+.@@; <
+ToString@@< D
+(@@D E
+)@@E F
+)@@F G
+;@@G H
+}AA 
+}BB 
+}CC 
+returnDD 
+(DD 
+trueDD 
+,DD 
+commentCountsDD '
+,DD' (
+$strDD( C
+,DDC D
+nullDDD H
+)DDH I
+;DDI J
+}EE 	
+publicFF 
+asyncFF 
+TaskFF 
+<FF 
+(FF 
+boolFF 
+successFF  '
+,FF' (
+ListFF) -
+<FF- .
+UserBookStatsReportFF. A
+>FFA B
+reportFFC I
+,FFI J
+stringFFK Q
+messageFFR Y
+,FFY Z
+stringFF[ a
+errorMessageFFb n
+)FFn o
+>FFo p
+UserBookStatsFFq ~
+(FF~ 
+)	FF Ä
+{GG 	
+tryHH 
+{II 
+varJJ 
+resultJJ 
+=JJ 
+awaitJJ "
+_storeContextJJ# 0
+.JJ0 1
+SetJJ1 4
+<JJ4 5
+UserBookStatsReportJJ5 H
+>JJH I
+(JJI J
+)JJJ K
+.KK 
 
-FromSqlRawMM '
-(MM' (
-stringMM( .
-.MM. /
-FormatMM/ 5
-(MM5 6
-$strM\6 )
-,\\) *
-Utility\\* 1
-.\\1 2
-Constant\\2 :
-.\\: ;
-Role\\; ?
-.\\? @
+FromSqlRawKK '
+(KK' (
+stringKK( .
+.KK. /
+FormatKK/ 5
+(KK5 6
+$strKZ6 )
+,ZZ) *
+UtilityZZ* 1
+.ZZ1 2
+ConstantZZ2 :
+.ZZ: ;
+RoleZZ; ?
+.ZZ? @
 
-SuperAdmin\\@ J
-)\\J K
-)\\K L
-.]] 
-ToListAsync]] (
-(]]( )
-)]]) *
-;]]* +
-return^^ 
-(^^ 
-true^^ 
-,^^ 
-result^^ $
-,^^$ %
-$str^^& A
-,^^A B
-null^^C G
-)^^G H
-;^^H I
-}__ 
-catch`` 
-(`` 
-	Exception`` 
-ex`` 
-)`` 
-{aa 
-returnbb 
-(bb 
-falsebb 
-,bb 
-nullbb #
-,bb# $
-exbb% '
-.bb' (
-Messagebb( /
-,bb/ 0
-exbb1 3
-.bb3 4
-ToStringbb4 <
-(bb< =
-)bb= >
-)bb> ?
-;bb? @
-}cc 
-}dd 	
-}ee 
-}ff ˇ	
+SuperAdminZZ@ J
+)ZZJ K
+)ZZK L
+.[[ 
+ToListAsync[[ (
+([[( )
+)[[) *
+;[[* +
+return\\ 
+(\\ 
+true\\ 
+,\\ 
+result\\ $
+,\\$ %
+$str\\& A
+,\\A B
+null\\C G
+)\\G H
+;\\H I
+}]] 
+catch^^ 
+(^^ 
+	Exception^^ 
+ex^^ 
+)^^ 
+{__ 
+return`` 
+(`` 
+false`` 
+,`` 
+null`` #
+,``# $
+ex``% '
+.``' (
+Message``( /
+,``/ 0
+ex``1 3
+.``3 4
+ToString``4 <
+(``< =
+)``= >
+)``> ?
+;``? @
+}aa 
+}bb 	
+}cc 
+}dd ˇ	
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\IReportRepository.cs
 	namespace 	
 SimpleBookStore
@@ -2825,7 +2801,32 @@ LogContext		 '
 ;- .
 } 	
 } 
-} ‚
+} ç
+nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+DAL 
+. 
+Repositories *
+.* +
+LogRepository+ 8
+{ 
+public 
+
+	interface 
+ILogRepository #
+{ 
+Task 
+	InsertLog 
+( 
+Logs 
+log 
+)  
+;  !
+} 
+}		 ‚
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.cs
 	namespace 	
 SimpleBookStore
@@ -3061,32 +3062,7 @@ IQueryable 
 ) 
 ; 
 } 
-} ç
-nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-DAL 
-. 
-Repositories *
-.* +
-LogRepository+ 8
-{ 
-public 
-
-	interface 
-ILogRepository #
-{ 
-Task 
-	InsertLog 
-( 
-Logs 
-log 
-)  
-;  !
-} 
-}		 ˛R
+} ˝P
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.cs
 	namespace 	
 SimpleBookStore
@@ -3613,97 +3589,81 @@ expression]]P Z
 =]][ \
 null]]] a
 )]]a b
-{^^ 	
-var__ 
-list__ 
-=__ 
-new__ 
-List__ 
-<__  
-Book__  $
->__$ %
-(__% &
-)__& '
-;__' (
-if`` 
-(`` 
+{^^ 	
+if__ 
+(__ 
 
-expression`` 
-!=`` 
-null`` "
-)``" #
-listaa 
-=aa 
-awaitaa 
-_contextaa %
-.aa% &
-Bookaa& *
-.aa* +
-Whereaa+ 0
-(aa0 1
+expression__ 
+!=__ 
+null__ "
+)__" #
+return`` 
+await`` 
+_context`` %
+.``% &
+Book``& *
+.``* +
+Where``+ 0
+(``0 1
 
-expressionaa1 ;
-)aa; <
-.aa< =
-AsNoTrackingaa= I
-(aaI J
-)aaJ K
-.aaK L
-ToListAsyncaaL W
-(aaW X
-)aaX Y
-;aaY Z
-elsebb 
-listcc 
-=cc 
-awaitcc 
-_contextcc %
-.cc% &
-Bookcc& *
-.cc* +
-AsNoTrackingcc+ 7
-(cc7 8
-)cc8 9
-.cc9 :
-ToListAsynccc: E
-(ccE F
-)ccF G
-;ccG H
-returndd 
-listdd 
-;dd 
-}ee 	
-publicff 
+expression``1 ;
+)``; <
+.``< =
+AsNoTracking``= I
+(``I J
+)``J K
+.``K L
+ToListAsync``L W
+(``W X
+)``X Y
+;``Y Z
+elseaa 
+returnbb 
+awaitbb 
+_contextbb %
+.bb% &
+Bookbb& *
+.bb* +
+AsNoTrackingbb+ 7
+(bb7 8
+)bb8 9
+.bb9 :
+ToListAsyncbb: E
+(bbE F
+)bbF G
+;bbG H
+}cc 	
+publicdd 
 
-IQueryableff 
-<ff 
-Bookff 
->ff 
-Getff  #
-(ff# $
-)ff$ %
-{gg 	
-varhh 
-modelhh 
-=hh 
-_contexthh  
-.hh  !
-Bookhh! %
-.hh% &
-AsNoTrackinghh& 2
-(hh2 3
-)hh3 4
-.hh4 5
-AsQueryablehh5 @
-(hh@ A
-)hhA B
-;hhB C
-returnii 
-modelii 
-;ii 
-}jj 	
-}kk 
-}ll ∏!
+IQueryabledd 
+<dd 
+Bookdd 
+>dd 
+Getdd  #
+(dd# $
+)dd$ %
+{ee 	
+varff 
+modelff 
+=ff 
+_contextff  
+.ff  !
+Bookff! %
+.ff% &
+AsNoTrackingff& 2
+(ff2 3
+)ff3 4
+.ff4 5
+AsQueryableff5 @
+(ff@ A
+)ffA B
+;ffB C
+returngg 
+modelgg 
+;gg 
+}hh 	
+}ii 
+}jj ∏!
 nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.cs
 	namespace 	
 SimpleBookStore
@@ -3949,7 +3909,367 @@ PrimaryKey $
 ;&& 
 }'' 	
 }(( 
-})) ∆!
+})) †
+wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122449_UserBookTableNameModify1.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+DAL 
+. 
+
+Migrations (
+{ 
+public 
+
+partial 
+class $
+UserBookTableNameModify1 1
+:2 3
+	Migration4 =
+{		 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder 
+. 
+	DropTable &
+(& '
+name 
+: 
+$str %
+)% &
+;& '
+} 	
+	protected 
+override 
+void 
+Down  $
+($ %
+MigrationBuilder% 5
+migrationBuilder6 F
+)F G
+{ 	
+migrationBuilder 
+. 
+CreateTable (
+(( )
+name 
+: 
+$str %
+,% &
+columns 
+: 
+table 
+=> !
+new" %
+{ 
+Age 
+= 
+table 
+.  
+Column  &
+<& '
+int' *
+>* +
+(+ ,
+type, 0
+:0 1
+$str2 7
+,7 8
+nullable9 A
+:A B
+falseC H
+)H I
+,I J
+BookBuyCount  
+=! "
+table# (
+.( )
+Column) /
+</ 0
+int0 3
+>3 4
+(4 5
+type5 9
+:9 :
+$str; @
+,@ A
+nullableB J
+:J K
+falseL Q
+)Q R
+,R S
+Email 
+= 
+table !
+.! "
+Column" (
+<( )
+string) /
+>/ 0
+(0 1
+type1 5
+:5 6
+$str7 F
+,F G
+nullableH P
+:P Q
+trueR V
+)V W
+,W X
+Gender 
+= 
+table "
+." #
+Column# )
+<) *
+string* 0
+>0 1
+(1 2
+type2 6
+:6 7
+$str8 G
+,G H
+nullableI Q
+:Q R
+trueS W
+)W X
+,X Y
+UserId 
+= 
+table "
+." #
+Column# )
+<) *
+string* 0
+>0 1
+(1 2
+type2 6
+:6 7
+$str8 G
+,G H
+nullableI Q
+:Q R
+trueS W
+)W X
+,X Y
+UserName 
+= 
+table $
+.$ %
+Column% +
+<+ ,
+string, 2
+>2 3
+(3 4
+type4 8
+:8 9
+$str: I
+,I J
+nullableK S
+:S T
+trueU Y
+)Y Z
+} 
+, 
+constraints 
+: 
+table "
+=># %
+{   
+}!! 
+)!! 
+;!! 
+}"" 	
+}## 
+}$$ û
+vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122113_UserBookTableNameModify.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+DAL 
+. 
+
+Migrations (
+{ 
+public 
+
+partial 
+class #
+UserBookTableNameModify 0
+:1 2
+	Migration3 <
+{		 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder 
+. 
+CreateTable (
+(( )
+name 
+: 
+$str %
+,% &
+columns 
+: 
+table 
+=> !
+new" %
+{ 
+UserId 
+= 
+table "
+." #
+Column# )
+<) *
+string* 0
+>0 1
+(1 2
+type2 6
+:6 7
+$str8 G
+,G H
+nullableI Q
+:Q R
+trueS W
+)W X
+,X Y
+UserName 
+= 
+table $
+.$ %
+Column% +
+<+ ,
+string, 2
+>2 3
+(3 4
+type4 8
+:8 9
+$str: I
+,I J
+nullableK S
+:S T
+trueU Y
+)Y Z
+,Z [
+Email 
+= 
+table !
+.! "
+Column" (
+<( )
+string) /
+>/ 0
+(0 1
+type1 5
+:5 6
+$str7 F
+,F G
+nullableH P
+:P Q
+trueR V
+)V W
+,W X
+Age 
+= 
+table 
+.  
+Column  &
+<& '
+int' *
+>* +
+(+ ,
+type, 0
+:0 1
+$str2 7
+,7 8
+nullable9 A
+:A B
+falseC H
+)H I
+,I J
+Gender 
+= 
+table "
+." #
+Column# )
+<) *
+string* 0
+>0 1
+(1 2
+type2 6
+:6 7
+$str8 G
+,G H
+nullableI Q
+:Q R
+trueS W
+)W X
+,X Y
+BookBuyCount  
+=! "
+table# (
+.( )
+Column) /
+</ 0
+int0 3
+>3 4
+(4 5
+type5 9
+:9 :
+$str; @
+,@ A
+nullableB J
+:J K
+falseL Q
+)Q R
+} 
+, 
+constraints 
+: 
+table "
+=># %
+{ 
+} 
+) 
+; 
+} 	
+	protected 
+override 
+void 
+Down  $
+($ %
+MigrationBuilder% 5
+migrationBuilder6 F
+)F G
+{ 	
+migrationBuilder   
+.   
+	DropTable   &
+(  & '
+name!! 
+:!! 
+$str!! %
+)!!% &
+;!!& '
+}"" 	
+}## 
+}$$ ∆!
 yC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250804193836_CommonEntityUpdatedDateFix.cs
 	namespace 	
 SimpleBookStore
@@ -9148,7 +9468,7 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 
 , -
 } 
-} √
+} Ü
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
 	namespace 	
 SimpleBookStore
@@ -9226,16 +9546,16 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 }0 1
 public 
 DbSet 
-< 
-	User_Book 
-> 
-	User_Book  )
-{* +
-set, /
-;/ 0
-get1 4
-;4 5
-}6 7
+< 
+UserBook 
+> 
+	User_Book (
+{) *
+set+ .
+;. /
+get0 3
+;3 4
+}5 6
 public 
 DbSet 
 < 
@@ -9253,30 +9573,35 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 void 
 OnModelCreating  /
 (/ 0
-ModelBuilder0 <
-modelBuilder= I
-)I J
+ModelBuilder0 <
+builder= D
+)D E
 { 	
 base 
 . 
 OnModelCreating  
-(  !
-modelBuilder! -
-)- .
-;. /
-modelBuilder 
-. 
-Entity 
-<  
-UserBookStatsReport  3
->3 4
-(4 5
-)5 6
-.6 7
-HasNoKey7 ?
-(? @
-)@ A
-;A B
+(  !
+builder! (
+)( )
+;) *
+builder 
+. 
+Entity 
+< 
+UserBookStatsReport .
+>. /
+(/ 0
+)0 1
+.1 2
+HasNoKey2 :
+(: ;
+); <
+.< =
+ToView= C
+(C D
+nullD H
+)H I
+;I J
 } 	
 } 
 public 

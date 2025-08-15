@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SimpleBookStore.DAL.DbContextSet;
 
@@ -11,9 +12,11 @@ using SimpleBookStore.DAL.DbContextSet;
 namespace SimpleBookStore.DAL.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20250815122113_UserBookTableNameModify")]
+    partial class UserBookTableNameModify
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -175,9 +178,7 @@ namespace SimpleBookStore.DAL.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.ToTable((string)null);
-
-                    b.ToView(null, (string)null);
+                    b.ToTable("UserBookStats");
                 });
 
             modelBuilder.Entity("SimpleBookStore.DAL.StoreEntity.Book", b =>

@@ -2,8 +2,8 @@
 _C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\StoreUnitOfWork.cs	 8r	
 xÇ
 m
-`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\IStoreUnitOfWork.csrt
-ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User_Book.cs 
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\IStoreUnitOfWork.csrs
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.cs 
 8
 r	n
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.cs 
@@ -11,34 +11,40 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 r	
 y
 WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs 8r
-z
+ã
+wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.cs  
+8ri	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijkxÇ!"&-.29:>EFJQRV[\`acghz
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs 8r	
-é
-wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.cs" 
-8rk	
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmxÇ!"&-.29:>EFJQRV[\abdeijê
+ê
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\IUserBookRepository.csr	
-ä
-sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\ReviewRepository.cs" 
-8rk	
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklxÇ !%,-189=DEIPQUZ[`acdhiå
+á
+sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\ReviewRepository.cs  
+8ri	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijxÇ !%,-189=DEIPQUZ[_`bfgå
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\IReviewRepository.csr	
-¸
-sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\ReportRepository.cs 8rb	
- !"#$%&'(*+,-./0123456789:;<=>?@ABCDEFHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefxÇ(*./156789;AELM\^bÑ
+˚
+sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\ReportRepository.cs 8ra	
+ !"#$%&')*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdxÇ')-.045678:@DJKZ\`Ñ
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\IReportRepository.csr
 	
 ë
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\LogRepository.cs 8r	
-Çà
+Ç|
+nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.csr	à
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.csr	
-|
-nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.csr	Ü
-oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.cs" 
-8rk	
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklxÇ !%,-189=DEIPQUZ[`acdhi±
+É
+oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.cs  
+8ri	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijxÇ !%,-189=DEIPQUZ[_`bfg±
 nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.cs 8j"r"	
- #$%&'()Ç%¡
+ #$%&'()Ç%≤
+wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122449_UserBookTableNameModify1.cs 8j
+r	 !"#$Ç
+±
+vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815122113_UserBookTableNameModify.cs 8j
+r	 !"#$Ç
+ ¡
 yC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250804193836_CommonEntityUpdatedDateFix.cs 8jr.	
  !"#$%&'()*,-./01234567Ç"',1í
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250803182914_ReviewEntityFix2.cs 8j

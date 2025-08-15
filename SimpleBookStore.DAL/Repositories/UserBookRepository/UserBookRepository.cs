@@ -14,7 +14,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
         {
             _context = context;
         }
-        public async Task<(bool success, EntityEntry entity, string message, string errorMessage)> InsertAsync(User_Book model)
+        public async Task<(bool success, EntityEntry entity, string message, string errorMessage)> InsertAsync(UserBook model)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, null, ex.Message, ex.ToString());
             }
         }
-        public async Task<(bool success, string message, string errorMessage)> InsertRangeAsync(List<User_Book> model)
+        public async Task<(bool success, string message, string errorMessage)> InsertRangeAsync(List<UserBook> model)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, ex.Message, ex.ToString());
             }
         }
-        public (bool success, EntityEntry entity, string message, string errorMessage) Update(User_Book model)
+        public (bool success, EntityEntry entity, string message, string errorMessage) Update(UserBook model)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, null, ex.Message, ex.ToString());
             }
         }
-        public (bool success, string message, string errorMessage) UpdateRange(List<User_Book> model)
+        public (bool success, string message, string errorMessage) UpdateRange(List<UserBook> model)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, ex.Message, ex.ToString());
             }
         }
-        public (bool success, EntityEntry entity, string message, string errorMessage) Delete(User_Book model)
+        public (bool success, EntityEntry entity, string message, string errorMessage) Delete(UserBook model)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, null, ex.Message, ex.ToString());
             }
         }
-        public (bool success, string message, string errorMessage) DeleteRange(List<User_Book> model)
+        public (bool success, string message, string errorMessage) DeleteRange(List<UserBook> model)
         {
             try
             {
@@ -86,19 +86,19 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
                 return (false, ex.Message, ex.ToString());
             }
         }
-        public async Task<User_Book> GetEntityAsync(Expression<Func<User_Book, bool>> expression)
+        public async Task<UserBook> GetEntityAsync(Expression<Func<UserBook, bool>> expression)
         {
             var model = await _context.User_Book.Where(expression).AsNoTracking().FirstOrDefaultAsync();
             return model;
         }
-        public async Task<List<User_Book>> GetListAsync(Expression<Func<User_Book, bool>> expression = null)
+        public async Task<List<UserBook>> GetListAsync(Expression<Func<UserBook, bool>> expression = null)
         {
             if (expression != null)
                 return await _context.User_Book.Where(expression).AsNoTracking().ToListAsync();
             else
                 return await _context.User_Book.AsNoTracking().ToListAsync();
         }
-        public IQueryable<User_Book> Get()
+        public IQueryable<UserBook> Get()
         {
             var model = _context.User_Book.AsNoTracking().AsQueryable();
             return model;

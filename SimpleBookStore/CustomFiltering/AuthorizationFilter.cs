@@ -9,10 +9,10 @@ using System.Text;
 namespace SimpleBookStore.CustomFiltering
 {
     [AttributeUsage(validOn: AttributeTargets.Class | AttributeTargets.Method | System.AttributeTargets.Class, AllowMultiple = true)]
-    public class AuthorizationFilter : Attribute, IAsyncActionFilter
+    public class AuthorizationFilterAttribute : Attribute, IAsyncActionFilter
     {
-        private string roles;
-        public AuthorizationFilter(string roles)
+        private readonly string roles;
+        public AuthorizationFilterAttribute(string roles)
         {
             this.roles = roles;
         }
@@ -20,7 +20,7 @@ namespace SimpleBookStore.CustomFiltering
         {
             var token = context.HttpContext.Request.Headers[HeaderNames.Authorization].ToString().Replace("Bearer ", "");
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(JWTDescription.Key);
+            var key = Encoding.ASCII.GetBytes(JwtDescription.Key);
 
             try
             {
@@ -32,8 +32,8 @@ namespace SimpleBookStore.CustomFiltering
                     ValidateAudience = true,
                     // set clockskew to zero so tokens expire exactly at token expiration time (instead of 5 minutes later)
                     ClockSkew = TimeSpan.Zero,
-                    ValidIssuer = JWTDescription.Issuer,
-                    ValidAudience = JWTDescription.Audience
+                    ValidIssuer = JwtDescription.Issuer,
+                    ValidAudience = JwtDescription.Audience
                 }, out SecurityToken validatedToken);
 
                 var jwtToken = (JwtSecurityToken)validatedToken;
@@ -58,7 +58,7 @@ namespace SimpleBookStore.CustomFiltering
                                  on a equals b
                                  select new { b }).ToList();
 
-                if (!roleExist.Any())
+                if (roleExist.Count == 0)
                 {
                     context.Result = new UnauthorizedResult();
                     return;
@@ -66,6 +66,7 @@ namespace SimpleBookStore.CustomFiltering
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 context.Result = new UnauthorizedResult();
                 return;
             }
