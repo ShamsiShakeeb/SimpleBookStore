@@ -12,16 +12,13 @@ namespace SimpleBookStore.CQ.Command.BookCommand
     {
         private readonly IRepository<Book> _repositoryBook;
         private readonly IUnitOfWork<IStoreEntity> _storeUnitWork;
-        private readonly IMediaTr<AddLogCommand, Task> _logCommand;
         private readonly ILoadExcel _loadExcel;
         public AddBooksFromExcel(IRepository<Book> repositoryBook,
             IUnitOfWork<IStoreEntity> storeUnitWork,
-            IMediaTr<AddLogCommand, Task> logCommand,
             ILoadExcel loadExcel)
         {
             _repositoryBook = repositoryBook;
             _storeUnitWork = storeUnitWork;
-            _logCommand = logCommand;
             _loadExcel = loadExcel;
         }
         public async Task<(bool success,string message,string errorMessage)> Handler(IFormFile file)

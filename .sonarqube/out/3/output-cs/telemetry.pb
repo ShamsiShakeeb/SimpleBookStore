@@ -1,0 +1,1 @@
+pRZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\SimpleBookStore.CQ.csproj¢net8.0òCSharp12

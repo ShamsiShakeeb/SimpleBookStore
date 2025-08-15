@@ -1,0 +1,12 @@
+﻿C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\LogCommand\AddLogCommand.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\ReviewCommand\GiveReviewCommand.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\OnBoardUserCommand.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\ValidateUserCommand.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuery\GetBookDetailInfoQuery.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuery\GetBookListQuery.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\DownloadCommentByUserReportQuery.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetCommentCountByUserQuery.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetUserBookStatsQuery.cs

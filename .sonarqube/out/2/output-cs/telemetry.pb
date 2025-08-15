@@ -1,0 +1,1 @@
+rR\C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\SimpleBookStore.DAL.csproj¢net8.0òCSharp12
