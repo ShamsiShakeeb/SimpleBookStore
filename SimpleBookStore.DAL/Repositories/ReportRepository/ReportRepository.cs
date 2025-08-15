@@ -45,14 +45,14 @@ namespace SimpleBookStore.DAL.Repositories.ReportRepository
                         await connection.OpenAsync();
                         using (SqlDataReader reader = await command.ExecuteReaderAsync())
                         {
-                            while (reader.Read())
+                            while (await reader.ReadAsync())
                             {
                                 var model = new CommentCountByUserReport
                                 {
                                     UID = reader.GetString(0), 
                                     UserName = reader.GetString(1),
                                     Email = reader.GetString(2),
-                                    Gender = reader.IsDBNull(3) ? null : reader.GetString(3),
+                                    Gender = await reader.IsDBNullAsync(3) ? null : reader.GetString(3),
                                     CommentCount = reader.GetInt32(4)
                                 };
                                 commentCounts.Add(model);
