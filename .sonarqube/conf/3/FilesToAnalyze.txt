@@ -1,0 +1,11 @@
+﻿C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Configurations\DependencyResolver.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\BookService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\IBookService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\ILogService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\LogService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\IReportService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\UserService.cs

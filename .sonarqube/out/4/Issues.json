@@ -1,0 +1,381 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24365.8 (9e9c7c1d)",
+        "semanticVersion": "4.11.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "The variable 'ex' is declared but never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/CustomFiltering/AuthorizationFilter.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 30,
+                  "endLine": 67,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'roles' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/CustomFiltering/AuthorizationFilter.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 24,
+                  "endLine": 14,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Attribute'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/CustomFiltering/AuthorizationFilter.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1825",
+          "level": "note",
+          "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<string>() instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "value"
+            }
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 1,
+                  "endLine": 67,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/BookController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 35,
+                  "endLine": 10,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReviewController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 37,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 37,
+                  "endLine": 10,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 38,
+                  "endLine": 10,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/CustomFiltering/AuthorizationFilter.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 22,
+                  "endLine": 61,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1825": {
+          "id": "CA1825",
+          "shortDescription": "Avoid zero-length array allocations",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1825",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1860": {
+          "id": "CA1860",
+          "shortDescription": "Avoid using 'Enumerable.Any()' extension method",
+          "fullDescription": "Prefer using 'IsEmpty', 'Count' or 'Length' properties whichever available, rather than calling 'Enumerable.Any()'. The intent is clearer and it is more performant than using 'Enumerable.Any()' extension method.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1860",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1861": {
+          "id": "CA1861",
+          "shortDescription": "Avoid constant arrays as arguments",
+          "fullDescription": "Constant arrays passed as arguments are not reused when called repeatedly, which implies a new array is created each time. Consider extracting them to 'static readonly' fields to improve performance if the passed array is not mutated within the called method.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1861",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0168": {
+          "id": "CS0168",
+          "shortDescription": "Variable is declared but never used",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0168)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3376": {
+          "id": "S3376",
+          "shortDescription": "Attribute, EventArgs, and Exception type names should end with the type being extended",
+          "fullDescription": "Adherence to the standard naming conventions makes your code not only more readable, but more usable. For instance, class FirstAttribute : Attribute can be used simply with First, but you must use the full name for class AttributeOne : Attribute.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3376",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6961": {
+          "id": "S6961",
+          "shortDescription": "API Controllers should derive from ControllerBase instead of Controller",
+          "fullDescription": "In ASP.NET Core, controllers usually inherit either from ControllerBase or Controller. If a controller does not use any View-specific functionality, it is recommended to inherit from ControllerBase.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6961",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Ö
+zC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\obj\Debug\net8.0\SimpleBookStore.Model.AssemblyInfo.csutf-8è
+ÉC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8á
+|C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\obj\Debug\net8.0\SimpleBookStore.Model.GlobalUsings.g.csutf-8r
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.csutf-8k
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.csutf-8n
+eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.csutf-8j
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.csutf-8p
+gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\RegistrationRequestModel.csutf-8g
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.csutf-8i
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.csutf-8k
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.csutf-8o
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.csutf-8

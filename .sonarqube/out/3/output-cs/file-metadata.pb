@@ -1,0 +1,15 @@
+Å
+vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\obj\Debug\net8.0\SimpleBookStore.BLL.AssemblyInfo.csutf-8ç
+ÅC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8É
+xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\obj\Debug\net8.0\SimpleBookStore.BLL.GlobalUsings.g.csutf-8n
+eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\UserService.csutf-8s
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.csutf-8o
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.csutf-8r
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.csutf-8r
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.csutf-8s
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\IReportService.csutf-8l
+cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\LogService.csutf-8m
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\LogService\ILogService.csutf-8o
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\IBookService.csutf-8n
+eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\BookService\BookService.csutf-8o
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Configurations\DependencyResolver.csutf-8

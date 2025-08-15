@@ -1,0 +1,16 @@
+﻿C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReviewController.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\obj\Debug\net8.0\SimpleBookStore.GlobalUsings.g.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\obj\Debug\net8.0\SimpleBookStore.AssemblyInfo.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\obj\Debug\net8.0\SimpleBookStore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\appsettings.Development.json
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\appsettings.json
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\.gitignore
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\SimpleBookStore.http
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Properties\launchSettings.json
