@@ -18,10 +18,10 @@ qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.cs3 8j¬rß	
  !"#$%&'()*+,-./012345689:;<=>?@ABCDEFGHIJKLNOPQRSTUVWXYZ[\]^_`acdefghijklmnopqrstuvxyz{|}~€‚ƒ„…†‡ˆ‰ŠŒ‘’“”•–—˜™š›œŸ ¡¢¤¥¦§¨©ª«¬­®¯°±²³´µ¶¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîğñòóõö÷øùúüışÿ‚ƒ„†‡ˆ‰‹Œ‘’“”•—˜™šœŸ¡¢£¤¦§¨©ª­®¯°²³µ¶¸¹»¼¾¿ÁÂÄÅÇÈÊËÌÍÎ‚ç !"#$%&'()*+,-./01358:<>?@ABCDEFGIKNPRTUVXZ[]`cegijkmopruxz|}~ƒ„†‰Œ‘“•–˜›œ¡¤¦¨©ª«­¯°²µ¸º¼¾¿ÀÁÂÃÄÅÇÉÊÌÏÑÔ×ÙÛİŞàâãåèêíğõü†‹—œ¡¦¯²µ¸»¾ÁÄÇÊk
 SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs 8r	
-
+e
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.csr
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs 8r	
-‚e
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.csr}
+‚}
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs 8r	
 ‚“
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configurations\DependencyResolver.cs 8r	

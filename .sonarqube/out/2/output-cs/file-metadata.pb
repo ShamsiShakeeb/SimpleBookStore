@@ -15,9 +15,9 @@ zC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.csutf-8Å
 vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.Designer.csutf-8v
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.csutf-8\
-SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.csutf-8g
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.csutf-8b
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.csutf-8e
+SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.csutf-8b
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.csutf-8g
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.csutf-8e
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.csutf-8o
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configurations\DependencyResolver.csutf-8c
 ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\DbEntity.csutf-8i

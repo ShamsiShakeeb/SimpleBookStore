@@ -62,22 +62,16 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  
 
- ´
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
+ ê
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
 
- #
+  
 
- 
+ 
 
- 
+ 
 
-
-
- 
-
- 
-
- #…
+ "…
 gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\RegistrationRequestModel.cs
 
  )
@@ -96,16 +90,22 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
  
 
-!! ê
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
+!! ´
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
 
-  
+ #
 
- 
+ 
 
- 
+ 
 
- "Ü
+
+
+ 
+
+ 
+
+ #Ü
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 
  "
@@ -114,7 +114,14 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
 
 
- Û
+ à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
+
+ $
+
+ 
+
+ Û
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
 
  $
@@ -125,14 +132,7 @@ aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\User
   "
    
   #
-  )à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
-
- $
-
- 
-
- ‚
+  )‚
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 
  )

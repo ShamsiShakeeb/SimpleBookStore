@@ -12,6 +12,27 @@
       },
       "results": [
         {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 1,
+                  "endLine": 59,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1155",
           "level": "warning",
           "message": "Use '.Any()' to test whether this 'IEnumerable<<anonymous type: string b>>' is empty or not.",
@@ -51,67 +72,6 @@
           ],
           "properties": {
             "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6960",
-          "level": "warning",
-          "message": "This controller has multiple responsibilities and could be split into 3 smaller controllers.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 18,
-                  "endLine": 12,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 42,
-                  "endLine": 55,
-                  "endColumn": 69
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 42,
-                  "endLine": 37,
-                  "endColumn": 61
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 42,
-                  "endLine": 46,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "May belong to responsibility #1.",
-              "1": "May belong to responsibility #2.",
-              "2": "May belong to responsibility #3."
-            }
           }
         },
         {
@@ -176,24 +136,64 @@
           }
         },
         {
-          "ruleId": "S6966",
+          "ruleId": "S6960",
           "level": "warning",
-          "message": "Await RunAsync instead.",
+          "message": "This controller has multiple responsibilities and could be split into 3 smaller controllers.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
                 "region": {
-                  "startLine": 59,
-                  "startColumn": 1,
-                  "endLine": 59,
-                  "endColumn": 10
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 42,
+                  "endLine": 55,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 42,
+                  "endLine": 37,
+                  "endColumn": 61
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 42,
+                  "endLine": 46,
+                  "endColumn": 55
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "May belong to responsibility #1.",
+              "1": "May belong to responsibility #2.",
+              "2": "May belong to responsibility #3."
+            }
           }
         },
         {

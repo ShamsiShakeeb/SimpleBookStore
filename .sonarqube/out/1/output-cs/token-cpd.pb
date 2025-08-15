@@ -314,108 +314,50 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 ;& '
 }( )
 } 
-} Ð
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
-	namespace 	
-SimpleBookStore
+} ¨
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
+	namespace 	
+SimpleBookStore
  
-. 
-Model 
-.  
-Request  '
-{ 
-public 
+. 
+Model 
+.  
+Request  '
+{ 
+public 
 
-class 
-ReviewRequestModel #
-{ 
+class 
+LogRequestModel  
+{ 
+public 
+bool 
+Success 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+string 
+Message 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
 public 
-string 
-UID 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-public 
-int 
-BID 
-{ 
-get 
-; 
-set !
-;! "
-}# $
-[		 	
-Range			 
-(		 
-$num		 
-,		 
-$num		 
-,		 
-ErrorMessage		 !
-=		" #
-$str		$ E
-)		E F
-]		F G
-public
-
- 
-int
-
- 
-Rating
-
- 
-{
-
- 
-get
-
- 
-;
-
-  
-set
-
-! $
-;
-
-$ %
-}
-
-& '
-public 
-string 
-Comment 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-DateTime 
-CreatedDate #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-=2 3
-DateTime4 <
-.< =
-UtcNow= C
-.C D
-AddHoursD L
-(L M
-$numM N
-)N O
-;O P
-} 
-} â
+string 
+ErrorMessage "
+{# $
+get% (
+;( )
+set* -
+;- .
+}/ 0
+} 
+}		 â
 gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\RegistrationRequestModel.cs
 	namespace 	
 SimpleBookStore
@@ -599,50 +541,108 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 ;!!) *
 }!!+ ,
 }"" 
-}## ¨
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
-	namespace 	
-SimpleBookStore
+}## Ð
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
+	namespace 	
+SimpleBookStore
  
-. 
-Model 
-.  
-Request  '
-{ 
-public 
+. 
+Model 
+.  
+Request  '
+{ 
+public 
 
-class 
-LogRequestModel  
-{ 
-public 
-bool 
-Success 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-string 
-Message 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
+class 
+ReviewRequestModel #
+{ 
 public 
-string 
-ErrorMessage "
-{# $
-get% (
-;( )
-set* -
-;- .
-}/ 0
-} 
-}		 ø
+string 
+UID 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+public 
+int 
+BID 
+{ 
+get 
+; 
+set !
+;! "
+}# $
+[		 	
+Range			 
+(		 
+$num		 
+,		 
+$num		 
+,		 
+ErrorMessage		 !
+=		" #
+$str		$ E
+)		E F
+]		F G
+public
+
+ 
+int
+
+ 
+Rating
+
+ 
+{
+
+ 
+get
+
+ 
+;
+
+  
+set
+
+! $
+;
+
+$ %
+}
+
+& '
+public 
+string 
+Comment 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public 
+DateTime 
+CreatedDate #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+=2 3
+DateTime4 <
+.< =
+UtcNow= C
+.C D
+AddHoursD L
+(L M
+$numM N
+)N O
+;O P
+} 
+} ø
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 	namespace 	
 SimpleBookStore
@@ -700,7 +700,41 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
 + ,
 } 
-}  
+} 
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Request  '
+{ 
+public 
+
+class 
+BuyBookRequestModel $
+{ 
+public 
+string 
+UserId 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+int 
+BookId 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+} 
+}  
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
 	namespace 	
 SimpleBookStore
@@ -842,41 +876,7 @@ aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\User
 ;* +
 }, -
 } 
-} 
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Request  '
-{ 
-public 
-
-class 
-BuyBookRequestModel $
-{ 
-public 
-string 
-UserId 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-int 
-BookId 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-} 
-} ÷
+} ÷
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 	namespace 	
 SimpleBookStore

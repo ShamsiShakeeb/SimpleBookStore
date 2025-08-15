@@ -4574,7 +4574,24 @@ ILogEntity" ,
 ;. /
 }0 1
 } 
-} â
+} Î
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+DAL 
+. 
+	LogEntity '
+{ 
+public 
+
+	interface 
+
+ILogEntity 
+{ 
+} 
+} â
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
 	namespace 	
 SimpleBookStore
@@ -4638,24 +4655,7 @@ ILogEntity" ,
 )i j
 ;j k
 } 
-} Î
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-DAL 
-. 
-	LogEntity '
-{ 
-public 
-
-	interface 
-
-ILogEntity 
-{ 
-} 
-} Ã	
+} Ã	
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs
 	namespace 	
 SimpleBookStore

@@ -1,10 +1,15 @@
-¨
-dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.cs
+…
+kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetUserBookStatsQuery.cs
 
- *
+ &
+		* : !! /
+
+
+6 E .
 
-		) +(
-		D L   Š
+q x
+ !!X ]2
+!! (( (($ *((1 7((A GŠ
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetCommentCountByUserQuery.cs
 
  +
@@ -59,18 +64,13 @@ jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuer
 V ^228 @
 i r22B K
  22# '
-22 44 …
-kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetUserBookStatsQuery.cs
+22 44 ¨
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.cs
 
- &
-		* : !! /
-
-
-6 E .
+ *
 
-q x
- !!X ]2
-!! (( (($ *((1 7((A GÝ
+		) +(
+		D L   Ý
 kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\ValidateUserCommand.cs
 
  $(

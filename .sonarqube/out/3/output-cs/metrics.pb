@@ -1,6 +1,6 @@
-…
-dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.cs 8r	
-‚­
+£
+kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetUserBookStatsQuery.cs 8r%	
+!#$%&()*+‚!%(­
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetCommentCountByUserQuery.cs 8r*	
  !"#%'()*,-./‚%),¬
 vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\DownloadCommentByUserReportQuery.cs 8r	
@@ -8,9 +8,9 @@ vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQu
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuery\GetBookListQuery.cs 8r 	
  !"#‚ Â
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuery\GetBookDetailInfoQuery.cs 8r2	
- !"#$%&'()*+,-./024567‚ #$%&'()*+,-./24£
-kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\ReportQuery\GetUserBookStatsQuery.cs 8r%	
-!#$%&()*+‚!%(Ì
+ !"#$%&'()*+,-./024567‚ #$%&'()*+,-./24…
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.cs 8r	
+‚Ì
 kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\ValidateUserCommand.cs 8r9	 !"$%&'()*+-./0123456789:;=>?@x‚ !"$(*-./0234578:=Ý
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\OnBoardUserCommand.cs 8rD	
  !"$%&()*+,-.02345679;<=>?@BCDEFGHIKLMNx‚ "$&(*+,024569;=>?BCGHKØ
