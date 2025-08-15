@@ -1,7 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using SimpleBookStore.DAL.DbContextSet;
 using SimpleBookStore.DAL.DTO;
 using SimpleBookStore.Model.Report;
@@ -68,7 +67,6 @@ namespace SimpleBookStore.DAL.Repositories.ReportRepository
             }
             return (true, commentCounts,"Data Fetched Successfully",null);
         }
-
         public async Task<(bool success, List<UserBookStatsReport> report, string message, string errorMessage)> UserBookStats()
         {
             try

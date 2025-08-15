@@ -30,7 +30,7 @@ namespace SimpleBookStore.BLL.Services.ReportService
             return (true, base64 , "Base64 Generated" , null);
         }
 
-        private string GenerateExcelBase64(List<CommentCountByUserReport> reportData)
+        private static string GenerateExcelBase64(List<CommentCountByUserReport> reportData)
         {
             using (var workbook = new XLWorkbook())
             {

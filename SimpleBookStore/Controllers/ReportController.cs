@@ -7,7 +7,7 @@ namespace SimpleBookStore.Controllers
     [ApiController]
     [Route("api/[controller]/[action]")]
     [AuthorizationFilter("SuperAdmin")]
-    public class ReportController : Controller
+    public class ReportController : ControllerBase
     {
         private readonly IReportService _reportService;
         public ReportController(IReportService reportService)

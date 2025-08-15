@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using SimpleBookStore.BLL.Services.ReviewService;
 using SimpleBookStore.CustomFiltering;
 using SimpleBookStore.Model.Request;
@@ -8,7 +7,7 @@ namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class ReviewController : Controller
+    public class ReviewController : ControllerBase
     {
         private readonly IReviewService _reviewService;
         public ReviewController(IReviewService reviewService)

@@ -93,12 +93,10 @@ namespace SimpleBookStore.DAL.Repositories.UserBookRepository
         }
         public async Task<List<User_Book>> GetListAsync(Expression<Func<User_Book, bool>> expression = null)
         {
-            var list = new List<User_Book>();
             if (expression != null)
-                list = await _context.User_Book.Where(expression).AsNoTracking().ToListAsync();
+                return await _context.User_Book.Where(expression).AsNoTracking().ToListAsync();
             else
-                list = await _context.User_Book.AsNoTracking().ToListAsync();
-            return list;
+                return await _context.User_Book.AsNoTracking().ToListAsync();
         }
         public IQueryable<User_Book> Get()
         {

@@ -7,7 +7,7 @@ namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class BookController : Controller
+    public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
         public BookController(IBookService bookService)

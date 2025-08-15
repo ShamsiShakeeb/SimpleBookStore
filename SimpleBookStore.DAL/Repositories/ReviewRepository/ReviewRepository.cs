@@ -92,12 +92,10 @@ namespace SimpleReviewStore.DAL.Repositories.ReviewRepository
         }
         public async Task<List<Review>> GetListAsync(Expression<Func<Review, bool>> expression = null)
         {
-            var list = new List<Review>();
             if (expression != null)
-                list = await _context.Review.Where(expression).AsNoTracking().ToListAsync();
+                return await _context.Review.Where(expression).AsNoTracking().ToListAsync();
             else
-                list = await _context.Review.AsNoTracking().ToListAsync();
-            return list;
+                return await _context.Review.AsNoTracking().ToListAsync();
         }
         public IQueryable<Review> Get()
         {

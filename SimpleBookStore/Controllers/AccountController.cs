@@ -7,7 +7,7 @@ namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class AccountController : Controller
+    public class AccountController : ControllerBase
     {
         private readonly IUserService _userService;
         public AccountController(IUserService userService)
