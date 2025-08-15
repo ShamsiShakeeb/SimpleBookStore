@@ -1,10 +1,10 @@
-‚
-eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs 8r	
-t
+{
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs 8rt
 bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs 8rx
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs 8r	
-{
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs 8r|
+‚
+eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs 8r	
+|
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs 
 8
 r	

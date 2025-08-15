@@ -1,4 +1,37 @@
-è
+è
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+
+ *
+
+ 
+
+ à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
+
+ #
+
+ 
+
+ √
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
+
+ "
+
+ 
+
+ 
+
+ 
+
+ 
+
+		 
+
+
+
+ %
+
+ è
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 
  &
@@ -29,40 +62,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  
 
- à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
-
- #
-
- 
-
- √
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
-
- "
-
- 
-
- 
-
- 
-
- 
-
-		 
-
-
-
- %
-
- è
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
-
- *
-
- 
-
- ´
+ ´
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
 
  #
@@ -138,19 +138,14 @@ aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\User
 
  
 
- ∞
+ ‚
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 
- )
-
- 
-
+ )
+   
 
 
- 
-
- 
-
- 
-
- 
+ 		 %
+  "
+  #
+  )

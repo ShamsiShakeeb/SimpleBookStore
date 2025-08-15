@@ -2,5 +2,5 @@ projectKey=KhatiProjectKey
 serverUrl=http://localhost:9000
 serverVersion=25.8.0.112029
 dashboardUrl=http://localhost:9000/dashboard?id=KhatiProjectKey
-ceTaskId=fe0ac4fc-dfa4-4f98-9c71-e109f95689fd
-ceTaskUrl=http://localhost:9000/api/ce/task?id=fe0ac4fc-dfa4-4f98-9c71-e109f95689fd
+ceTaskId=9ea24a1f-3f1f-456d-ba69-3703706f8422
+ceTaskUrl=http://localhost:9000/api/ce/task?id=9ea24a1f-3f1f-456d-ba69-3703706f8422

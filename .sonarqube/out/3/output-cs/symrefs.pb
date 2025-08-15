@@ -138,28 +138,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\LogCom
 $ 1 *
 
  !(
-2 7 # ## (ª
-fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.cs
-
-
-
- (
-+ : ! 0AA 
-0 C >># 6
-3 A 66 '(
-7 B    !,, !
-0 > ,
-# 5" 4
-& 3 *
-* 4 $
-
-O VP
-k pH M%%0 5%%> C11. 311< A:: ";; "2
-  ** @@ AA' /
-; <@ A
-88 >>C N
-
->> ­
+2 7 # ## (­
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.cs
 
  "
@@ -186,4 +165,23 @@ iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCo
 44$ %44) *
 44P Q44g h
 66, -661 2
-66` a66t u
+66` a66t už
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.cs
+
+
+
+ (
++ : ! 0AA 
+0 C >> )
+3 A 66 '(
+7 B    !,, !
+0 > ,
+# 5" 4
+& 3 *
+* 4 $
+
+O VP
+k pH M%%0 5%%> C11. 311< A:: ";; "2
+  ** @@ AA' /
+; <@ A
+88 >>6 A

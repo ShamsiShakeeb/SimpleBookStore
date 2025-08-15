@@ -1,4 +1,169 @@
-≠
+û
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class %
+RegistrationResponseModel *
+{ 
+public 
+bool 
+Success 
+{ 
+set !
+;! "
+get# &
+;& '
+}( )
+public 
+string 
+Message 
+{ 
+set  #
+;# $
+get% (
+;( )
+}* +
+} 
+} è
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class 
+LoginResponseModel #
+{ 
+public 
+string 
+UserId 
+{ 
+set "
+;" #
+get$ '
+;' (
+}) *
+public 
+string 
+Token 
+{ 
+set !
+;! "
+get# &
+;& '
+}( )
+} 
+} ã
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class 
+BookResponseModel "
+{ 
+public 
+int 
+Id 
+{ 
+get 
+; 
+set  
+;  !
+}" #
+public 
+string 
+Title 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+string 
+Author 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+string 
+ISBN 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public		 
+decimal		 
+Price		 
+{		 
+get		 "
+;		" #
+set		$ '
+;		' (
+}		) *
+public
+
+ 
+DateTime
+
+ 
+PublishedDate
+
+ %
+{
+
+& '
+get
+
+( +
+;
+
++ ,
+set
+
+- 0
+;
+
+0 1
+}
+
+2 3
+public 
+int 
+Stock 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+} 
+} ≠
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 	namespace 	
 SimpleBookStore
@@ -149,172 +314,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 ;& '
 }( )
 } 
-} è
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class 
-LoginResponseModel #
-{ 
-public 
-string 
-UserId 
-{ 
-set "
-;" #
-get$ '
-;' (
-}) *
-public 
-string 
-Token 
-{ 
-set !
-;! "
-get# &
-;& '
-}( )
-} 
-} ã
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class 
-BookResponseModel "
-{ 
-public 
-int 
-Id 
-{ 
-get 
-; 
-set  
-;  !
-}" #
-public 
-string 
-Title 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-string 
-Author 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-string 
-ISBN 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-public		 
-decimal		 
-Price		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-public
-
- 
-DateTime
-
- 
-PublishedDate
-
- %
-{
-
-& '
-get
-
-( +
-;
-
-+ ,
-set
-
-- 0
-;
-
-0 1
-}
-
-2 3
-public 
-int 
-Stock 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-} 
-} û
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class %
-RegistrationResponseModel *
-{ 
-public 
-bool 
-Success 
-{ 
-set !
-;! "
-get# &
-;& '
-}( )
-public 
-string 
-Message 
-{ 
-set  #
-;# $
-get% (
-;( )
-}* +
-} 
-} –
+} –
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
 	namespace 	
 SimpleBookStore
@@ -858,7 +858,7 @@ aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\User
 ;* +
 }, -
 } 
-} Ô
+} ˜
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 	namespace 	
 SimpleBookStore
@@ -875,10 +875,13 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\Comm
 { 
 [ 	
 JsonProperty	 
-( 
-$str 
-) 
-] 
+( 
+nameof 
+( 
+UID  
+)  !
+)! "
+]" #
 public 
 string 
 UID 
@@ -890,10 +893,13 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\Comm
 }& '
 [		 	
 JsonProperty			 
-(		 
-$str		  
-)		  !
-]		! "
+(		 
+nameof		 
+(		 
+UserName		 %
+)		% &
+)		& '
+]		' (
 public
 
  
@@ -923,10 +929,13 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\Comm
 + ,
 [ 	
 JsonProperty	 
-( 
-$str 
-) 
-] 
+( 
+nameof 
+( 
+Email "
+)" #
+)# $
+]$ %
 public 
 string 
 Email 
@@ -938,10 +947,13 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\Comm
 }( )
 [ 	
 JsonProperty	 
-( 
-$str 
-) 
-]  
+( 
+nameof 
+( 
+Gender #
+)# $
+)$ %
+]% &
 public 
 string 
 Gender 
@@ -953,10 +965,13 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\Comm
 }) *
 [ 	
 JsonProperty	 
-( 
-$str $
-)$ %
-]% &
+( 
+nameof 
+( 
+CommentCount )
+)) *
+)* +
+]+ ,
 public 
 int 
 CommentCount 

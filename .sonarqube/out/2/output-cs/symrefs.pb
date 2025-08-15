@@ -24,24 +24,7 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 
  )
 
- "¹
-WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- k
+ "k
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\IStoreEntity.cs
 
  !Ï
@@ -77,7 +60,24 @@ nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Lo
 0 15 6
 
 ##  $
-##6 F%% ´
+##6 F%% ¹
+WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ´
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.cs
 
 		 '
@@ -222,19 +222,7 @@ mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 ÁÁ 
 ÄÄ 
 ÇÇ 
-ÊÊ g
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
-
- ®
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
-
- 
-
-
-( 6 5 C
-+ 8 *
-
- /‘
+ÊÊ ‘
 SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs
 
  
@@ -247,7 +235,19 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 
  
 
- "Â
+ "g
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
+
+ ®
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
+
+ 
+
+
+( 6 5 C
++ 8 *
+
+ /Â
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs
 
  
