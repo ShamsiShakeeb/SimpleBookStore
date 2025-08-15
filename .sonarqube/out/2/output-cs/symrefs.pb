@@ -1,7 +1,7 @@
-¤
-ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User_Book.cs
+£
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.cs
 
- 
+ 
 
 		 
 
@@ -22,9 +22,26 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 
  
 
- )
+ (
 
- "k
+ "¹
+WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ k
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\IStoreEntity.cs
 
  !Ï
@@ -46,7 +63,7 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\B
 
  
 
- )
+ (
 
  "È
 nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.cs
@@ -60,24 +77,26 @@ nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Lo
 0 15 6
 
 ##  $
-##6 F%% ¹
-WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
+##6 F%% «
+qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.cs
 
- 
+ +
 
- 
+  "2
+4 D  )) .. (
+   " "(
+ "  !! 
+4 59 :
+  !% &
+##  !##% &
 
- 
-
- 
-
- 
-
- 
-
- 
-
- ´
+55  $2
+556 F77 :: SS XX (
+<< >> @@ "AA "(
+CC "EE FF KK 
+EE5 6EE: ;
+HH  !HH% &
+MM  !MM% &´
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.cs
 
 		 '
@@ -235,10 +254,7 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 
  
 
- "g
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
-
- ®
+ "®
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
 
  
@@ -247,7 +263,10 @@ YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILo
 ( 6 5 C
 + 8 *
 
- /Â
+ /g
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
+
+ Â
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs
 
  
@@ -263,7 +282,14 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configuration
  *
 
 ) ,F
-E M      ˜
+E M      °
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
+
+  
+( 6  !
+		. ; *
+
+ /˜
 ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\DbEntity.cs
 
  
@@ -274,14 +300,7 @@ ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\
 
  
 
- $°
-`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
-
-  
-( 6  !
-		. ; *
-
- /o
+ $o
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\IStoreAdoContext.cs
 
  %

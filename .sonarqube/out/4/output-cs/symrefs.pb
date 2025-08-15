@@ -16,13 +16,13 @@ HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs<
 ,, // 11 22 55 77 99 ;; ˙
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 
- $
-  66' ,
-* / 
+ -
+  % 66' ,
+3 8 
 
  02
-H O 00 ?? EE 
-i mHH 
+H O 00 ?? FF 
+i mII 
  + 0
   
  @ C
@@ -33,7 +33,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ++ ++! "
 44 88+ 4
 66 99+ 6
-88 == ò
+88 == ò
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReviewController.cs
 
  !
@@ -43,7 +43,25 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ) 5
 I N0 5
 r sw x<
-  ( .8 > ", 2ù
+  ( .8 > ", 2„
+]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
+
+ !
+	n Ñ "'' 5
+i y   00 /
+V r!! (99 ;
+	n É% :
+i x   .
+V q!!+ F
+
+%%) <2
+'' (( ))( .))8 >** "
+
+..) 62
+00 11 22( .228 >33 "
+
+77) DF
+99 :: ;;( .;;8 >== "==, 2==; Aù
 [C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
 
  
@@ -72,25 +90,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 
 ==) 7
 ==B F??A E<
-?? @@ AA( .AA8 >BB "BB, 2„
-]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
-
- !
-	n Ñ "'' 5
-i y   00 /
-V r!! (99 ;
-	n É% :
-i x   .
-V q!!+ F
-
-%%) <2
-'' (( ))( .))8 >** "
-
-..) 62
-00 11 22( .228 >33 "
-
-77) DF
-99 :: ;;( .;;8 >== "==, 2==; Aº
+?? @@ AA( .AA8 >BB "BB, 2º
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
 
  "(

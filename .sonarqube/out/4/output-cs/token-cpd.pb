@@ -53,7 +53,7 @@ PC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.c
 ;) *
 }+ ,
 } 
-} Ã
+} ç
 HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs
 var 
 builder 
@@ -189,13 +189,15 @@ SwaggerDoc 
 $str$$ %
 }%% 
 }&& 
-,&& 
-new'' 
-string'' 
-['' 
-]'' 
-{'' 
-}'' 
+,&& 
+Array'' 
+.'' 
+Empty'' 
+<'' 
+string'' 
+>'' 
+(''  
+)''  !
 }(( 	
 })) 
 ))) 
@@ -262,7 +264,7 @@ UseSwagger11 
 (;; 
 );; 	
 ;;;	 
-Ó0
+ˆ2
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 	namespace		 	
 SimpleBookStore		
@@ -300,23 +302,24 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 „ …
 public 
 
-class 
-AuthorizationFilter $
-:% &
-	Attribute' 0
-,0 1
-IAsyncActionFilter2 D
+class (
+AuthorizationFilterAttribute -
+:. /
+	Attribute0 9
+,9 :
+IAsyncActionFilter; M
 { 
-private 
-string 
-roles 
-; 
-public 
-AuthorizationFilter "
-(" #
-string# )
-roles* /
-)/ 0
+private 
+readonly 
+string 
+roles  %
+;% &
+public (
+AuthorizationFilterAttribute +
+(+ ,
+string, 2
+roles3 8
+)8 9
 { 	
 this 
 . 
@@ -381,7 +384,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 .$ %
 GetBytes% -
 (- .
-JWTDescription. <
+JwtDescription. <
 .< =
 Key= @
 )@ A
@@ -425,13 +428,13 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ,""- .
 ValidIssuer## 
 =##  !
-JWTDescription##" 0
+JwtDescription##" 0
 .##0 1
 Issuer##1 7
 ,##7 8
 ValidAudience$$ !
 =$$" #
-JWTDescription$$$ 2
+JwtDescription$$$ 2
 .$$2 3
 Audience$$3 ;
 }%% 
@@ -557,14 +560,15 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 );;: ;
 ;;;; <
 if== 
-(== 
-!== 
-	roleExist== 
-.== 
-Any== "
-(==" #
-)==# $
-)==$ %
+(== 
+	roleExist== 
+.== 
+Count== #
+(==# $
+)==$ %
+====& (
+$num==) *
+)==* +
 {>> 
 context?? 
 .?? 
@@ -585,26 +589,33 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 exCC 
 )CC  
 {DD 
-contextEE 
-.EE 
-ResultEE 
-=EE  
-newEE! $
-UnauthorizedResultEE% 7
-(EE7 8
-)EE8 9
-;EE9 :
-returnFF 
-;FF 
-}GG 
-awaitHH 
-nextHH 
-(HH 
-)HH 
-;HH 
-}II 	
-}JJ 
-}KK Í
+ConsoleEE 
+.EE 
+	WriteLineEE !
+(EE! "
+exEE" $
+)EE$ %
+;EE% &
+contextFF 
+.FF 
+ResultFF 
+=FF  
+newFF! $
+UnauthorizedResultFF% 7
+(FF7 8
+)FF8 9
+;FF9 :
+returnGG 
+;GG 
+}HH 
+awaitII 
+nextII 
+(II 
+)II 
+;II 
+}JJ 	
+}KK 
+}LL Ñ
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReviewController.cs
 	namespace 	
 SimpleBookStore
@@ -645,9 +656,8 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 
 class 
 ReviewController !
-:" #
-
-Controller$ .
+:" #
+ControllerBase$ 2
 { 
 private 
 readonly 
@@ -817,7 +827,409 @@ BadRequest !
 ;= >
 } 	
 } 
-}   ©@
+}   Ð8
+]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Controllers %
+{ 
+[		 
+ApiController		 
+]		 
+[
+
+ 
+Route
+
+ 
+
+(
+
+
+ 
+$str
+
+ &
+)
+
+& '
+]
+
+' (
+[ 
+AuthorizationFilter 
+( 
+$str %
+)% &
+]& '
+public 
+
+class 
+ReportController !
+:" #
+ControllerBase$ 2
+{ 
+private 
+readonly 
+IMediaTr !
+<! "&
+GetCommentCountByUserQuery" <
+,< =
+Task 
+< 
+( 
+bool 
+success 
+, 
+List  $
+<$ %$
+CommentCountByUserReport% =
+>= >
+report? E
+,E F
+stringG M
+messageN U
+,U V
+stringW ]
+errorMessage^ j
+)j k
+>k l
+>l m#
+_getCommentCountByUser	n „
+;
+„ …
+private 
+readonly 
+IMediaTr !
+<! "!
+GetUserBookStatsQuery" 7
+,7 8
+Task 
+< 
+( 
+bool 
+success 
+, 
+List  $
+<$ %
+UserBookStatsReport% 8
+>8 9
+report: @
+,@ A
+stringB H
+messageI P
+,P Q
+stringR X
+errorMessageY e
+)e f
+>f g
+>g h
+_getUserBookStati y
+;y z
+private 
+readonly 
+IMediaTr !
+<! ",
+ DownloadCommentByUserReportQuery" B
+,B C
+Task 
+< 
+( 
+bool 
+success 
+, 
+string  &
+base64' -
+,- .
+string/ 5
+message6 =
+,= >
+string? E
+errorMessageF R
+)R S
+>S T
+>T U(
+_downloadCommentByUserReportV r
+;r s
+public 
+ReportController 
+(  
+IMediaTr  (
+<( )&
+GetCommentCountByUserQuery) C
+,C D
+Task 
+< 
+( 
+bool 
+success 
+, 
+List  $
+<$ %$
+CommentCountByUserReport% =
+>= >
+report? E
+,E F
+stringG M
+messageN U
+,U V
+stringW ]
+errorMessage^ j
+)j k
+>k l
+>l m"
+getCommentCountByUser	n ƒ
+,
+ƒ „
+IMediaTr 
+< !
+GetUserBookStatsQuery *
+,* +
+Task 
+< 
+( 
+bool 
+success 
+, 
+List  $
+<$ %
+UserBookStatsReport% 8
+>8 9
+report: @
+,@ A
+stringB H
+messageI P
+,P Q
+stringR X
+errorMessageY e
+)e f
+>f g
+>g h
+getUserBookStati x
+,x y
+IMediaTr 
+< ,
+ DownloadCommentByUserReportQuery 5
+,5 6
+Task 
+< 
+( 
+bool 
+success 
+, 
+string  &
+base64' -
+,- .
+string/ 5
+message6 =
+,= >
+string? E
+errorMessageF R
+)R S
+>S T
+>T U'
+downloadCommentByUserReportV q
+)q r
+{ 	"
+_getCommentCountByUser "
+=# $!
+getCommentCountByUser% :
+;: ;
+_getUserBookStat   
+=   
+getUserBookStat   .
+;  . /(
+_downloadCommentByUserReport!! (
+=!!) *'
+downloadCommentByUserReport!!+ F
+;!!F G
+}"" 	
+[$$ 	
+HttpGet$$	 
+]$$ 
+public%% 
+async%% 
+Task%% 
+<%% 
+IActionResult%% '
+>%%' (
+CommentCountByUsers%%) <
+(%%< =
+)%%= >
+{&& 	
+var'' 
+result'' 
+='' 
+await'' "
+_getCommentCountByUser'' 5
+.''5 6
+Send''6 :
+('': ;
+)''; <
+;''< =
+if(( 
+((( 
+!(( 
+result(( 
+.(( 
+success(( 
+)((  
+return)) 
+
+BadRequest)) !
+())! "
+new))" %
+{))& '
+result))( .
+.)). /
+success))/ 6
+,))6 7
+result))8 >
+.))> ?
+message))? F
+}))G H
+)))H I
+;))I J
+return** 
+Ok** 
+(** 
+new** 
+{** 
+result** "
+.**" #
+report**# )
+}*** +
+)**+ ,
+;**, -
+}++ 	
+[-- 	
+HttpGet--	 
+]-- 
+public.. 
+async.. 
+Task.. 
+<.. 
+IActionResult.. '
+>..' (
+UserBookStats..) 6
+(..6 7
+)..7 8
+{// 	
+var00 
+result00 
+=00 
+await00 
+_getUserBookStat00 /
+.00/ 0
+Send000 4
+(004 5
+)005 6
+;006 7
+if11 
+(11 
+!11 
+result11 
+.11 
+success11 
+)11  
+return22 
+
+BadRequest22 !
+(22! "
+new22" %
+{22& '
+result22( .
+.22. /
+success22/ 6
+,226 7
+result228 >
+.22> ?
+message22? F
+}22G H
+)22H I
+;22I J
+return33 
+Ok33 
+(33 
+new33 
+{33 
+result33 "
+.33" #
+report33# )
+}33* +
+)33+ ,
+;33, -
+}44 	
+[66 	
+HttpGet66	 
+]66 
+public77 
+async77 
+Task77 
+<77 
+IActionResult77 '
+>77' ('
+DownloadCommentByUserReport77) D
+(77D E
+)77E F
+{88 	
+var99 
+result99 
+=99 
+await99 (
+_downloadCommentByUserReport99 ;
+.99; <
+Send99< @
+(99@ A
+)99A B
+;99B C
+if:: 
+(:: 
+!:: 
+result:: 
+.:: 
+success:: 
+)::  
+return;; 
+
+BadRequest;; !
+(;;! "
+new;;" %
+{;;& '
+result;;( .
+.;;. /
+success;;/ 6
+,;;6 7
+result;;8 >
+.;;> ?
+message;;? F
+};;G H
+);;H I
+;;;I J
+return== 
+Ok== 
+(== 
+new== 
+{== 
+result== "
+.==" #
+success==# *
+,==* +
+result==, 2
+.==2 3
+base64==3 9
+,==9 :
+result==; A
+.==A B
+message==B I
+}==J K
+)==K L
+;==L M
+}>> 	
+}?? 
+}@@ ­@
 [C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
 	namespace
 
@@ -848,9 +1260,8 @@ BadRequest !
 
 class 
 BookController 
-:  !
-
-Controller" ,
+:  !
+ControllerBase" 0
 { 
 private 
 readonly 
@@ -1278,410 +1689,7 @@ BadRequestAA !
 ;BB= >
 }CC 	
 }DD 
-}EE Ì8
-]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Controllers %
-{ 
-[		 
-ApiController		 
-]		 
-[
-
- 
-Route
-
- 
-
-(
-
-
- 
-$str
-
- &
-)
-
-& '
-]
-
-' (
-[ 
-AuthorizationFilter 
-( 
-$str %
-)% &
-]& '
-public 
-
-class 
-ReportController !
-:" #
-
-Controller$ .
-{ 
-private 
-readonly 
-IMediaTr !
-<! "&
-GetCommentCountByUserQuery" <
-,< =
-Task 
-< 
-( 
-bool 
-success 
-, 
-List  $
-<$ %$
-CommentCountByUserReport% =
->= >
-report? E
-,E F
-stringG M
-messageN U
-,U V
-stringW ]
-errorMessage^ j
-)j k
->k l
->l m#
-_getCommentCountByUser	n „
-;
-„ …
-private 
-readonly 
-IMediaTr !
-<! "!
-GetUserBookStatsQuery" 7
-,7 8
-Task 
-< 
-( 
-bool 
-success 
-, 
-List  $
-<$ %
-UserBookStatsReport% 8
->8 9
-report: @
-,@ A
-stringB H
-messageI P
-,P Q
-stringR X
-errorMessageY e
-)e f
->f g
->g h
-_getUserBookStati y
-;y z
-private 
-readonly 
-IMediaTr !
-<! ",
- DownloadCommentByUserReportQuery" B
-,B C
-Task 
-< 
-( 
-bool 
-success 
-, 
-string  &
-base64' -
-,- .
-string/ 5
-message6 =
-,= >
-string? E
-errorMessageF R
-)R S
->S T
->T U(
-_downloadCommentByUserReportV r
-;r s
-public 
-ReportController 
-(  
-IMediaTr  (
-<( )&
-GetCommentCountByUserQuery) C
-,C D
-Task 
-< 
-( 
-bool 
-success 
-, 
-List  $
-<$ %$
-CommentCountByUserReport% =
->= >
-report? E
-,E F
-stringG M
-messageN U
-,U V
-stringW ]
-errorMessage^ j
-)j k
->k l
->l m"
-getCommentCountByUser	n ƒ
-,
-ƒ „
-IMediaTr 
-< !
-GetUserBookStatsQuery *
-,* +
-Task 
-< 
-( 
-bool 
-success 
-, 
-List  $
-<$ %
-UserBookStatsReport% 8
->8 9
-report: @
-,@ A
-stringB H
-messageI P
-,P Q
-stringR X
-errorMessageY e
-)e f
->f g
->g h
-getUserBookStati x
-,x y
-IMediaTr 
-< ,
- DownloadCommentByUserReportQuery 5
-,5 6
-Task 
-< 
-( 
-bool 
-success 
-, 
-string  &
-base64' -
-,- .
-string/ 5
-message6 =
-,= >
-string? E
-errorMessageF R
-)R S
->S T
->T U'
-downloadCommentByUserReportV q
-)q r
-{ 	"
-_getCommentCountByUser "
-=# $!
-getCommentCountByUser% :
-;: ;
-_getUserBookStat   
-=   
-getUserBookStat   .
-;  . /(
-_downloadCommentByUserReport!! (
-=!!) *'
-downloadCommentByUserReport!!+ F
-;!!F G
-}"" 	
-[$$ 	
-HttpGet$$	 
-]$$ 
-public%% 
-async%% 
-Task%% 
-<%% 
-IActionResult%% '
->%%' (
-CommentCountByUsers%%) <
-(%%< =
-)%%= >
-{&& 	
-var'' 
-result'' 
-='' 
-await'' "
-_getCommentCountByUser'' 5
-.''5 6
-Send''6 :
-('': ;
-)''; <
-;''< =
-if(( 
-((( 
-!(( 
-result(( 
-.(( 
-success(( 
-)((  
-return)) 
-
-BadRequest)) !
-())! "
-new))" %
-{))& '
-result))( .
-.)). /
-success))/ 6
-,))6 7
-result))8 >
-.))> ?
-message))? F
-}))G H
-)))H I
-;))I J
-return** 
-Ok** 
-(** 
-new** 
-{** 
-result** "
-.**" #
-report**# )
-}*** +
-)**+ ,
-;**, -
-}++ 	
-[-- 	
-HttpGet--	 
-]-- 
-public.. 
-async.. 
-Task.. 
-<.. 
-IActionResult.. '
->..' (
-UserBookStats..) 6
-(..6 7
-)..7 8
-{// 	
-var00 
-result00 
-=00 
-await00 
-_getUserBookStat00 /
-.00/ 0
-Send000 4
-(004 5
-)005 6
-;006 7
-if11 
-(11 
-!11 
-result11 
-.11 
-success11 
-)11  
-return22 
-
-BadRequest22 !
-(22! "
-new22" %
-{22& '
-result22( .
-.22. /
-success22/ 6
-,226 7
-result228 >
-.22> ?
-message22? F
-}22G H
-)22H I
-;22I J
-return33 
-Ok33 
-(33 
-new33 
-{33 
-result33 "
-.33" #
-report33# )
-}33* +
-)33+ ,
-;33, -
-}44 	
-[66 	
-HttpGet66	 
-]66 
-public77 
-async77 
-Task77 
-<77 
-IActionResult77 '
->77' ('
-DownloadCommentByUserReport77) D
-(77D E
-)77E F
-{88 	
-var99 
-result99 
-=99 
-await99 (
-_downloadCommentByUserReport99 ;
-.99; <
-Send99< @
-(99@ A
-)99A B
-;99B C
-if:: 
-(:: 
-!:: 
-result:: 
-.:: 
-success:: 
-)::  
-return;; 
-
-BadRequest;; !
-(;;! "
-new;;" %
-{;;& '
-result;;( .
-.;;. /
-success;;/ 6
-,;;6 7
-result;;8 >
-.;;> ?
-message;;? F
-};;G H
-);;H I
-;;;I J
-return== 
-Ok== 
-(== 
-new== 
-{== 
-result== "
-.==" #
-success==# *
-,==* +
-result==, 2
-.==2 3
-base64==3 9
-,==9 :
-result==; A
-.==A B
-message==B I
-}==J K
-)==K L
-;==L M
-}>> 	
-}?? 
-}@@ ¡C
+}EE ¥C
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
 	namespace 	
 SimpleBookStore
@@ -1710,9 +1718,8 @@ BadRequest;; !
 
 class 
 AccountController "
-:# $
-
-Controller% /
+:# $
+ControllerBase% 3
 { 
 private 
 readonly 

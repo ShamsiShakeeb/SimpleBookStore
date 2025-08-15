@@ -114,31 +114,25 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
 
 
- ˆ
+ ó
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
+
+ $
+  #
+
+
+ 		 %
+  "
+   
+  #
+  )ˆ
 bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
 
  $
 
  
 
- ·
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
-
- $
-
- 
-
-
-
- 
-
- 
-
- 
-
- 
-
- â
+ â
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 
  )

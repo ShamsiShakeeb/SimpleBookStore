@@ -8,6 +8,8 @@ C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILog
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.Designer.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.Designer.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.Designer.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\LogContextModelSnapshot.cs
@@ -16,4 +18,4 @@ C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Bo
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\IStoreEntity.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.cs
-C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User_Book.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.cs
