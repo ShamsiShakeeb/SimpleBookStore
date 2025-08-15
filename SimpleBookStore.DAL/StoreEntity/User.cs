@@ -10,7 +10,7 @@ namespace SimpleBookStore.DAL.StoreEntity
         [MaxLength(10)]
         public string Gender { set; get; }
         public int Age { set; get; }
-        public List<User_Book> User_Books { set; get; } 
+        public List<UserBook> User_Books { set; get; } 
         public List<Review> Review {  set; get; }
     }
 }

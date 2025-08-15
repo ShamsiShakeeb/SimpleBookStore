@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SimpleBookStore.DAL.StoreEntity
 {
-    public class User_Book : IStoreEntity
+    public class UserBook : IStoreEntity
     {
         [Key]
         public int Id { get; set; }

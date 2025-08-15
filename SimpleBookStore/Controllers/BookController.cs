@@ -11,7 +11,7 @@ namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class BookController : Controller
+    public class BookController : ControllerBase
     {
         private readonly IMediaTr<GetBookListQuery, Task<PaginationResponseModel<BookResponseModel>>> _bookList;
         private readonly IMediaTr<GetBookDetailInfoQuery, Task<PaginationResponseModel<BookInfoResponseModel>>> _bookDetails;

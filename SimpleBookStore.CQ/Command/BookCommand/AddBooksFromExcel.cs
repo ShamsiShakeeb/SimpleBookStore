@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using SimpleBookStore.CQ.Command.LogCommand;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.Model.Request;
+using System.Globalization;
 
 namespace SimpleBookStore.CQ.Command.BookCommand
 {
@@ -51,7 +52,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     ISBN = r.Where(x => x.ColumnName.Trim() == "ISBN").Select(x => x.ColumnValue).FirstOrDefault(),
                     Price = r.Where(x => x.ColumnName.Trim() == "Price").Select(x => Convert.ToDecimal(x.ColumnValue))
                     .FirstOrDefault(),
-                    PublishedDate = r.Where(x => x.ColumnName.Trim() == "PublishedDate").Select(x => DateTime.Parse(x.ColumnValue))
+                    PublishedDate = r.Where(x => x.ColumnName.Trim() == "PublishedDate").Select(x => DateTime.Parse(x.ColumnValue, CultureInfo.InvariantCulture))
                     .FirstOrDefault(),
                     Createdby = Utility.Constant.Role.SuperAdmin,
 

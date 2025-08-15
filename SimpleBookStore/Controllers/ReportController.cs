@@ -9,7 +9,7 @@ namespace SimpleBookStore.Controllers
     [ApiController]
     [Route("api/[controller]/[action]")]
     [AuthorizationFilter("SuperAdmin")]
-    public class ReportController : Controller
+    public class ReportController : ControllerBase
     {
         private readonly IMediaTr<GetCommentCountByUserQuery, 
             Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)>> _getCommentCountByUser;

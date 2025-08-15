@@ -10,11 +10,11 @@ namespace SimpleBookStore.CQ.Command.BookCommand
     public class BuyBookCommand : IEventHandler
     {
         private readonly IRepository<Book> _repositoryBook;
-        private readonly IRepository<User_Book> _repositoryUserBook;
+        private readonly IRepository<UserBook> _repositoryUserBook;
         private readonly IUnitOfWork<IStoreEntity> _storeUnitWork;
         private readonly IMediaTr<AddLogCommand, Task> _logCommand;
         public BuyBookCommand(IRepository<Book> repositoryBook,
-            IRepository<User_Book> repositoryUserBook,
+            IRepository<UserBook> repositoryUserBook,
             IUnitOfWork<IStoreEntity> storeUnitWork,
             IMediaTr<AddLogCommand, Task> logCommand)
         {
@@ -53,7 +53,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
 
             return await _storeUnitWork.Commit(async () =>
             {
-                var insertModel = new User_Book()
+                var insertModel = new UserBook()
                 {
                     BookId = model.BookId,
                     UserId = model.UserId

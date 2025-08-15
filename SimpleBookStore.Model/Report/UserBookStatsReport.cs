@@ -4,17 +4,17 @@ namespace SimpleBookStore.Model.Report
 {
     public class UserBookStatsReport
     {
-        [JsonProperty("UserId")]
+        [JsonProperty(nameof(UserId))]
         public string UserId { get; set; }
-        [JsonProperty("UserName")]
+        [JsonProperty(nameof(UserName))]
         public string UserName { get; set; }
-        [JsonProperty("Email")]
+        [JsonProperty(nameof(Email))]
         public string Email { get; set; }
-        [JsonProperty("Age")]
+        [JsonProperty(nameof(Age))]
         public int Age { get; set; }
-        [JsonProperty("Gender")]
+        [JsonProperty(nameof(Gender))]
         public string Gender { get; set; }
-        [JsonProperty("BookBuyCount")]
+        [JsonProperty(nameof(BookBuyCount))]
         public int BookBuyCount { get; set; }
     }
 }

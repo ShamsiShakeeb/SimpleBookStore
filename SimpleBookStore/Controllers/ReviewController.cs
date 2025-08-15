@@ -9,7 +9,7 @@ namespace SimpleBookStore.Controllers
     [ApiController]
     [Route("api/[controller]/[action]")]
     [AuthorizationFilter("Person")]
-    public class ReviewController : Controller
+    public class ReviewController : ControllerBase
     {
         private readonly IMediaTr<GiveReviewCommand, Task<(bool success, string message, string errorMessage)>> _giveReview;
         public ReviewController(IMediaTr<GiveReviewCommand, Task<(bool success, string message, string errorMessage)>> giveReview)
