@@ -1,1 +1,1 @@
-zRdC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Utility\SimpleBookStore.Utility.csproj¢net8.0òCSharp12
+vR`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\SimpleBookStore.Model.csproj¢net8.0òCSharp12

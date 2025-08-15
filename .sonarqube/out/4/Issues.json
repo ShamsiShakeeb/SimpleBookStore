@@ -96,42 +96,18 @@
           }
         },
         {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 13,
-                  "endLine": 39,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "value"
-            }
-          }
-        },
-        {
-          "ruleId": "S6966",
+          "ruleId": "S6961",
           "level": "warning",
-          "message": "Await RunAsync instead.",
+          "message": "Inherit from ControllerBase instead of Controller.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReviewController.cs",
                 "region": {
-                  "startLine": 59,
-                  "startColumn": 1,
-                  "endLine": 59,
-                  "endColumn": 10
+                  "startLine": 12,
+                  "startColumn": 37,
+                  "endLine": 12,
+                  "endColumn": 47
                 }
               }
             }
@@ -162,24 +138,27 @@
           }
         },
         {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReviewController.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 37,
-                  "endLine": 12,
-                  "endColumn": 47
+                  "startLine": 39,
+                  "startColumn": 13,
+                  "endLine": 39,
+                  "endColumn": 28
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "value"
+            }
           }
         },
         {
@@ -195,6 +174,27 @@
                   "startColumn": 38,
                   "endLine": 12,
                   "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 1,
+                  "endLine": 59,
+                  "endColumn": 10
                 }
               }
             }

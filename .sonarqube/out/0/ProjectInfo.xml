@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>SimpleBookStore.Model</ProjectName>
+  <ProjectName>SimpleBookStore.Utility</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>ed33ceb9-8cd0-4c5d-8b29-f5efcd255cba</ProjectGuid>
-  <FullPath>C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\SimpleBookStore.Model.csproj</FullPath>
+  <ProjectGuid>a9ea12f2-ae2a-46e9-b019-1719628ed8be</ProjectGuid>
+  <FullPath>C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Utility\SimpleBookStore.Utility.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\BS01389\source\repos\SimpleBookStore\.sonarqube\conf\0\FilesToAnalyze.txt" />

@@ -12,18 +12,228 @@
       },
       "results": [
         {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'JWTDescription' to match pascal case naming rules, consider using 'JwtDescription'.",
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'UID'",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Utility/Constant.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 29,
-                  "endLine": 5,
-                  "endColumn": 43
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Email'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'UserName'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'UserId'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Email'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'UserName'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Age'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'BookBuyCount'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Gender'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Gender'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'CommentCount'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 37
                 }
               }
             }
@@ -34,20 +244,18 @@
         }
       ],
       "rules": {
-        "S101": {
-          "id": "S101",
-          "shortDescription": "Types should be named in PascalCase",
-          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+        "CA1507": {
+          "id": "CA1507",
+          "shortDescription": "Use nameof to express symbol names",
+          "fullDescription": "Using nameof helps keep your code valid when refactoring.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1507",
           "properties": {
-            "category": "Minor Code Smell",
+            "category": "Maintainability",
             "isEnabledByDefault": true,
             "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
             ]
           }
         }

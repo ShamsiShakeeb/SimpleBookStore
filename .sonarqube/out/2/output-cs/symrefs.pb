@@ -257,7 +257,14 @@ YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILo
 + 2Y `
 C P *
 
- /È
+ /°
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
+
+  
+( 6  !
+		. ; *
+
+ /È
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configurations\DependencyResolver.cs
 
  *
@@ -274,14 +281,7 @@ ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\
 
  
 
- $°
-`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
-
-  
-( 6  !
-		. ; *
-
- /o
+ $o
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\IStoreAdoContext.cs
 
  %

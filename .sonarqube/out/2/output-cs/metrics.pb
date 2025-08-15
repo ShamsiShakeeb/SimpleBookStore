@@ -21,11 +21,11 @@ YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILo
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs 8r	
 ‚}
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs 8r	
-‚“
+‚‚
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs 8r	
+‚“
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configurations\DependencyResolver.cs 8r	
 ‚v
 ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\DbEntity.cs 8r	
-‚‚
-`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs 8r	
-‚n
+‚n
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\IStoreAdoContext.csr	

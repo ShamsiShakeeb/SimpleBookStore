@@ -12,48 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "S4487",
-          "level": "warning",
-          "message": "Remove this unread private field '_logCommand' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.CQ/Command/BookCommand/AddBooksFromExcel.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 56,
-                  "endLine": 15,
-                  "endColumn": 67
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6580",
-          "level": "warning",
-          "message": "Use a format provider when parsing date and time.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.CQ/Command/BookCommand/AddBooksFromExcel.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 102,
-                  "endLine": 40,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1481",
           "level": "warning",
           "message": "Remove the unused local variable 'result'.",
@@ -73,6 +31,27 @@
           "properties": {
             "warningLevel": 1
           }
+        },
+        {
+          "ruleId": "S6580",
+          "level": "warning",
+          "message": "Use a format provider when parsing date and time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.CQ/Command/BookCommand/AddBooksFromExcel.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 102,
+                  "endLine": 54,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
         }
       ],
       "rules": {
@@ -84,23 +63,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
           "properties": {
             "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S4487": {
-          "id": "S4487",
-          "shortDescription": "Unread \"private\" fields should be removed",
-          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
-          "properties": {
-            "category": "Critical Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

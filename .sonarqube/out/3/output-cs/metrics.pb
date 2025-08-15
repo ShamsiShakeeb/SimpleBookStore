@@ -19,6 +19,6 @@ kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\Review
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\LogCommand\AddLogCommand.cs 8r"	
  !"#‚Ë
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.cs 8r?	
- !"#$%&'(*+,-./012346789:;<>@ABCEFx‚ $%'*,0136:;>@A¼
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.cs 8r3	
- !"#$%&'()*,-.0123456x‚#$%&(*-02
+ !"#$%&'(*+,-./012346789:;<>@ABCEFx‚ $%'*,0136:;>@AË
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.cs 8r?
+ !"#$%&'()+,-./012345678:;<>?@ABCDx‚!(+-123468;>@
