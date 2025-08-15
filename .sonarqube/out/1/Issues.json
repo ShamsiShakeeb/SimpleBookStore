@@ -35,48 +35,6 @@
         {
           "ruleId": "CA1507",
           "level": "note",
-          "message": "Use nameof in place of string literal 'Email'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 23,
-                  "endLine": 11,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1507",
-          "level": "note",
-          "message": "Use nameof in place of string literal 'UserName'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 23,
-                  "endLine": 9,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1507",
-          "level": "note",
           "message": "Use nameof in place of string literal 'UserId'",
           "locations": [
             {
@@ -98,6 +56,27 @@
         {
           "ruleId": "CA1507",
           "level": "note",
+          "message": "Use nameof in place of string literal 'UserName'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
           "message": "Use nameof in place of string literal 'Email'",
           "locations": [
             {
@@ -123,12 +102,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/UserBookStatsReport.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 23,
                   "endLine": 9,
                   "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Email'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1507",
+          "level": "note",
+          "message": "Use nameof in place of string literal 'Gender'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 31
                 }
               }
             }
@@ -171,27 +192,6 @@
                   "startColumn": 23,
                   "endLine": 17,
                   "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1507",
-          "level": "note",
-          "message": "Use nameof in place of string literal 'Gender'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.Model/Report/CommentCountByUserReport.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 23,
-                  "endLine": 13,
-                  "endColumn": 31
                 }
               }
             }

@@ -4,15 +4,15 @@ namespace SimpleBookStore.Model.Report
 {
     public class CommentCountByUserReport
     {
-        [JsonProperty("UID")]
+        [JsonProperty(nameof(UID))]
         public string UID { get; set; }
-        [JsonProperty("UserName")]
+        [JsonProperty(nameof(UserName))]
         public string UserName { get; set; }
-        [JsonProperty("Email")]
+        [JsonProperty(nameof(Email))]
         public string Email { get; set; }
-        [JsonProperty("Gender")]
+        [JsonProperty(nameof(Gender))]
         public string Gender { get; set; }
-        [JsonProperty("CommentCount")]
+        [JsonProperty(nameof(CommentCount))]
         public int CommentCount { get; set; }
     }
 }

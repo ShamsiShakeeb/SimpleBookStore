@@ -1,169 +1,4 @@
-û
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class %
-RegistrationResponseModel *
-{ 
-public 
-bool 
-Success 
-{ 
-set !
-;! "
-get# &
-;& '
-}( )
-public 
-string 
-Message 
-{ 
-set  #
-;# $
-get% (
-;( )
-}* +
-} 
-} è
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class 
-LoginResponseModel #
-{ 
-public 
-string 
-UserId 
-{ 
-set "
-;" #
-get$ '
-;' (
-}) *
-public 
-string 
-Token 
-{ 
-set !
-;! "
-get# &
-;& '
-}( )
-} 
-} ã
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Response  (
-{ 
-public 
-
-class 
-BookResponseModel "
-{ 
-public 
-int 
-Id 
-{ 
-get 
-; 
-set  
-;  !
-}" #
-public 
-string 
-Title 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-string 
-Author 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-string 
-ISBN 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-public		 
-decimal		 
-Price		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-public
-
- 
-DateTime
-
- 
-PublishedDate
-
- %
-{
-
-& '
-get
-
-( +
-;
-
-+ ,
-set
-
-- 0
-;
-
-0 1
-}
-
-2 3
-public 
-int 
-Stock 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-} 
-} ≠
+≠
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 	namespace 	
 SimpleBookStore
@@ -314,7 +149,172 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 ;& '
 }( )
 } 
-} –
+} è
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class 
+LoginResponseModel #
+{ 
+public 
+string 
+UserId 
+{ 
+set "
+;" #
+get$ '
+;' (
+}) *
+public 
+string 
+Token 
+{ 
+set !
+;! "
+get# &
+;& '
+}( )
+} 
+} ã
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class 
+BookResponseModel "
+{ 
+public 
+int 
+Id 
+{ 
+get 
+; 
+set  
+;  !
+}" #
+public 
+string 
+Title 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+string 
+Author 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+string 
+ISBN 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public		 
+decimal		 
+Price		 
+{		 
+get		 "
+;		" #
+set		$ '
+;		' (
+}		) *
+public
+
+ 
+DateTime
+
+ 
+PublishedDate
+
+ %
+{
+
+& '
+get
+
+( +
+;
+
++ ,
+set
+
+- 0
+;
+
+0 1
+}
+
+2 3
+public 
+int 
+Stock 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+} 
+} û
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Response  (
+{ 
+public 
+
+class %
+RegistrationResponseModel *
+{ 
+public 
+bool 
+Success 
+{ 
+set !
+;! "
+get# &
+;& '
+}( )
+public 
+string 
+Message 
+{ 
+set  #
+;# $
+get% (
+;( )
+}* +
+} 
+} –
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
 	namespace 	
 SimpleBookStore
@@ -642,41 +642,7 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 ;- .
 }/ 0
 } 
-}		 ç
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-Model 
-.  
-Request  '
-{ 
-public 
-
-class 
-BuyBookRequestModel $
-{ 
-public 
-string 
-UserId 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-int 
-BookId 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-} 
-} ¯
+}		 ¯
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 	namespace 	
 SimpleBookStore
@@ -734,7 +700,41 @@ bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Buy
 
 + ,
 } 
-} ‰
+} ç
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+Model 
+.  
+Request  '
+{ 
+public 
+
+class 
+BuyBookRequestModel $
+{ 
+public 
+string 
+UserId 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+int 
+BookId 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+} 
+} ‰
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
 	namespace 	
 SimpleBookStore

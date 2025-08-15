@@ -75,18 +75,18 @@
           }
         },
         {
-          "ruleId": "CA1825",
-          "level": "note",
-          "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<string>() instead.",
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
                 "region": {
-                  "startLine": 39,
-                  "startColumn": 13,
-                  "endLine": 39,
-                  "endColumn": 28
+                  "startLine": 12,
+                  "startColumn": 37,
+                  "endLine": 12,
+                  "endColumn": 47
                 }
               }
             }
@@ -117,18 +117,18 @@
           }
         },
         {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
+          "ruleId": "CA1825",
+          "level": "note",
+          "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<string>() instead.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 37,
-                  "endLine": 12,
-                  "endColumn": 47
+                  "startLine": 39,
+                  "startColumn": 13,
+                  "endLine": 39,
+                  "endColumn": 28
                 }
               }
             }
@@ -204,27 +204,6 @@
           }
         },
         {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/BookController.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 35,
-                  "endLine": 14,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1860",
           "level": "note",
           "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
@@ -246,6 +225,27 @@
             "customProperties": {
               "DiagnosticPropertyKey": "Count"
             }
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/BookController.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 35,
+                  "endLine": 14,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         }
       ],

@@ -222,7 +222,19 @@ mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 ÁÁ 
 ÄÄ 
 ÇÇ 
-ÊÊ ‘
+ÊÊ g
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
+
+ ®
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
+
+ 
+
+
+( 6 5 C
++ 8 *
+
+ /‘
 SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs
 
  
@@ -235,19 +247,7 @@ SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Log
 
  
 
- "g
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.cs
-
- ®
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs
-
- 
-
-
-( 6 5 C
-+ 8 *
-
- /Â
+ "Â
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\LogContext.cs
 
  
@@ -257,14 +257,7 @@ YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILo
 + 2Y `
 C P *
 
- /°
-`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
-
-  
-( 6  !
-		. ; *
-
- /È
+ /È
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Configurations\DependencyResolver.cs
 
  *
@@ -281,7 +274,14 @@ ZC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\CommonEntity\
 
  
 
- $o
+ $°
+`C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\StoreAdoContext.cs
+
+  
+( 6  !
+		. ; *
+
+ /o
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\ADO\Context\IStoreAdoContext.cs
 
  %

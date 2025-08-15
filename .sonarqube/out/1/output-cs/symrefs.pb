@@ -1,37 +1,4 @@
-è
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
-
- *
-
- 
-
- à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
-
- #
-
- 
-
- √
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
-
- "
-
- 
-
- 
-
- 
-
- 
-
-		 
-
-
-
- %
-
- è
+è
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 
  &
@@ -62,7 +29,40 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  
 
- ´
+ à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
+
+ #
+
+ 
+
+ √
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
+
+ "
+
+ 
+
+ 
+
+ 
+
+ 
+
+		 
+
+
+
+ %
+
+ è
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+
+ *
+
+ 
+
+ ´
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
 
  #
@@ -105,14 +105,7 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
  
 
- "à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
-
- $
-
- 
-
- Ü
+ "Ü
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 
  "
@@ -121,7 +114,14 @@ bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Buy
 
 
 
- ∑
+ à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
+
+ $
+
+ 
+
+ ∑
 aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\UserBookStatsReport.cs
 
  $

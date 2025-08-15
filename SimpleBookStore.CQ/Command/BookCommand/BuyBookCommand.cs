@@ -59,7 +59,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     UserId = model.UserId
                 };
 
-                var result = await _repositoryUserBook.InsertAsync(insertModel);
+                await _repositoryUserBook.InsertAsync(insertModel);
 
                 bookInfo.Stock -= 1;
                 _repositoryBook.Update(bookInfo);
