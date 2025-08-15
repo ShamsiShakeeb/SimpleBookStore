@@ -35,14 +35,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\User
 ll mm7 <
 mm #rr* =
 nn vv 
-tt zz< A
-jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
-
- #
-
-B L
-
-` e¼
+tt zz< A¼
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.cs
 
  !
@@ -75,7 +68,14 @@ iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\Revi
   44  $<
 ,, == CC" (EE# )II II$ *
 .. 88A L(
-88 99 99' -996 <Ú
+88 99 99' -996 <
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
+
+ #
+
+B L
+
+` eÚ
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs
 
  2

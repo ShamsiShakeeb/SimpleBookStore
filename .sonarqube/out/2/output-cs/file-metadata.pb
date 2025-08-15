@@ -14,9 +14,9 @@ sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\IReviewRepository.csutf-8|
 sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\ReportRepository.csutf-8}
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReportRepository\IReportRepository.csutf-8v
-mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\LogRepository.csutf-8w
-nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.csutf-8y
-pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.csutf-8x
+mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\LogRepository.csutf-8y
+pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.csutf-8w
+nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.csutf-8x
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.csutf-8t
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\StoreContextModelSnapshot.csutf-8v
 kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\LogContextModelSnapshot.csutf-8‚

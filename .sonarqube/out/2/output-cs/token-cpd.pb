@@ -2825,32 +2825,7 @@ LogContext		 '
 ;- .
 } 	
 } 
-} ç
-nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-DAL 
-. 
-Repositories *
-.* +
-LogRepository+ 8
-{ 
-public 
-
-	interface 
-ILogRepository #
-{ 
-Task 
-	InsertLog 
-( 
-Logs 
-log 
-)  
-;  !
-} 
-}		 ‚
+} ‚
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.cs
 	namespace 	
 SimpleBookStore
@@ -3086,7 +3061,32 @@ IQueryable 
 ) 
 ; 
 } 
-} ˛R
+} ç
+nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+DAL 
+. 
+Repositories *
+.* +
+LogRepository+ 8
+{ 
+public 
+
+	interface 
+ILogRepository #
+{ 
+Task 
+	InsertLog 
+( 
+Logs 
+log 
+)  
+;  !
+} 
+}		 ˛R
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.cs
 	namespace 	
 SimpleBookStore

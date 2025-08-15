@@ -75,6 +75,90 @@
           }
         },
         {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReviewController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 37,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/BookController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 35,
+                  "endLine": 10,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 37,
+                  "endLine": 10,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6961",
+          "level": "warning",
+          "message": "Inherit from ControllerBase instead of Controller.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 38,
+                  "endLine": 10,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA1825",
           "level": "note",
           "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<string>() instead.",
@@ -132,90 +216,6 @@
                   "startColumn": 1,
                   "endLine": 67,
                   "endColumn": 10
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/BookController.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 35,
-                  "endLine": 10,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReviewController.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 37,
-                  "endLine": 11,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/ReportController.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 37,
-                  "endLine": 10,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6961",
-          "level": "warning",
-          "message": "Inherit from ControllerBase instead of Controller.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Controllers/AccountController.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 38,
-                  "endLine": 10,
-                  "endColumn": 48
                 }
               }
             }

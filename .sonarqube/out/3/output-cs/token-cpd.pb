@@ -684,45 +684,7 @@ WriteTokenzz1 ;
 ;zzB C
 }{{ 	
 }|| 
-}}} î
-jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
-	namespace 	
-SimpleBookStore
- 
-. 
-BLL 
-. 
-Services &
-.& '
-ReviewService' 4
-{ 
-public 
-
-	interface 
-IReviewService #
-{ 
-Task 
-< 
-( 
-bool 
-success 
-, 
-string "
-message# *
-,* +
-string, 2
-errorMessage3 ?
-)? @
->@ A
-
-GiveReviewB L
-(L M
-ReviewRequestModelM _
-model` e
-)e f
-;f g
-} 
-}		 «
+}}} «
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.cs
 	namespace 	
 SimpleBookStore
@@ -1109,7 +1071,45 @@ GiveReviewO Y
 ;II9 :
 }JJ 	
 }KK 
-}LL ù=
+}LL î
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.cs
+	namespace 	
+SimpleBookStore
+ 
+. 
+BLL 
+. 
+Services &
+.& '
+ReviewService' 4
+{ 
+public 
+
+	interface 
+IReviewService #
+{ 
+Task 
+< 
+( 
+bool 
+success 
+, 
+string "
+message# *
+,* +
+string, 2
+errorMessage3 ?
+)? @
+>@ A
+
+GiveReviewB L
+(L M
+ReviewRequestModelM _
+model` e
+)e f
+;f g
+} 
+}		 ù=
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs
 	namespace 	
 SimpleBookStore

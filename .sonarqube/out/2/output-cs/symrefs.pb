@@ -275,14 +275,7 @@ mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 		( / 
 
  #
-) ,) ,”
-nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
-
- #
-
- 
-
- Ê
+) ,) ,Ê
 pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\IBookRepository.cs
 
  $
@@ -323,7 +316,14 @@ pC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 
 C M
 
- Ë
+ ”
+nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\LogRepository\ILogRepository.cs
+
+ #
+
+ 
+
+ Ë
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\BookRepository\BookRepository.cs
 
 		 x
@@ -585,7 +585,20 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 ÏÏ 
 ÒÒ 
 ÕÕ 
-ØØ ²
+ØØ ‘
+SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs
+
+ 
+
+		 
+
+
+
+ 
+
+ 
+
+ "²
 \C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DTO\UserBookStatsReport.cs
 
  $
@@ -602,20 +615,7 @@ fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 
 
 
- ‘
-SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.cs
-
- 
-
-		 
-
-
-
- 
-
- 
-
- "ö
+ ö
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\DbContextSet\StoreContext.cs2
 
 

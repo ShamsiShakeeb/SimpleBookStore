@@ -1,12 +1,12 @@
 –
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\UserService.cs- 8rl
- !"#$%&'(*+,./01234689:;<=?ABCDEFHIJKLMNOQRSTUWYZ\]^`acdefghjklmnopqrstuvwxz{|}x	‚4!"#$%&(*,.01268:;<?ACDEHIMNQWYZ\]^`egjklmopqrtuwzx
-jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.csr	v
+ !"#$%&'(*+,./01234689:;<=?ABCDEFHIJKLMNOQRSTUWYZ\]^`acdefghjklmnopqrstuvwxz{|}x	‚4!"#$%&(*,.01268:;<?ACDEHIMNQWYZ\]^`egjklmopqrtuwzv
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\UserService\IUserService.csr
 	
 Ø
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\ReviewService.cs 8rE	
- !"#$%&'()*,-./012345689:=>?@ABCDEFGIJKLx‚!&'),01234589=?CDEIÏ
+ !"#$%&'()*,-./012345689:=>?@ABCDEFGIJKLx‚!&'),01234589=?CDEIx
+jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReviewService\IReviewService.csr	Ï
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\ReportService.cs 8r;	
 !"#$%'()*+-./012345789:;<=>?@Ax‚#%'()*+-0123478:;<{
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.BLL\Services\ReportService\IReportService.csr	

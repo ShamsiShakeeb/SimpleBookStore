@@ -149,6 +149,7 @@
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
+    <Property Name="sonar.exclusions">**/Migrations/*.cs</Property>
   </LocalSettings>
   <ScannerOptsSettings />
   <AnalyzersSettings>
