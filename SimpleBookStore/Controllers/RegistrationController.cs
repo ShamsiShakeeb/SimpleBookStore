@@ -9,17 +9,12 @@ namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class AccountController : ControllerBase
+    public class RegistrationController : ControllerBase
     {
-        private readonly IMediaTr<OnBoardUserCommand,Task<RegistrationResponseModel>> _onboardUser;
-        private readonly IMediaTr<ValidateUserCommand, 
-            Task<(bool success, LoginResponseModel response, string message)>> _validateUser;
-        public AccountController(IMediaTr<OnBoardUserCommand, Task<RegistrationResponseModel>> onboardUser,
-            IMediaTr<ValidateUserCommand,
-            Task<(bool success, LoginResponseModel response, string message)>> validateUser)
+        private readonly IMediaTr<OnBoardUserCommand, Task<RegistrationResponseModel>> _onboardUser;
+        public RegistrationController(IMediaTr<OnBoardUserCommand, Task<RegistrationResponseModel>> onboardUser)
         {
             _onboardUser = onboardUser;
-            _validateUser = validateUser;
         }
 
         [HttpPost]
@@ -56,22 +51,5 @@ namespace SimpleBookStore.Controllers
             }
             return Ok(new { success = true, message = "Registration Done!" });
         }
-
-        [HttpPost]
-        public async Task<IActionResult> TokenRequest(LoginRequestModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return Unauthorized(new { success = false, message = "Token Generation Failed" });
-            }
-
-            var result = await _validateUser.Send(model);
-
-            if (!result.success)
-                return Unauthorized(new { success = result.success, message = result.message });
-
-            return Ok(new { success = result.success, response = result.response, message = result.message });
-        }
-
     }
 }

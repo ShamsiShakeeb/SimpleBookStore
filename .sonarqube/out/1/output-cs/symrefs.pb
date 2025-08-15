@@ -1,4 +1,26 @@
-è
+·
+]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\ResponseModel.cs
+
+ 
+   
+
+ 
+
+ 
+
+ 
+
+ "
+
+
+
+ 
+
+ 
+
+ 
+
+ "è
 iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
 
  *
@@ -31,7 +53,22 @@ aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  %
 
- è
+ ´
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
+
+ #
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ #è
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 
  &
@@ -62,16 +99,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  
 
- ê
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
-
-  
-
- 
-
- 
-
- "…
+ …
 gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\RegistrationRequestModel.cs
 
  )
@@ -90,22 +118,16 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
  
 
-!! ´
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
+!! ê
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
 
- #
+  
 
- 
+ 
 
- 
+ 
 
-
-
- 
-
- 
-
- #Ü
+ "Ü
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 
  "

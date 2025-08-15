@@ -8,12 +8,64 @@ PC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.c
 
 		 
 
- ¸
-HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs<
- 		     ,,
+ ˚
+gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\QueryService\Report\ReportQueryService.cs
+
+ #
+	
+
+s â " /
+i y  )
+	| ë% :
+\ k .
+
+I a
+
+D Vé
+hC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\QueryService\Report\IReportQueryService.cs
+
+ (
+
+< T
+
+		7 I∫
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\QueryService\Book\IBookQueryService.cs
+
+ &
+
+9 F
+
+K S
+
+Y b
+
+		= M
+
+		R Z
+
+		` iÕ
+cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\QueryService\Book\BookQueryService.cs
+
+ !
+
+
+f o  "
+p |  %
+m u  
+c n &
+
+F S
+X `7 ?
+f oA J
+
+J Z
+_ g: B
+m vD Mé
+HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.csL
+        00
  (
-     H
-,, // 11 22 55 77 99 ;; ˙
+       J
+00 33 55 66 99 ;; == ?? 	˙
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 
  -
@@ -43,74 +95,86 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ) 5
 I N0 5
 r sw x<
-  ( .8 > ", 2„
-]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
+  ( .8 > ", 2‡
+eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportDownloadController.cs
 
- !
-	n Ñ "'' 5
-i y   00 /
-V r!! (99 ;
-	n É% :
-i x   .
-V q!!+ F
+ )
+a } ( ;
+	p ã+ F
 
-%%) <2
-'' (( ))( .))8 >** "
+) <(
+  " ( °
+cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\RegistrationController.cs
 
-..) 62
-00 11 22( .228 >33 "
+ '(
+W c # /++# /
+d o &
 
-77) DF
-99 :: ;;( .;;8 >== "==, 2==; Aù
-[C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
+) 9
+S XD I(
+  6 <P V
+! *  ` i
+J KO P
 
- 
-f o $$ (
-p | -- +
-m u 55 '
-p } ?? ,
-k s  
-c n &
-` g 
-c o (
+'') ?
+''Y ^++D I(
+++ ,, --6 <--P V
+11! *22` i
+11J K11O Pâ
+cC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\PurchaseBookController.cs
 
-"") 1
-""6 >$$= E
-""D M$$H Q
-$$ %% 
+ '
+G O  '
+T [ 
 
-++) 4
-++9 A--@ H
-++G P--J S
--- .. 
+) 0
+E J- 2
+M NR S(
+  " ( –
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookInformationController.cs
 
-33) 0
-33E J55- 2<
-55 66 77( .778 >88 "88, 2
+ *(
++ <  0"" 0
+; K  0
 
-==) 7
-==B F??A E<
-?? @@ AA( .AA8 >BB "BB, 2º
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
+) 1
+6 >? G
+D MI R
+  
 
- "(
-V b # /00# /
-O \ DD ,
-_ j &
-O [ (
+  ) 4
+  9 A""B J
+  G P""K T
+"" ## ä
+dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookOperationController.cs
 
-) 9
-S XD I(
-    6 <  P V
-$$! *%%` i
-$$J K$$O P
+ (
+J W  ,
+X d (
 
-,,) ?
-,,Y ^00D I(
-00 11 226 <22P V
-66! *77` i
-66J K66O P
+) 7
+B FA E
+N OS T(
+  " ( Î
+[C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AuthController.cs
 
-==) 5
-==H MDD2 7F
-DD FF GG4 :GGN TII& ,IIA GII\ b
+ 
+_ l  ,
+e q (
+
+) 5
+H M2 7(
+  $ *   ú
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AdminReportController.cs
+
+
+
+ &(
+- @  2 2
+9 K" 4
+
+) <(
+  " ( 
+
+) 6(
+    " (!! 

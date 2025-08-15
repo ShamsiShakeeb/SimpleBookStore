@@ -1,8 +1,8 @@
-Å
-vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\obj\Debug\net8.0\SimpleBookStore.DAL.AssemblyInfo.csutf-8ç
+ç
 ÅC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8É
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\obj\Debug\net8.0\SimpleBookStore.DAL.GlobalUsings.g.csutf-8b
-YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.csutf-8^
+YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.csutf-8Å
+vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\obj\Debug\net8.0\SimpleBookStore.DAL.AssemblyInfo.csutf-8^
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.csutf-8`
 WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.csutf-8f
 ]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\IStoreEntity.csutf-8^
@@ -11,9 +11,9 @@ iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\St
 kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\LogContextModelSnapshot.csutf-8Ç
 wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.Designer.csutf-8w
 nC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\Log\20250805153515_InitalLogDb.csutf-8Ö
-zC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.Designer.csutf-8z
-qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.csutf-8Å
-vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.Designer.csutf-8v
+zC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.Designer.csutf-8Å
+vC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.Designer.csutf-8z
+qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250815125459_UserBookNameModify.csutf-8v
 mC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250805153315_InitialStoreDb.csutf-8\
 SC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\Logs.csutf-8b
 YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\LogEntity\ILogEntity.csutf-8g

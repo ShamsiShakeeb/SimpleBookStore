@@ -4,6 +4,7 @@ using KhatiMediaTr;
 using SimpleBookStore.CQ.Command.LogCommand;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.Model.Request;
+using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Command.BookCommand
 {
@@ -23,7 +24,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
             _storeUnitWork = storeUnitWork;
             _logCommand = logCommand;
         }
-        public async Task<(bool success, string message, string errorMessage)> Handler(BuyBookRequestModel model)
+        public async Task<ResponseModel> Handler(BuyBookRequestModel model)
         {
             var bookInfo = await _repositoryBook.GetEntity(x => x.Id == model.BookId);
 
@@ -36,7 +37,13 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     ErrorMessage = string.Format("No Record Found Regarding this book Id: {0}. " +
                       "Operation Done By: {1}", model.BookId, model.UserId)
                 });
-                return (false, "Book Not Found", "No Record Found Regarding this book Id");
+
+                return new ResponseModel()
+                {
+                    Success = false,
+                    Message = "Book Not Found",
+                    ErrorMessage = "No Record Found Regarding this book Id"
+                };
             }
 
             else if (bookInfo.Stock == 0)
@@ -48,10 +55,16 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     ErrorMessage = string.Format("No Record Found Regarding this book Id: {0}. " +
                     "Operation Done By: {1}", model.BookId, model.UserId)
                 });
-                return (false, "Recently this Book is not available", null);
+
+                return new ResponseModel()
+                {
+                    Success = false,
+                    Message = "Recently this Book is not available",
+                    ErrorMessage = null
+                };
             }
 
-            return await _storeUnitWork.Commit(async () =>
+            var response = await _storeUnitWork.Commit(async () =>
             {
                 var insertModel = new UserBook()
                 {
@@ -64,6 +77,13 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                 bookInfo.Stock -= 1;
                 _repositoryBook.Update(bookInfo);
             });
+
+            return new ResponseModel()
+            {
+                Success = response.success,
+                Message = response.message,
+                ErrorMessage = response.errorMessage
+            };
         }
 
     }

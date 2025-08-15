@@ -9,3 +9,4 @@ C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Boo
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookResponseModel.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
 C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\ResponseModel.cs

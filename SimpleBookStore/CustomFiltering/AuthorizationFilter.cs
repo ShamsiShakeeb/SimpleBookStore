@@ -58,7 +58,7 @@ namespace SimpleBookStore.CustomFiltering
                                  on a equals b
                                  select new { b }).ToList();
 
-                if (roleExist.Count() == 0)
+                if (roleExist.Count == 0)
                 {
                     context.Result = new UnauthorizedResult();
                     return;

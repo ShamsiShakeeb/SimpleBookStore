@@ -10,7 +10,7 @@ jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Query\BookQuer
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Configuration\DependencyResolver.csutf-8t
 kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\ValidateUserCommand.csutf-8s
 jC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\UserCommand\OnBoardUserCommand.csutf-8t
-kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\ReviewCommand\GiveReviewCommand.csutf-8m
+kC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\ReviewCommand\GiveReviewCommand.csutf-8r
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.csutf-8m
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\LogCommand\AddLogCommand.csutf-8o
-fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.csutf-8r
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\AddBooksFromExcel.csutf-8
+fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.CQ\Command\BookCommand\BuyBookCommand.csutf-8

@@ -1,34 +1,45 @@
 ﻿using KhatiExcel.Feature;
 using KhatiMediaTr;
 using SimpleBookStore.Model.Report;
+using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Query.ReportQuery
 {
     public class DownloadCommentByUserReportQuery : IEventHandler
     {
-        private readonly IMediaTr<GetCommentCountByUserQuery, Task<(bool success,
-            List<CommentCountByUserReport> report, string message, string errorMessage)>> _getCommentByUserQuery;
+        private readonly IMediaTr<GetCommentCountByUserQuery, Task<ResponseModel<List<CommentCountByUserReport>>>> _getCommentByUserQuery;
 
         private readonly ILoadExcel _loadExcel;
-        public DownloadCommentByUserReportQuery(IMediaTr<GetCommentCountByUserQuery, Task<(bool success,
-            List<CommentCountByUserReport> report, string message, string errorMessage)>> getCommentByUserQuery,
+        public DownloadCommentByUserReportQuery(IMediaTr<GetCommentCountByUserQuery, Task<ResponseModel<List<CommentCountByUserReport>>>> getCommentByUserQuery,
             ILoadExcel loadExcel)
         {
             _getCommentByUserQuery = getCommentByUserQuery;
             _loadExcel = loadExcel;
         }
-        public async Task<(bool success, string base64, string message, string errorMessage)> Handler()
+        public async Task<ResponseModel<string>> Handler()
         {
             var result = await _getCommentByUserQuery.Send();
 
-            if (!result.success)
-              return (result.success, null, result.message, result.errorMessage);
+            if (!result.Success)
+              return new ResponseModel<string>()
+              {
+                  Success = result.Success,
+                  ErrorMessage = result.ErrorMessage,
+                  Message = result.Message,
+                  Data = null
+              };
 
             var excelResult = _loadExcel.ListToExcelBase64("Sheet1", 
                 new List<string>() { "UID", "UserName", "Email", "Gender", "CommentCount" }, 
-                result.report);
+                result.Data);
 
-            return excelResult;
+            return new ResponseModel<string>()
+            {
+                Success = excelResult.success,
+                ErrorMessage = excelResult.errorMessage,
+                Message = excelResult.message,
+                Data = excelResult.base64
+            };
         }
     }
 }

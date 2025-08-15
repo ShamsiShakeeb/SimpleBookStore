@@ -1,6 +1,7 @@
 ﻿using KhatiMediaTr;
 using SimpleBookStore.DAL.ADO.Context;
 using SimpleBookStore.Model.Report;
+using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Query.ReportQuery
 {
@@ -11,7 +12,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
         {
             _storeAdoContext = storeAdoContext;
         }
-        public async Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)> Handler()
+        public async Task<ResponseModel<List<CommentCountByUserReport>>> Handler()
         {
 
             var query = @"WITH cte AS (
@@ -41,7 +42,13 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
                     { "@RoleName", Utility.Constant.Role.SuperAdmin }
                 });
 
-            return (result.Success, result.Data, result.Message, result.Exception);
+            return new ResponseModel<List<CommentCountByUserReport>>()
+            {
+                Success = result.Success,
+                Data = result.Data,
+                Message = result.Message,
+                ErrorMessage = result.Exception?.ToString()
+            };
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using KhatiMediaTr;
 using SimpleBookStore.DAL.ADO.Context;
 using SimpleBookStore.Model.Report;
+using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Query.ReportQuery
 {
@@ -12,7 +13,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
             _storeAdoContext = storeAdoContext;
         }
 
-        public async Task<(bool success, List<UserBookStatsReport> report, string message, string errorMessage)> Handler()
+        public async Task<ResponseModel<List<UserBookStatsReport>>> Handler()
         {
 
             var query = @"SELECT 
@@ -22,7 +23,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
                           (SELECT Age FROM AspNetUsers au WHERE au.Id = ub.UserId) AS Age,
                           (SELECT Gender FROM AspNetUsers au WHERE au.Id = ub.UserId) AS Gender,
                           COUNT(BookId) AS BookBuyCount
-                          FROM User_Book ub
+                          FROM UserBook ub
                           inner join AspNetUserRoles aur
                           on ub.UserId = aur.UserId
                           inner join AspNetRoles ar
@@ -37,7 +38,13 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
                     { "@RoleName", Utility.Constant.Role.SuperAdmin }
                 });
 
-            return (result.Success, result.Data, result.Message, result.Exception);
+            return new ResponseModel<List<UserBookStatsReport>>()
+            {
+                Success = result.Success,
+                Data = result.Data,
+                Message = result.Message,
+                ErrorMessage = result.Exception?.ToString()
+            };
         }
     }
 }
