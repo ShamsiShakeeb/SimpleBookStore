@@ -11,12 +11,12 @@ UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\U
 r	
 y
 WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.cs 8r
-ã
+z
+UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs 8r	
+ã
 wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.cs  
 8ri	
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijkxÇ!"&-.29:>EFJQRV[\`acghz
-UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs 8r	
-ê
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijkxÇ!"&-.29:>EFJQRV[\`acghê
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\IUserBookRepository.csr	
 á
 sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\ReviewRepository.cs  

@@ -11,47 +11,7 @@
         "language": "en-US"
       },
       "results": [
-        {
-          "ruleId": "S6966",
-          "level": "warning",
-          "message": "Await RunAsync instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore/Program.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 1,
-                  "endLine": 67,
-                  "endColumn": 10
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        }
-      ],
-      "rules": {
-        "S6966": {
-          "id": "S6966",
-          "shortDescription": "Awaitable method should be used",
-          "fullDescription": "In an async method, any blocking operations should be avoided.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        }
-      }
+      ]
     }
   ]
 }

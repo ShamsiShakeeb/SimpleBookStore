@@ -53,7 +53,7 @@ PC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.c
 ;) *
 }+ ,
 } 
-} ª!
+} Â!
 HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.cs
 var 
 builder 
@@ -287,14 +287,16 @@ UseSwagger99 
 MapControllersAA 
 (AA 
 )AA 
-;AA 
-appCC 
-.CC 
-RunCC 
-(CC 
-)CC 	
-;CC	 
-ê1
+;AA 
+awaitCC 
+appCC 	
+.CC	 
+
+RunAsyncCC
+ 
+(CC 
+)CC 
+;CC ê1
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 	namespace		 	
 SimpleBookStore		

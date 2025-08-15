@@ -1,33 +1,4 @@
-è
-iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
-
- *
-
- 
-
- à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
-
- #
-
- 
-
- ´
-aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
-
- #
-
- 
-
- 
-
-
-
- 
-
- 
-
- #…
+…
 gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\RegistrationRequestModel.cs
 
  )
@@ -46,16 +17,14 @@ gC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\Reg
 
  
 
-!! ê
-^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
+!! à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\LoginResponseModel.cs
 
-  
+ #
 
- 
+ 
 
- 
-
- "è
+ è
 eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\BookInfoResponseModel.cs
 
  &
@@ -86,7 +55,45 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
  
 
- Ü
+ è
+iC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\RegistrationResponseModel.cs
+
+ *
+
+ 
+
+ ´
+aC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\ReviewRequestModel.cs
+
+ #
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ #à
+bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
+
+ $
+
+ 
+
+ ê
+^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LogRequestModel.cs
+
+  
+
+ 
+
+ 
+
+ "Ü
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\LoginRequestModel.cs
 
  "
@@ -95,14 +102,7 @@ eC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Response\Bo
 
 
 
- à
-bC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Request\BuyBookRequestModel.cs
-
- $
-
- 
-
- ∞
+ ∞
 fC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.Model\Report\CommentCountByUserReport.cs
 
  )

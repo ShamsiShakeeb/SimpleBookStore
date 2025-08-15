@@ -8,12 +8,12 @@ PC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\WeatherForecast.c
 
 		 
 
- ˜
+ š
 HC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Program.csX
     -- -- .. .. 00 44
  (
-     H
-44 77 99 :: == ?? AA CC ú
+     J
+44 77 99 :: == ?? AA CC 	ú
 dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\AuthorizationFilter.cs
 
  -
@@ -45,23 +45,7 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 ) 5
 I N9 >
 r sw x<
-  ( .8 > ", 2‰
-]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
-
-
-
- !2
-( 6  - -'' -
-/ < *
-
-) <2
-  ( .8 > "
-
-) 62
-    ( .  8 >!! "
-
-%%) DF
-'' (( ))( .))8 >++ "++, 2++; AÁ
+  ( .8 > ", 2Á
 [C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\BookController.cs
 
 
@@ -82,7 +66,23 @@ dC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\CustomFiltering\A
 
 ..) 7
 ..B F00E I<
-00 11 22( .228 >33 "33, 2š
+00 11 22( .228 >33 "33, 2‰
+]C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\ReportController.cs
+
+
+
+ !2
+( 6  - -'' -
+/ < *
+
+) <2
+  ( .8 > "
+
+) 62
+    ( .  8 >!! "
+
+%%) DF
+'' (( ))( .))8 >++ "++, 2++; Aš
 ^C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\Controllers\AccountController.cs
 
 

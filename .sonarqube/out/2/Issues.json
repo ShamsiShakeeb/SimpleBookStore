@@ -14,67 +14,6 @@
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'Review' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 24,
-                  "endLine": 48,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 24,
-                  "endLine": 53,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 23,
-                  "endLine": 61,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
           "message": "Define a constant instead of using this literal 'Book_Stock' 4 times.",
           "locations": [
             {
@@ -203,697 +142,6 @@
               "1": null,
               "2": null,
               "3": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'nvarchar(max)' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 56,
-                  "endLine": 26,
-                  "endColumn": 71
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 57,
-                  "endLine": 27,
-                  "endColumn": 72
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 57,
-                  "endLine": 28,
-                  "endColumn": 72
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 59,
-                  "endLine": 29,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'Review' 22 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 24,
-                  "endLine": 15,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 24,
-                  "endLine": 19,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 24,
-                  "endLine": 23,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 24,
-                  "endLine": 27,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 24,
-                  "endLine": 31,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 24,
-                  "endLine": 35,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 24,
-                  "endLine": 39,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 24,
-                  "endLine": 48,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 24,
-                  "endLine": 53,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 24,
-                  "endLine": 58,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 65,
-                  "startColumn": 24,
-                  "endLine": 65,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 24,
-                  "endLine": 77,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 24,
-                  "endLine": 81,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 24,
-                  "endLine": 85,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 24,
-                  "endLine": 89,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 24,
-                  "endLine": 93,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 24,
-                  "endLine": 102,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 108,
-                  "startColumn": 24,
-                  "endLine": 108,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 114,
-                  "startColumn": 24,
-                  "endLine": 114,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 119,
-                  "startColumn": 24,
-                  "endLine": 119,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 124,
-                  "startColumn": 24,
-                  "endLine": 124,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 131,
-                  "startColumn": 24,
-                  "endLine": 131,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "10": null,
-              "11": null,
-              "12": null,
-              "13": null,
-              "14": null,
-              "15": null,
-              "16": null,
-              "17": null,
-              "18": null,
-              "19": null,
-              "2": null,
-              "20": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null,
-              "7": null,
-              "8": null,
-              "9": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'BookId' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 23,
-                  "endLine": 30,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 101,
-                  "startColumn": 23,
-                  "endLine": 101,
-                  "endColumn": 31
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 115,
-                  "startColumn": 25,
-                  "endLine": 115,
-                  "endColumn": 33
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 132,
-                  "startColumn": 25,
-                  "endLine": 132,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'UserId' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 23,
-                  "endLine": 34,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 107,
-                  "startColumn": 23,
-                  "endLine": 107,
-                  "endColumn": 31
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 120,
-                  "startColumn": 25,
-                  "endLine": 120,
-                  "endColumn": 33
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
-                "region": {
-                  "startLine": 125,
-                  "startColumn": 25,
-                  "endLine": 125,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'UpdatedDate' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 23,
-                  "endLine": 23,
-                  "endColumn": 36
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 23,
-                  "endLine": 35,
-                  "endColumn": 36
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 23,
-                  "endLine": 45,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'datetime2' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 23,
-                  "endLine": 17,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 26,
-                  "endLine": 20,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 23,
-                  "endLine": 25,
-                  "endColumn": 34
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 26,
-                  "endLine": 28,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 23,
-                  "endLine": 37,
-                  "endColumn": 34
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 26,
-                  "endLine": 41,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 23,
-                  "endLine": 47,
-                  "endColumn": 34
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 26,
-                  "endLine": 51,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'nvarchar(max)' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 57,
-                  "endLine": 17,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 59,
-                  "endLine": 18,
-                  "endColumn": 74
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 56,
-                  "endLine": 19,
-                  "endColumn": 71
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 57,
-                  "endLine": 21,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
             }
           }
         },
@@ -1795,6 +1043,758 @@
           }
         },
         {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Review' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 24,
+                  "endLine": 53,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250802164334_AddingRatingsModel.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 23,
+                  "endLine": 61,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Review' 22 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 24,
+                  "endLine": 15,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 24,
+                  "endLine": 19,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 24,
+                  "endLine": 23,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 24,
+                  "endLine": 27,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 24,
+                  "endLine": 31,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 24,
+                  "endLine": 35,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 24,
+                  "endLine": 39,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 24,
+                  "endLine": 53,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 24,
+                  "endLine": 58,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 24,
+                  "endLine": 65,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 24,
+                  "endLine": 77,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 24,
+                  "endLine": 81,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 24,
+                  "endLine": 85,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 24,
+                  "endLine": 89,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 24,
+                  "endLine": 93,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 24,
+                  "endLine": 102,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 24,
+                  "endLine": 108,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 24,
+                  "endLine": 114,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 24,
+                  "endLine": 119,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 24,
+                  "endLine": 124,
+                  "endColumn": 32
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 24,
+                  "endLine": 131,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "10": null,
+              "11": null,
+              "12": null,
+              "13": null,
+              "14": null,
+              "15": null,
+              "16": null,
+              "17": null,
+              "18": null,
+              "19": null,
+              "2": null,
+              "20": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'BookId' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 23,
+                  "endLine": 101,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 25,
+                  "endLine": 115,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 25,
+                  "endLine": 132,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'UserId' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 23,
+                  "endLine": 34,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 23,
+                  "endLine": 107,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 25,
+                  "endLine": 120,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250803182914_ReviewEntityFix2.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 25,
+                  "endLine": 125,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'nvarchar(max)' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 56,
+                  "endLine": 26,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 57,
+                  "endLine": 27,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 57,
+                  "endLine": 28,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122449_UserBookTableNameModify1.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 59,
+                  "endLine": 29,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'UpdatedDate' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 23,
+                  "endLine": 35,
+                  "endColumn": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 23,
+                  "endLine": 45,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'datetime2' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 26,
+                  "endLine": 20,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 34
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 26,
+                  "endLine": 28,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 23,
+                  "endLine": 37,
+                  "endColumn": 34
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 26,
+                  "endLine": 41,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 23,
+                  "endLine": 47,
+                  "endColumn": 34
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250804193836_CommonEntityUpdatedDateFix.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 26,
+                  "endLine": 51,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'nvarchar(max)' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 57,
+                  "endLine": 17,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 59,
+                  "endLine": 18,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 56,
+                  "endLine": 19,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Migrations/20250815122113_UserBookTableNameModify.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 57,
+                  "endLine": 21,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
           "ruleId": "S1186",
           "level": "warning",
           "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
@@ -1828,48 +1828,6 @@
                   "startColumn": 36,
                   "endLine": 90,
                   "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6966",
-          "level": "warning",
-          "message": "Await ReadAsync instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Repositories/ReportRepository/ReportRepository.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 36,
-                  "endLine": 48,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6966",
-          "level": "warning",
-          "message": "Await IsDBNullAsync instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/BS01389/source/repos/SimpleBookStore/SimpleBookStore.DAL/Repositories/ReportRepository/ReportRepository.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 46,
-                  "endLine": 55,
-                  "endColumn": 64
                 }
               }
             }
@@ -1925,23 +1883,6 @@
             "tags": [
               "C#",
               "MainSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S6966": {
-          "id": "S6966",
-          "shortDescription": "Awaitable method should be used",
-          "fullDescription": "In an async method, any blocking operations should be avoided.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
               "SonarWay"
             ]
           }

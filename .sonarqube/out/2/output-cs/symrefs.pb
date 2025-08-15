@@ -64,7 +64,28 @@ WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\R
 
  
 
- ©
+ Ï
+UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs
+
+ 
+
+		 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ %
+
+ 
+
+ (
+
+ "©
 wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.cs
 
 
@@ -102,28 +123,7 @@ wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 ^^X b`` aa6 @
 
 ee$ '
-gg hh Ï
-UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.cs
-
- 
-
-		 
-
- 
-
- 
-
- 
-
- 
-
- %
-
- 
-
- (
-
- "Ò
+gg hh Ò
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\IUserBookRepository.cs
 
  (
@@ -256,7 +256,7 @@ sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\
 ! +))E O-- (
  )); C
 ))" )..< CP
-..- 300# )44* 055/ 566, 277- 377I O883 9
+..- 300) /44* 055/ 566, 2773 977T Z883 9
 22$ )::2 7
 
 FFq ~
@@ -414,18 +414,7 @@ oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 
 II  $z
 II6 FKK OO SS WW [[ dd jj pp uu zz 
- ­
-oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250803182555_ReviewEntityFix1.cs
-
- )
-
-  "
-
-4 D
-
-  $
-
-6 F½
+ ½
 qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250802164334_AddingRatingsModel.cs
 
 		 +
@@ -439,7 +428,18 @@ qC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20
 ))  !))% &
 
 ::  $
-::6 F<< ‡
+::6 F<< ­
+oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250803182555_ReviewEntityFix1.cs
+
+ )
+
+  "
+
+4 D
+
+  $
+
+6 F‡
 oC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Migrations\20250802160118_StockInSameTable.cs
 
 		 )

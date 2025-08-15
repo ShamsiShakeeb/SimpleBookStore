@@ -6,9 +6,9 @@ _C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\St
 `C:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\UnitOfWork\IStoreUnitOfWork.csutf-8b
 YC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\UserBook.csutf-8^
 UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\User.csutf-8`
-WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.csutf-8Ä
-wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.csutf-8^
-UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.csutf-8Å
+WC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Review.csutf-8^
+UC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\StoreEntity\Book.csutf-8Ä
+wC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\UserBookRepository.csutf-8Å
 xC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\UserBookRepository\IUserBookRepository.csutf-8|
 sC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\ReviewRepository.csutf-8}
 tC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore.DAL\Repositories\ReviewRepository\IReviewRepository.csutf-8|
