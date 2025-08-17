@@ -7,39 +7,27 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
 {
     public class DownloadCommentByUserReportQuery : IEventHandler
     {
-        private readonly IMediaTr<GetCommentCountByUserQuery, Task<ResponseModel<List<CommentCountByUserReport>>>> _getCommentByUserQuery;
+        private readonly IMediaTr<GetCommentCountByUserQuery, Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)>> _getCommentByUserQuery;
 
         private readonly ILoadExcel _loadExcel;
-        public DownloadCommentByUserReportQuery(IMediaTr<GetCommentCountByUserQuery, Task<ResponseModel<List<CommentCountByUserReport>>>> getCommentByUserQuery,
+        public DownloadCommentByUserReportQuery(IMediaTr<GetCommentCountByUserQuery, Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)>> getCommentByUserQuery,
             ILoadExcel loadExcel)
         {
             _getCommentByUserQuery = getCommentByUserQuery;
             _loadExcel = loadExcel;
         }
-        public async Task<ResponseModel<string>> Handler()
+        public async Task<(bool success,string base64,string message,string errorMessage)> Handler()
         {
             var result = await _getCommentByUserQuery.Send();
 
-            if (!result.Success)
-              return new ResponseModel<string>()
-              {
-                  Success = result.Success,
-                  ErrorMessage = result.ErrorMessage,
-                  Message = result.Message,
-                  Data = null
-              };
+            if (!result.success)
+                return (result.success, null, result.message, result.errorMessage);
 
             var excelResult = _loadExcel.ListToExcelBase64("Sheet1", 
                 new List<string>() { "UID", "UserName", "Email", "Gender", "CommentCount" }, 
-                result.Data);
+                result.report);
 
-            return new ResponseModel<string>()
-            {
-                Success = excelResult.success,
-                ErrorMessage = excelResult.errorMessage,
-                Message = excelResult.message,
-                Data = excelResult.base64
-            };
+            return (excelResult.success, excelResult.base64, excelResult.message, excelResult.errorMessage);
         }
     }
 }

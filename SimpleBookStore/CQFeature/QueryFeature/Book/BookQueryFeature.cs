@@ -3,13 +3,13 @@ using KhatiMediaTr;
 using SimpleBookStore.CQ.Query.BookQuery;
 using SimpleBookStore.Model.Response;
 
-namespace SimpleBookStore.QueryService.Book
+namespace SimpleBookStore.CQFeature.QueryFeature.Book
 {
-    public class BookQueryService : IBookQueryService
+    public class BookQueryFeature : IBookQueryFeature
     {
         private readonly IMediaTr<GetBookListQuery, Task<PaginationResponseModel<BookResponseModel>>> _bookList;
         private readonly IMediaTr<GetBookDetailInfoQuery, Task<PaginationResponseModel<BookInfoResponseModel>>> _bookDetails;
-        public BookQueryService(IMediaTr<GetBookListQuery, Task<PaginationResponseModel<BookResponseModel>>> bookList,
+        public BookQueryFeature(IMediaTr<GetBookListQuery, Task<PaginationResponseModel<BookResponseModel>>> bookList,
             IMediaTr<GetBookDetailInfoQuery, Task<PaginationResponseModel<BookInfoResponseModel>>> bookDetails)
         {
             _bookList = bookList;

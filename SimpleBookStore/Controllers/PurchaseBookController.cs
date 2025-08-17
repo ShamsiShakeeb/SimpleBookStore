@@ -1,9 +1,7 @@
-﻿using KhatiMediaTr;
-using Microsoft.AspNetCore.Mvc;
-using SimpleBookStore.CQ.Command.BookCommand;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleBookStore.CQFeature.CommandFeature.BookStore;
 using SimpleBookStore.CustomFiltering;
 using SimpleBookStore.Model.Request;
-using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.Controllers
 {
@@ -12,10 +10,10 @@ namespace SimpleBookStore.Controllers
     [Route("api/[controller]/[action]")]
     public class PurchaseBookController : ControllerBase
     {
-        private readonly IMediaTr<BuyBookCommand, Task<ResponseModel>> _buyBook;
-        public PurchaseBookController(IMediaTr<BuyBookCommand, Task<ResponseModel>> buyBook)
+        private readonly IBookStoreCommandFeature _bookStoreCommandFeature;
+        public PurchaseBookController(IBookStoreCommandFeature bookStoreCommandFeature)
         {
-            _buyBook = buyBook;
+            _bookStoreCommandFeature = bookStoreCommandFeature;
         }
 
         [HttpPost]
@@ -24,7 +22,7 @@ namespace SimpleBookStore.Controllers
             if (!ModelState.IsValid)
                return BadRequest(new { Errors = ModelState.Values.SelectMany(v => v.Errors) });
 
-            var result = await _buyBook.Send(model);
+            var result = await _bookStoreCommandFeature.BuyBookAsync(model);
             if (!result.Success)
                 return BadRequest(result);
             return Ok(result);

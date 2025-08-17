@@ -1,10 +1,6 @@
-﻿using KhatiExtendedEF.Model;
-using KhatiMediaTr;
-using Microsoft.AspNetCore.Mvc;
-using SimpleBookStore.CQ.Query.BookQuery;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleBookStore.CQFeature.QueryFeature.Book;
 using SimpleBookStore.CustomFiltering;
-using SimpleBookStore.Model.Response;
-using SimpleBookStore.QueryService.Book;
 
 namespace SimpleBookStore.Controllers
 {
@@ -13,8 +9,8 @@ namespace SimpleBookStore.Controllers
     [AuthorizationFilter("Person")]
     public class BookInformationController : ControllerBase
     {
-        private readonly IBookQueryService _bookQueryService;
-        public BookInformationController(IBookQueryService bookQueryService)
+        private readonly IBookQueryFeature _bookQueryService;
+        public BookInformationController(IBookQueryFeature bookQueryService)
         {
             _bookQueryService = bookQueryService;
         }

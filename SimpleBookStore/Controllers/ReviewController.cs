@@ -1,6 +1,5 @@
-﻿using KhatiMediaTr;
-using Microsoft.AspNetCore.Mvc;
-using SimpleBookStore.CQ.Command.ReviewCommand;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleBookStore.CQFeature.CommandFeature.BookStore;
 using SimpleBookStore.CustomFiltering;
 using SimpleBookStore.Model.Request;
 
@@ -11,10 +10,10 @@ namespace SimpleBookStore.Controllers
     [AuthorizationFilter("Person")]
     public class ReviewController : ControllerBase
     {
-        private readonly IMediaTr<GiveReviewCommand, Task<(bool success, string message, string errorMessage)>> _giveReview;
-        public ReviewController(IMediaTr<GiveReviewCommand, Task<(bool success, string message, string errorMessage)>> giveReview)
+        private readonly IBookStoreCommandFeature _bookStoreCommandFeature;
+        public ReviewController(IBookStoreCommandFeature bookStoreCommandFeature)
         {
-            _giveReview = giveReview;
+            _bookStoreCommandFeature = bookStoreCommandFeature;
         }
 
         [HttpPost]
@@ -23,10 +22,10 @@ namespace SimpleBookStore.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(new { success = false, message = string.Join("\n", ModelState.Values.SelectMany(v => v.Errors)) });
 
-            var result = await _giveReview.Send(model);
-            if (!result.success)
-                return BadRequest(new { result.success, result.message });
-            return Ok(new { result.success, result.message });
+            var result = await _bookStoreCommandFeature.SubmitReviewAsync(model);
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
     }
 }

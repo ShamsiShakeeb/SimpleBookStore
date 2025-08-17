@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SimpleBookStore.CQFeature.QueryFeature.Report;
 using SimpleBookStore.CustomFiltering;
-using SimpleBookStore.QueryService.Report;
 
 namespace SimpleBookStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
     [AuthorizationFilter("SuperAdmin")]
-    public class AdminReportController : ControllerBase
+    public class ReportController : ControllerBase
     {
-        private readonly IReportQueryService _reportQueryService;
-        public AdminReportController(IReportQueryService reportQueryService)
+        private readonly IReportQueryFeature _reportQueryService;
+        public ReportController(IReportQueryFeature reportQueryService)
         {
             _reportQueryService = reportQueryService;
         }
@@ -28,6 +28,15 @@ namespace SimpleBookStore.Controllers
         public async Task<IActionResult> UserBookStats()
         {
             var result = await _reportQueryService.UserBookStatsAsync();
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DownloadCommentByUserReport()
+        {
+            var result = await _reportQueryService.DownloadCommentCountByUsersReportAsync();
             if (!result.Success)
                 return BadRequest(result);
             return Ok(result);

@@ -1,8 +1,11 @@
 using Microsoft.OpenApi.Models;
 using SimpleBookStore.CQ.Configuration;
+using SimpleBookStore.CQFeature.CommandFeature.Admin;
+using SimpleBookStore.CQFeature.CommandFeature.Auth;
+using SimpleBookStore.CQFeature.CommandFeature.BookStore;
+using SimpleBookStore.CQFeature.QueryFeature.Book;
+using SimpleBookStore.CQFeature.QueryFeature.Report;
 using SimpleBookStore.DAL.Configurations;
-using SimpleBookStore.QueryService.Book;
-using SimpleBookStore.QueryService.Report;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +16,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.DAL();
 builder.Services.CQ();
-builder.Services.AddScoped<IBookQueryService,BookQueryService>();
-builder.Services.AddScoped<IReportQueryService,ReportQueryService>();
+
+builder.Services.AddScoped<IBookQueryFeature,BookQueryFeature>();
+builder.Services.AddScoped<IReportQueryFeature,ReportQueryFeature>();
+builder.Services.AddScoped<IAdminCommandFeature,AdminCommandFeature>();
+builder.Services.AddScoped<IBookStoreCommandFeature,BookStoreCommandFeature>();
+builder.Services.AddScoped<IAuthCommandFeature,AuthCommandFeature>();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

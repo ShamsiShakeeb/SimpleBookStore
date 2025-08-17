@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using SimpleBookStore.CQ.Command.LogCommand;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.Model.Request;
-using SimpleBookStore.Model.Response;
 using System.Globalization;
 
 namespace SimpleBookStore.CQ.Command.BookCommand
@@ -27,7 +26,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
             _logCommand = logCommand;
             _loadExcel = loadExcel;
         }
-        public async Task<ResponseModel> Handler(IFormFile file)
+        public async Task<(bool success, string message, string errorMessage)> Handler(IFormFile file)
         {
 
             if (file == null || file.Length == 0)
@@ -39,11 +38,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                      Message = "Not Excel File Uploaded or Excel Process Failed",
                      ErrorMessage = "Not Excel File Uploaded or Excel Process Failed at ParseBooksFromExcelAsync Method",
                  });
-                return new ResponseModel() { 
-                    Success = false,
-                    Message = "Not Excel File Found",
-                    ErrorMessage = "No Excel File Found"
-                };
+                return (false, "Not Excel File Found", "No Excel File Found");
             }
 
             var result = _loadExcel.Fetch(file, "Sheet1");
@@ -70,12 +65,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                 await _repositoryBook.InsertRangeAsync(books);
             });
 
-            return new ResponseModel()
-            {
-                Success = response.success,
-                Message = response.message,
-                ErrorMessage = response.errorMessage,
-            };
+            return (response.success, response.message, response.errorMessage);
         }
     }
 }

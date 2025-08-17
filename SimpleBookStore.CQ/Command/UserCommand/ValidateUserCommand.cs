@@ -20,31 +20,19 @@ namespace SimpleBookStore.CQ.Command.UserCommand
             _userManager = userManager;
             _signManager = signManager;
         }
-        public async Task<ResponseModel<LoginResponseModel>> Handler(LoginRequestModel model)
+        public async Task<(bool success, LoginResponseModel response, string message, string errorMessage)> Handler(LoginRequestModel model)
         {
             var response = new LoginResponseModel();
 
             var login = await _signManager.PasswordSignInAsync(model.UserName, model.Password, true, false);
 
             if (!login.Succeeded)
-                return new ResponseModel<LoginResponseModel>()
-                {
-                    Success = false,
-                    Data = default,
-                    Message = null,
-                    ErrorMessage = "Login Failed"
-                };
+                return (false, null, "Login Failed", "Login Failed");
 
             var user = await _userManager.FindByNameAsync(model.UserName);
             response.UserId = user.Id;
             response.Token = await GenerateTokenAsync(user);
-            return new ResponseModel<LoginResponseModel>()
-            {
-                Success = true,
-                Data = response,
-                Message = "Token Generated",
-                ErrorMessage = null
-            };
+            return (true, response, "Token Generated", null);
         }
         private async Task<string> GenerateTokenAsync(User user)
         {

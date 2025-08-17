@@ -4,7 +4,6 @@ using KhatiMediaTr;
 using SimpleBookStore.CQ.Command.LogCommand;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.Model.Request;
-using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Command.BookCommand
 {
@@ -24,7 +23,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
             _storeUnitWork = storeUnitWork;
             _logCommand = logCommand;
         }
-        public async Task<ResponseModel> Handler(BuyBookRequestModel model)
+        public async Task<(bool success,string message, string errorMessage)> Handler(BuyBookRequestModel model)
         {
             var bookInfo = await _repositoryBook.GetEntity(x => x.Id == model.BookId);
 
@@ -38,12 +37,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                       "Operation Done By: {1}", model.BookId, model.UserId)
                 });
 
-                return new ResponseModel()
-                {
-                    Success = false,
-                    Message = "Book Not Found",
-                    ErrorMessage = "No Record Found Regarding this book Id"
-                };
+                return (false, "Book Not Found", "No Record Found Regarding this book Id");
             }
 
             else if (bookInfo.Stock == 0)
@@ -56,12 +50,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                     "Operation Done By: {1}", model.BookId, model.UserId)
                 });
 
-                return new ResponseModel()
-                {
-                    Success = false,
-                    Message = "Recently this Book is not available",
-                    ErrorMessage = null
-                };
+                return (false, "Recently this Book is not available", null);
             }
 
             var response = await _storeUnitWork.Commit(async () =>
@@ -78,12 +67,7 @@ namespace SimpleBookStore.CQ.Command.BookCommand
                 _repositoryBook.Update(bookInfo);
             });
 
-            return new ResponseModel()
-            {
-                Success = response.success,
-                Message = response.message,
-                ErrorMessage = response.errorMessage
-            };
+            return (response.success, response.message, response.errorMessage);
         }
 
     }

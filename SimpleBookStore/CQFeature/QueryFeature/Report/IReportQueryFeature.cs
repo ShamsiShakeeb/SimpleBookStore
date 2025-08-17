@@ -1,11 +1,12 @@
 ﻿using SimpleBookStore.Model.Report;
 using SimpleBookStore.Model.Response;
 
-namespace SimpleBookStore.QueryService.Report
+namespace SimpleBookStore.CQFeature.QueryFeature.Report
 {
-    public interface IReportQueryService
+    public interface IReportQueryFeature
     {
         Task<ResponseModel<List<CommentCountByUserReport>>> CommentCountByUsersAsync();
         Task<ResponseModel<List<UserBookStatsReport>>> UserBookStatsAsync();
+        Task<ResponseModel<string>> DownloadCommentCountByUsersReportAsync();
     }
 }

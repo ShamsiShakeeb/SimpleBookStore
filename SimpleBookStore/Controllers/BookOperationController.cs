@@ -1,8 +1,6 @@
-﻿using KhatiMediaTr;
-using Microsoft.AspNetCore.Mvc;
-using SimpleBookStore.CQ.Command.BookCommand;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleBookStore.CQFeature.CommandFeature.Admin;
 using SimpleBookStore.CustomFiltering;
-using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.Controllers
 {
@@ -11,10 +9,10 @@ namespace SimpleBookStore.Controllers
     [Route("api/[controller]/[action]")]
     public class BookOperationController : ControllerBase
     {
-        private readonly IMediaTr<AddBooksFromExcel, Task<ResponseModel>> _addBookExcel;
-        public BookOperationController(IMediaTr<AddBooksFromExcel, Task<ResponseModel>> addBookExcel)
+        private readonly IAdminCommandFeature _adminCommandFeature;
+        public BookOperationController(IAdminCommandFeature adminCommandFeature)
         {
-            _addBookExcel = addBookExcel;
+            _adminCommandFeature = adminCommandFeature;
         }
 
         [HttpPost]
@@ -23,7 +21,7 @@ namespace SimpleBookStore.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(new { Errors = ModelState.Values.SelectMany(v => v.Errors) });
 
-            var result = await _addBookExcel.Send(new object[] { file });
+            var result = await _adminCommandFeature.BookBulkUploadAsync(file);
             if (!result.Success)
                 return BadRequest(result);
             return Ok(result);

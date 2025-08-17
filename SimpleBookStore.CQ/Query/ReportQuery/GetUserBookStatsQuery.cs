@@ -1,7 +1,6 @@
 ﻿using KhatiMediaTr;
 using SimpleBookStore.DAL.ADO.Context;
 using SimpleBookStore.Model.Report;
-using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.CQ.Query.ReportQuery
 {
@@ -13,7 +12,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
             _storeAdoContext = storeAdoContext;
         }
 
-        public async Task<ResponseModel<List<UserBookStatsReport>>> Handler()
+        public async Task<(bool success, List<UserBookStatsReport> report, string message, string errorMessage)> Handler()
         {
 
             var query = @"SELECT 
@@ -38,13 +37,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
                     { "@RoleName", Utility.Constant.Role.SuperAdmin }
                 });
 
-            return new ResponseModel<List<UserBookStatsReport>>()
-            {
-                Success = result.Success,
-                Data = result.Data,
-                Message = result.Message,
-                ErrorMessage = result.Exception?.ToString()
-            };
+            return (result.Success, result.Data, result.Message, result.Exception);
         }
     }
 }

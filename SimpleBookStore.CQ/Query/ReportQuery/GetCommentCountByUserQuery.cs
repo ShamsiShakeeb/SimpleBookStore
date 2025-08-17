@@ -12,7 +12,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
         {
             _storeAdoContext = storeAdoContext;
         }
-        public async Task<ResponseModel<List<CommentCountByUserReport>>> Handler()
+        public async Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)> Handler()
         {
 
             var query = @"WITH cte AS (
@@ -42,13 +42,7 @@ namespace SimpleBookStore.CQ.Query.ReportQuery
                     { "@RoleName", Utility.Constant.Role.SuperAdmin }
                 });
 
-            return new ResponseModel<List<CommentCountByUserReport>>()
-            {
-                Success = result.Success,
-                Data = result.Data,
-                Message = result.Message,
-                ErrorMessage = result.Exception?.ToString()
-            };
+            return (result.Success, result.Data, result.Message, result.Exception);
         }
     }
 }
