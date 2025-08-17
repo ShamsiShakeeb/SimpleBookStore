@@ -36,7 +36,7 @@ namespace SimpleBookStore.DAL.Repositories.ReportRepository
                                     inner join AspNetRoles ar
                                     on aur.RoleId = ar.Id
                                     where ar.Name not in ('{0}')
-                                  ",Utility.Constant.Role.SuperAdmin);
+                                  ",Utility.Constant.Role.SuperAdmin );
 
                 using (SqlCommand command = new SqlCommand(sqlQuery, connection))
                 {
