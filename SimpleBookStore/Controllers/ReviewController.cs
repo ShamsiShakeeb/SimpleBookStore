@@ -23,9 +23,9 @@ namespace SimpleBookStore.Controllers
                 return BadRequest(new { success = false, message = string.Join("\n", ModelState.Values.SelectMany(v => v.Errors)) });
 
             var result = await _reviewService.GiveReview(model);
-            if (!result.success)
-                return BadRequest(new { result.success, result.message });
-            return Ok(new { result.success, result.message });
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
     }
 }

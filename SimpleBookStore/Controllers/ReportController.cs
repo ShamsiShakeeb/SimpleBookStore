@@ -19,28 +19,28 @@ namespace SimpleBookStore.Controllers
         public async Task<IActionResult> CommentCountByUsers()
         {
             var result = await _reportService.GetCommentCountByUsers();
-            if (!result.success)
-                return BadRequest(new { result.success, result.message });
-            return Ok(new { result.report });
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
 
         [HttpGet]
         public async Task<IActionResult> UserBookStats()
         {
             var result = await _reportService.UserBookStats();
-            if (!result.success)
-                return BadRequest(new { result.success, result.message });
-            return Ok(new { result.report });
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
 
         [HttpGet]
         public async Task<IActionResult> DownloadCommentByUserReport()
         {
             var result = await _reportService.DownloadCommentByUserReport();
-            if(!result.success)
-                return BadRequest(new { result.success, result.message});
+            if(!result.Success)
+                return BadRequest(result);
 
-            return Ok(new { result.success, result.base64, result.message });
+            return Ok(result);
         }
     }
 }

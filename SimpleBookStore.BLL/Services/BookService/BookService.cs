@@ -68,9 +68,9 @@ namespace SimpleBookStore.BLL.Services.BookService
                                 }).ToListAsync();
             return result;
         }
-        public async Task<(bool success, string message, string errorMessage)> BuyBookAsync(BuyBookRequestModel model)
+        public async Task<ResponseModel> BuyBookAsync(BuyBookRequestModel model)
         {
-            return await _storeUnitOfWork.CommitAsync<(bool, string, string)>(async () =>
+            return await _storeUnitOfWork.CommitAsync<ResponseModel>(async () =>
             {
                 var bookInfo = await _bookRepository.GetEntityAsync(x => x.Id == model.BookId);
 
@@ -83,7 +83,12 @@ namespace SimpleBookStore.BLL.Services.BookService
                           ErrorMessage = string.Format("No Record Found Regarding this book Id: {0}. " +
                           "Operation Done By: {1}" , model.BookId,model.UserId)
                         });
-                    return (false, "Book Not Found", "No Record Found Regarding this book Id");
+                    return new ResponseModel()
+                    {
+                        Success = false,
+                        Message = "Book Not Found",
+                        ErrorMessage = "No Record Found Regarding this book Id"
+                    };
                 }
 
                 else if (bookInfo.Stock == 0)
@@ -96,7 +101,12 @@ namespace SimpleBookStore.BLL.Services.BookService
                             ErrorMessage = string.Format("No Record Found Regarding this book Id: {0}. " +
                             "Operation Done By: {1}", model.BookId, model.UserId)
                         });
-                    return (false, "Recently this Book is not available", null);
+                    return new ResponseModel()
+                    {
+                        Success = false,
+                        Message = "Recently this Book is not available",
+                        ErrorMessage = null
+                    };
                 }
 
                 var insertModel = new UserBook()
@@ -117,16 +127,25 @@ namespace SimpleBookStore.BLL.Services.BookService
                            ErrorMessage = string.Format("Error Occurd For BuyBookAsync Method, Book Id: {0}, User Id: {1} Exception: {2}"
                            , model.BookId, model.UserId, result.errorMessage)
                        });
-                    return (false, result.message, result.errorMessage);
+                    return new ResponseModel()
+                    {
+                        Success = false,
+                        Message = result.message,
+                        ErrorMessage = result.errorMessage
+                    };
                 }
 
                  bookInfo.Stock -= 1;
                 _bookRepository.Update(bookInfo);
 
-                return (true, "Book purchased successfully", null);
+                return new ResponseModel() { 
+                    Success = true, 
+                    Message = "Book purchased successfully", 
+                    ErrorMessage = null 
+                };
             });
         }
-        public async Task<(bool success, string message, string errorMessage)> ParseBooksFromExcelAsync(IFormFile file)
+        public async Task<ResponseModel> ParseBooksFromExcelAsync(IFormFile file)
         {
             var books = new List<Book>();
 
@@ -139,7 +158,13 @@ namespace SimpleBookStore.BLL.Services.BookService
                      Message = "Not Excel File Uploaded or Excel Process Failed",
                      ErrorMessage = "Not Excel File Uploaded or Excel Process Failed at ParseBooksFromExcelAsync Method",
                  });
-                return (false, "Not Excel File Found", "No Excel File Found");
+
+                return new ResponseModel()
+                {
+                    Success = false,
+                    Message = "Not Excel File Found",
+                    ErrorMessage = "No Excel File Found"
+                };
             }
 
             using (var stream = new MemoryStream())
@@ -168,10 +193,15 @@ namespace SimpleBookStore.BLL.Services.BookService
                 }
             }
 
-            return await _storeUnitOfWork.CommitAsync<(bool, string, string)>(async () =>
+            return await _storeUnitOfWork.CommitAsync<ResponseModel>(async () =>
             {
                 var result = await _bookRepository.InsertRangeAsync(books);
-                return (result.success, result.message, result.errorMessage);
+                return new ResponseModel()
+                {
+                    Success = result.success,
+                    Message = result.message,
+                    ErrorMessage = result.errorMessage
+                };
             });
         }
 

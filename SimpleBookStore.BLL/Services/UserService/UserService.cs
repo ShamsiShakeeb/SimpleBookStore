@@ -80,20 +80,32 @@ namespace SimpleBookStore.BLL.Services.UserService
 
             return response;
         }
-        public async Task<(bool success, LoginResponseModel response, string message)> ValidateUser(string userName, string password)
+        public async Task<ResponseModel<LoginResponseModel>> ValidateUser(LoginRequestModel model)
         {
             var response = new LoginResponseModel();
 
-            var login = await _signManager.PasswordSignInAsync(userName,password, true, false);
+            var login = await _signManager.PasswordSignInAsync(model.UserName,model.Password, true, false);
 
             if(!login.Succeeded)
-                return (false, null, "Login Failed");
+                return new ResponseModel<LoginResponseModel>()
+                {
+                    Success = login.Succeeded,
+                    Data = null,
+                    Message = "Login Failed",
+                    ErrorMessage = null
+                };
 
-            var user = await _userManager.FindByNameAsync(userName);
+            var user = await _userManager.FindByNameAsync(model.UserName);
             response.UserId = user.Id;
             response.Token = await GenerateTokenAsync(user);
             
-            return (true,response,"Token Generated");
+            return new ResponseModel<LoginResponseModel>()
+            {
+                Success = true,
+                Data = response,
+                Message = "Login Successful",
+                ErrorMessage = null
+            };
         }
 
         private async Task<string> GenerateTokenAsync(User user)

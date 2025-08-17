@@ -9,7 +9,7 @@ namespace SimpleBookStore.BLL.Services.BookService
     {
         Task<List<Book>> GetBookList();
         Task<List<BookInfoResponseModel>> GetBookDetailInfo();
-        Task<(bool success, string message, string errorMessage)> BuyBookAsync(BuyBookRequestModel model);
-        Task<(bool success, string message, string errorMessage)> ParseBooksFromExcelAsync(IFormFile file);
+        Task<ResponseModel> BuyBookAsync(BuyBookRequestModel model);
+        Task<ResponseModel> ParseBooksFromExcelAsync(IFormFile file);
     }
 }

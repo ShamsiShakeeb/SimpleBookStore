@@ -3,8 +3,8 @@ using SimpleBookStore.BLL.Services.LogService;
 using SimpleBookStore.DAL.StoreEntity;
 using SimpleBookStore.DAL.UnitOfWork;
 using SimpleBookStore.Model.Request;
+using SimpleBookStore.Model.Response;
 using SimpleReviewStore.DAL.Repositories.ReviewRepository;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace SimpleBookStore.BLL.Services.ReviewService
 {
@@ -24,7 +24,7 @@ namespace SimpleBookStore.BLL.Services.ReviewService
             _logService = logService;
             _storeUnitOfWork = storeUnitOfWork;
         }
-        public async Task<(bool success, string message, string errorMessage)> GiveReview(ReviewRequestModel model)
+        public async Task<ResponseModel> GiveReview(ReviewRequestModel model)
         {
             var user = await _userManager.FindByIdAsync(model.UID);
 
@@ -38,10 +38,15 @@ namespace SimpleBookStore.BLL.Services.ReviewService
                         ErrorMessage = string.Format("User Not Found at GiveReview Method" +
                         "Operation Done By: {0}", model.UID)
                     });
-                return (false, "User not found", "Invalid UID");
+                return new ResponseModel()
+                {
+                    Success = false,
+                    Message = "User not found",
+                    ErrorMessage = "Invalid UID"
+                };
             }
 
-            var result = await _storeUnitOfWork.CommitAsync<(bool success, string message, string errorMessage)>(async () =>
+            var result = await _storeUnitOfWork.CommitAsync<ResponseModel>(async () =>
             {
                 var insertModel = new Review()
                 {
@@ -54,23 +59,33 @@ namespace SimpleBookStore.BLL.Services.ReviewService
                 };
 
                 var result = await _reviewRepository.InsertAsync(insertModel);
-                return (result.success,result.message,result.errorMessage);
+                return new ResponseModel()
+                {
+                    Success = result.success,
+                    Message = result.message,
+                    ErrorMessage = result.errorMessage
+                };
             });
             
 
-            if (!result.success)
+            if (!result.Success)
             {
                 await _logService.InsertLog(
                     new LogRequestModel()
                     {
                         Success = false,
-                        Message = result.message,
+                        Message = result.Message,
                         ErrorMessage = string.Format("Internal Error at GiveReview Method Operation Done By {0} Exception: {1}"
-                        ,model.UID,result.errorMessage)
+                        ,model.UID,result.ErrorMessage)
                     });
             }
 
-            return (result.success, result.message, null);
+            return new ResponseModel()
+            {
+                Success = result.Success,
+                Message = result.Message,
+                ErrorMessage = result.ErrorMessage
+            };
         }
     }
 }

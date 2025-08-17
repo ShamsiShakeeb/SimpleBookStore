@@ -2,6 +2,7 @@
 using SimpleBookStore.DAL.DTO;
 using SimpleBookStore.DAL.Repositories.ReportRepository;
 using SimpleBookStore.Model.Report;
+using SimpleBookStore.Model.Response;
 
 namespace SimpleBookStore.BLL.Services.ReportService
 {
@@ -12,24 +13,48 @@ namespace SimpleBookStore.BLL.Services.ReportService
         {
             _reportRepository = reportRepository;
         }
-        public async Task<(bool success, List<CommentCountByUserReport> report, string message, string errorMessage)> GetCommentCountByUsers()
+        public async Task<ResponseModel<List<CommentCountByUserReport>>> GetCommentCountByUsers()
         {
-            return await _reportRepository.GetCommentCountByUsers();
+            var result = await _reportRepository.GetCommentCountByUsers();
+            return new ResponseModel<List<CommentCountByUserReport>>()
+            {
+                Success = result.success,
+                Data = result.report,
+                Message = result.message,
+                ErrorMessage = result.errorMessage
+            };
         }
-        public async Task<(bool success, List<UserBookStatsReport> report, string message, string errorMessage)> UserBookStats()
+        public async Task<ResponseModel<List<UserBookStatsReport>>> UserBookStats()
         {
-            return await _reportRepository.UserBookStats();
+            var result = await _reportRepository.UserBookStats();
+            return new ResponseModel<List<UserBookStatsReport>>()
+            {
+                Success = result.success,
+                Data = result.report,
+                Message = result.message,
+                ErrorMessage = result.errorMessage
+            };
         }
-
-        public async Task<(bool success,string base64,string message,string errorMessage)> DownloadCommentByUserReport()
+        public async Task<ResponseModel<string>> DownloadCommentByUserReport()
         {
             var result = await _reportRepository.GetCommentCountByUsers();
             if (!result.success)
-                return (result.success, null, result.message, result.errorMessage);
+                return new ResponseModel<string>()
+                {
+                    Success = result.success,
+                    Data = null,
+                    ErrorMessage= result.errorMessage,
+                    Message = result.message
+                };
             var base64 = GenerateExcelBase64(result.report);
-            return (true, base64 , "Base64 Generated" , null);
+            return new ResponseModel<string>()
+            {
+                Success = true,
+                Data = base64,
+                Message = "Base64 Generated",
+                ErrorMessage = null
+            };
         }
-
         private static string GenerateExcelBase64(List<CommentCountByUserReport> reportData)
         {
             using (var workbook = new XLWorkbook())

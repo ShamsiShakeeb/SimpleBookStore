@@ -36,9 +36,9 @@ namespace SimpleBookStore.Controllers
         public async Task<IActionResult> BuyBook(BuyBookRequestModel model)
         {
             var result = await _bookService.BuyBookAsync(model);
-            if (!result.success)
-                return BadRequest(new { result.success , result.message });
-            return Ok(new { result.success , result.message});
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
 
         [AuthorizationFilter("SuperAdmin")]
@@ -46,9 +46,9 @@ namespace SimpleBookStore.Controllers
         public async Task<IActionResult> BookBulkUpload(IFormFile file)
         {
             var result = await _bookService.ParseBooksFromExcelAsync(file);
-            if (!result.success)
-                return BadRequest(new { result.success, result.message });
-            return Ok(new { result.success, result.message });
+            if (!result.Success)
+                return BadRequest(result);
+            return Ok(result);
         }
     }
 }

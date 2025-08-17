@@ -58,12 +58,11 @@ namespace SimpleBookStore.Controllers
                 return Unauthorized(new { success = false, message = "Token Generation Failed"});
             }
 
-            var result = await _userService.ValidateUser(model.UserName, model.Password);
+            var result = await _userService.ValidateUser(model);
 
-            if (!result.success)
-                return Unauthorized(new { success = result.success, message = result.message });
-
-            return Ok(new { success = result.success, response = result.response, message = result.message });
+            if (!result.Success)
+                return Unauthorized(result);
+            return Ok(result);
         }
         
     }
