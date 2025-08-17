@@ -1,1 +1,0 @@
-jRTC:\Users\BS01389\source\repos\SimpleBookStore\SimpleBookStore\SimpleBookStore.csproj¢net8.0òCSharp12
